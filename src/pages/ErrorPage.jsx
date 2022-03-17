@@ -11,6 +11,7 @@ export default function ErrorPage() {
         padding: "10% 10%"
       } }>
       <Typography>Page not found</Typography>
+
     </Box>
   )
 }
