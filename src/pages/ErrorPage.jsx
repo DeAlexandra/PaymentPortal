@@ -5,14 +5,12 @@ import { Box } from '@material-ui/core'
 export default function ErrorPage() {
   return (
     <Box
-    sx={{
+      sx={ {
         display: "flex",
         justifyContent: "center",
-        padding:"10% 10%"
-
-    }}>
-          
-     <Typography>Page not found</Typography> 
+        padding: "10% 10%"
+      } }>
+      <Typography>Page not found</Typography>
     </Box>
   )
 }

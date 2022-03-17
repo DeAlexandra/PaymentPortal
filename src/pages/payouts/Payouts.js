@@ -5,14 +5,12 @@ import { Typography } from '@material-ui/core'
 export default function Payouts() {
   return (
     <Box
-    sx={{
+      sx={ {
         display: "flex",
         justifyContent: "center",
-        padding:"10% 10%"
-
-    }}>
-          
-     <Typography>Main Content Payouts</Typography> 
+        padding: "10% 10%"
+      } }>
+      <Typography>Main Content Payouts</Typography>
     </Box>
   )
 }

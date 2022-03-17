@@ -5,14 +5,12 @@ import { Typography } from '@material-ui/core'
 export default function Transactions() {
   return (
     <Box
-    sx={{
+      sx={ {
         display: "flex",
         justifyContent: "center",
-        padding:"10% 10%"
-
-    }}>
-          
-     <Typography>Main Content Transactions</Typography> 
+        padding: "10% 10%"
+      } }>
+      <Typography>Main Content Transactions</Typography>
     </Box>
   )
 }
