@@ -34,7 +34,6 @@ const itemList = [
 
 export default function ListItems({ open }) {
     const navigate = useNavigate();
-
     return (
         <List>
             { itemList.map((item, index) => {

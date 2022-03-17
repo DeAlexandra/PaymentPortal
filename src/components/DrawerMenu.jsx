@@ -29,6 +29,7 @@ const closedMixin = (theme) => ({
         width: `calc(${theme.spacing(8)} + 1px)`
     }
 });
+
 const Drawer = styled(MuiDrawer, {
     shouldForwardProp: (prop) => prop !== "open"
 })(({ theme, open }) => ({
