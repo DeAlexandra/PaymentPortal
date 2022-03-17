@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/dashboard/Dashboard"
+import Transactions from "./pages/transactions/Transactions"
+import Payouts from "./pages/payouts/Payouts"
+import Users from "./pages/users/Users"
+import Sidebar from "./components/Sidebar"
+import ErrorPage from "./pages/ErrorPage";
+import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Sidebar />
+      <Routes>
+        <Route path="/" element={ <Dashboard /> } />
+        <Route path="/dashboard" element={ <Dashboard /> } />
+        <Route path="/transactions" element={ <Transactions /> } />
+        <Route path="/payouts" element={ <Payouts /> } />
+        <Route path="/users" element={ <Users /> } />
+        <Route path="*" element={ <ErrorPage /> } />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
-export default App;
