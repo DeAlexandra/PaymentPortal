@@ -8,8 +8,6 @@ const Users = lazy(() => import("./pages/users/Users"));
 const ErrorPage = lazy(() => import("./pages/ErrorPage"));
 const Dashboard = lazy(() => import("./pages/dashboard/Dashboard"));
 
-
-
 export default function App() {
   return (
     <Router>
@@ -28,4 +26,3 @@ export default function App() {
     </Router>
   );
 }
-

@@ -8,6 +8,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import { styled } from "@mui/material/styles";
 import { Link } from 'react-router-dom';
 import logo from "./logo.png"
+import { useTranslation } from 'react-i18next';
+import SelectAutoWidth from './LanguageSelect';
 
 const DRAWER_WIDTH = 240;
 
@@ -30,6 +32,7 @@ const AppBar = styled(MuiAppBar, {
 }));
 
 export default function Header({ handleDrawerOpen, open }) {
+    const { t } = useTranslation();
     return (
         <AppBar
             position="fixed"
@@ -56,8 +59,9 @@ export default function Header({ handleDrawerOpen, open }) {
                     variant="h6"
                     flexGrow={ 1 }
                 >
-                    Dashboard App
+                    { t("dashboard") }
                 </Typography>
+                <SelectAutoWidth />
                 <IconButton
                     position="right"
                     color="inherit"

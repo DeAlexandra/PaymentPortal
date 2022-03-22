@@ -8,25 +8,26 @@ import CachedIcon from '@mui/icons-material/Cached';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import ReceiptIcon from '@mui/icons-material/Receipt';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const itemList = [
     {
-        text: "Dashboard",
+        text: "dashboard",
         icon: <DashboardIcon />,
         route: "dashboard"
     },
     {
-        text: "Transactions",
+        text: "transactions",
         icon: <CachedIcon />,
         route: "transactions"
     },
     {
-        text: "Users",
+        text: "users",
         icon: <PeopleAltIcon />,
         route: "users"
     },
     {
-        text: "Payouts",
+        text: "payouts",
         icon: <ReceiptIcon />,
         route: "payouts"
     }
@@ -34,6 +35,7 @@ const itemList = [
 
 export default function ListItems({ open }) {
     const navigate = useNavigate();
+    const { t } = useTranslation();
     return (
         <List>
             { itemList.map((item, index) => {
@@ -58,7 +60,7 @@ export default function ListItems({ open }) {
                             { icon }
                         </ListItemIcon>
                         <ListItemText
-                            primary={ text }
+                            primary={ t(text) }
                             sx={ { opacity: open ? 1 : 0 } } />
                     </ListItemButton>
                 )
