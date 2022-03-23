@@ -3,5 +3,8 @@ export const EN_TRANSLATIONS = {
     transactions: "Transactions",
     users: "Users",
     payouts: "Payouts",
-    lang: "Lang"
+    lang: "Lang",
+    romanian: "Romanian",
+    english: "English",
+    loading_message: "Loading..."
 }

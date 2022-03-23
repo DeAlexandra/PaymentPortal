@@ -3,11 +3,10 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 
 export default function SelectAutoWidth() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const handleChangeLang = (event) => {
         i18n.changeLanguage(event.target.value)
     }
@@ -23,11 +22,11 @@ export default function SelectAutoWidth() {
                     onChange={ handleChangeLang }
                     autoWidth
                     label="Language"
-                    defaultValue={ "en" }
+                    value={ localStorage.getItem("i18nextLng") }
                     sx={ { color: "white" } }
                 >
-                    <MenuItem value="en" selected>English</MenuItem>
-                    <MenuItem value="ro">Română</MenuItem>
+                    <MenuItem value="en-US">{ t("english") }</MenuItem>
+                    <MenuItem value="ro">{ t("romanian") }</MenuItem>
                 </Select>
             </FormControl>
         </div>

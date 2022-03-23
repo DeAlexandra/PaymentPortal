@@ -3,5 +3,8 @@ export const RO_TRANSLATIONS = {
     transactions: "Tranzacții",
     users: "Utilizatori",
     payouts: "Plăți",
-    lang: "Limbă"
+    lang: "Limbă",
+    romanian: "Română",
+    english: "Engleză",
+    loading_message: "Se încarcă..."
 }
