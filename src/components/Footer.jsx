@@ -15,7 +15,8 @@ export default function Footer() {
       flexDirection: 'row',
       justifyContent: "center",
       alignItems: "center",
-      alignContent: 'flex-end'
+      alignContent: 'flex-end',
+      py: "16px"
     } }>
       <CopyRight />
     </Box>

@@ -6,5 +6,12 @@ export const EN_TRANSLATIONS = {
     lang: "Lang",
     romanian: "Romanian",
     english: "English",
-    loading_message: "Loading..."
+    loading_message: "Loading...",
+    total: "Total",
+    price: "Price",
+    shop: "Shop",
+    VAT: "VAT",
+    id: "Id",
+    edit: "Edit",
+    delete: "Delete"
 }
