@@ -15,5 +15,7 @@ export const RO_TRANSLATIONS = {
     edit: "Editează",
     delete: "Șterge",
     fail_fetch_transactions: "Colectare listă tranzacții eșuată.",
-    fail_fetch_users: "Colectare lista utilizatori eșuată",
+    fail_fetch_users: "Colectare lista utilizatori eșuată.",
+    success_fetch_transactions: "Colectare listă tranzacții reușită.",
+    success_fetch_users: "Colectare listă tranzacții reușită."
 };

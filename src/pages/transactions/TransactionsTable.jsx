@@ -23,7 +23,7 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
                 alignSelf: "flex-start",
                 width: "60%",
                 border: 1,
-                marginTop: "100px",
+                marginTop: "10px",
                 borderColor: "grey.200",
                 boxSizing: "boxSizing",
                 boxShadow: 4,
