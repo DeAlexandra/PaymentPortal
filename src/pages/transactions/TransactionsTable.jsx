@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
@@ -57,5 +57,5 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
                 </TableBody>
             </Table>
         </TableContainer>
-    )
+    );
 }

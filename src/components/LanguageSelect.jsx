@@ -8,8 +8,8 @@ import { useTranslation } from 'react-i18next';
 export default function SelectAutoWidth() {
     const { t, i18n } = useTranslation();
     const handleChangeLang = (event) => {
-        i18n.changeLanguage(event.target.value)
-    }
+        i18n.changeLanguage(event.target.value);
+    };
     return (
         <div>
             <FormControl sx={ { m: 1, minWidth: 80 } }>

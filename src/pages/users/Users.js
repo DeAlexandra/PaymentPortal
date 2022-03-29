@@ -1,27 +1,37 @@
-import React from 'react'
+import React from 'react';
 import { useState, useEffect } from 'react';
 import UserCard from './UserCard';
+import IsLoading from '../../components/IsLoading';
+import FailUserFetch from '../../components/Toast alerts/FailUserFetch';
 
 export default function Users() {
-  const [users, setUsers] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
+  const [users, setUsers] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    fetchUsers()
+    fetchUsers();
   }, []);
 
   const fetchUsers = async () => {
     try {
-      setIsLoading(true)
+      setIsLoading(true);
       const response = await fetch("http://localhost:3004/users");
       const userList = await response.json();
       setUsers(userList);
-      setIsLoading(false)
+      setIsLoading(false);
     } catch (err) {
-      console.log(err)
+      setIsLoading(false);
+      setHasError(true);
+      console.log(err);
     }
   };
+  if (isLoading) {
+    return <IsLoading />;
+  }
   return (
-    <UserCard users={ users } />
-  )
-}
+    <div>
+      { !hasError ? <UserCard users={ users } /> : <FailUserFetch /> }
+    </div>
+  );
+};

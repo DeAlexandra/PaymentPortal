@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Typography from "@mui/material/Typography";
 import Toolbar from "@mui/material/Toolbar";
 import MuiAppBar from "@mui/material/AppBar";
@@ -7,7 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import PersonIcon from '@mui/icons-material/Person';
 import { styled } from "@mui/material/styles";
 import { Link } from 'react-router-dom';
-import logo from "./logo.png"
+import logo from "./logo.png";
 import { useTranslation } from 'react-i18next';
 import SelectAutoWidth from './LanguageSelect';
 
@@ -71,5 +71,5 @@ export default function Header({ handleDrawerOpen, open }) {
                 </IconButton>
             </Toolbar>
         </AppBar>
-    )
+    );
 }

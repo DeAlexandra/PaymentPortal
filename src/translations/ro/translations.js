@@ -13,5 +13,7 @@ export const RO_TRANSLATIONS = {
     VAT: "TVA",
     id: "Id",
     edit: "Editează",
-    delete: "Șterge"
-}
+    delete: "Șterge",
+    fail_fetch_transactions: "Colectare listă tranzacții eșuată.",
+    fail_fetch_users: "Colectare lista utilizatori eșuată",
+};

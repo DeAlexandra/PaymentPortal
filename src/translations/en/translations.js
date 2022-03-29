@@ -13,5 +13,7 @@ export const EN_TRANSLATIONS = {
     VAT: "VAT",
     id: "Id",
     edit: "Edit",
-    delete: "Delete"
-}
+    delete: "Delete",
+    fail_fetch_transactions: "Failed to retrieve transaction list",
+    fail_fetch_users: "Failed to retrieve user list",
+};

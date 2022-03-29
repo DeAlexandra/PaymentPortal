@@ -11,5 +11,5 @@ export default function Dashboard() {
       } }>
       <Typography>Main Content Dashboard</Typography>
     </Box>
-  )
+  );
 }

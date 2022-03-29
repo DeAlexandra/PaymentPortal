@@ -1,6 +1,6 @@
-import React from 'react'
-import { Typography } from '@material-ui/core'
-import { Box } from '@material-ui/core'
+import React from 'react';
+import { Typography } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 
 export default function ErrorPage() {
   return (
@@ -13,5 +13,5 @@ export default function ErrorPage() {
       <Typography>Page not found</Typography>
 
     </Box>
-  )
+  );
 }

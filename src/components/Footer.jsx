@@ -1,12 +1,12 @@
-import React from 'react'
-import { Box } from '@mui/system'
-import { Typography } from '@material-ui/core'
+import React from 'react';
+import { Box } from '@mui/system';
+import { Typography } from '@material-ui/core';
 
 const CopyRight = () => {
   return (
     <Typography >{ "Copyright © My Website " }{ new Date().getFullYear() }</Typography>
-  )
-}
+  );
+};
 
 export default function Footer() {
   return (
@@ -15,10 +15,9 @@ export default function Footer() {
       flexDirection: 'row',
       justifyContent: "center",
       alignItems: "center",
-      alignContent: 'flex-end',
       py: "16px"
     } }>
       <CopyRight />
     </Box>
-  )
+  );
 }
