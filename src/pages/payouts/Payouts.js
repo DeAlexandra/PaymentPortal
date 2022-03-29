@@ -1,6 +1,6 @@
-import React from 'react'
-import { Box } from '@mui/system'
-import { Typography } from '@material-ui/core'
+import React from 'react';
+import { Box } from '@mui/system';
+import { Typography } from '@material-ui/core';
 
 export default function Payouts() {
   return (
@@ -12,5 +12,5 @@ export default function Payouts() {
       } }>
       <Typography>Main Content Payouts</Typography>
     </Box>
-  )
+  );
 }

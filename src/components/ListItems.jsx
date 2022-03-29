@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -31,7 +31,7 @@ const itemList = [
         icon: <ReceiptIcon />,
         route: "payouts"
     }
-]
+];
 
 export default function ListItems({ open }) {
     const navigate = useNavigate();
@@ -63,8 +63,8 @@ export default function ListItems({ open }) {
                             primary={ t(text) }
                             sx={ { opacity: open ? 1 : 0 } } />
                     </ListItemButton>
-                )
+                );
             }) }
         </List>
-    )
+    );
 }

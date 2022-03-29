@@ -1,7 +1,6 @@
-import React from 'react'
-import { Box } from '@mui/system'
-import { Typography } from '@material-ui/core'
-
+import React from 'react';
+import { Box } from '@mui/system';
+import { Typography } from '@material-ui/core';
 export default function Dashboard() {
   return (
     <Box
@@ -12,5 +11,5 @@ export default function Dashboard() {
       } }>
       <Typography>Main Content Dashboard</Typography>
     </Box>
-  )
+  );
 }

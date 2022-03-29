@@ -6,5 +6,16 @@ export const RO_TRANSLATIONS = {
     lang: "Limbă",
     romanian: "Română",
     english: "Engleză",
-    loading_message: "Se încarcă..."
-}
+    loading_message: "Se încarcă...",
+    total: "Total",
+    price: "Preț",
+    shop: "Magazin",
+    VAT: "TVA",
+    id: "Id",
+    edit: "Editează",
+    delete: "Șterge",
+    fail_fetch_transactions: "Colectare listă tranzacții eșuată.",
+    fail_fetch_users: "Colectare lista utilizatori eșuată.",
+    success_fetch_transactions: "Colectare listă tranzacții reușită.",
+    success_fetch_users: "Colectare listă tranzacții reușită."
+};
