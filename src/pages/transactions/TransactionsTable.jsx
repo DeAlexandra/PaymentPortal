@@ -6,6 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTranslation } from 'react-i18next';
 
 export default function TransactionsTable({ getTotalPrice, transactions }) {
@@ -21,9 +22,10 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
             } }>
             <Table sx={ {
                 alignSelf: "flex-start",
-                width: "60%",
                 border: 1,
-                marginTop: "10px",
+                marginTop: "100px",
+                marginLeft: "80px",
+                marginRight: "20px",
                 borderColor: "grey.200",
                 boxSizing: "boxSizing",
                 boxShadow: 4,
@@ -36,6 +38,7 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
                         <TableCell sx={ { color: 'white' } } align="left">{ t("price") }</TableCell>
                         <TableCell sx={ { color: 'white' } } align="left">{ t("VAT") }</TableCell>
                         <TableCell sx={ { color: 'white' } } align="right">{ t("total") }</TableCell>
+                        <TableCell sx={ { color: 'white' } } align="right"></TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -52,6 +55,9 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
                             <TableCell align="left">{ row.price }</TableCell>
                             <TableCell align="left">{ row.VAT }</TableCell>
                             <TableCell align="right">{ getTotalPrice(row.price, row.VAT) }</TableCell>
+                            <TableCell align="right">
+                                <ArrowForwardIcon color="primary" sx={ { cursor: "pointer" } }
+                                /></TableCell>
                         </TableRow>
                     )) }
                 </TableBody>

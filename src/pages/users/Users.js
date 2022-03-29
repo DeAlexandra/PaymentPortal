@@ -22,8 +22,6 @@ export default function Users() {
       const userList = await response.json();
       setUsers(userList);
       setIsLoading(false);
-      setMessage("success_fetch_users");
-      setSeverity("success");
     } catch (err) {
       setIsLoading(false);
       setHasError(true);
@@ -37,8 +35,7 @@ export default function Users() {
   return (
     <div>
       { !hasError
-        ? <div><ToastNotification message={ message } severity={ severity } />
-          <UserCard users={ users } /> </div>
+        ? <UserCard users={ users } />
         : <ToastNotification message={ message } severity={ severity } /> }
     </div>
   );
