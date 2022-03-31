@@ -1,15 +1,13 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import UserCard from './UserCard';
 import IsLoading from '../../components/IsLoading';
-import ToastNotification from '../../components/Toast alerts/ToastNotification';
+import ToastContext from '../../context/ToastContext';
 
 export default function Users() {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [hasError, setHasError] = useState(false);
-  const [message, setMessage] = useState("");
-  const [severity, setSeverity] = useState("");
+  const { toastState, setToastState } = useContext(ToastContext);
 
   useEffect(() => {
     fetchUsers();
@@ -24,19 +22,15 @@ export default function Users() {
       setIsLoading(false);
     } catch (err) {
       setIsLoading(false);
-      setHasError(true);
-      setMessage("fail_fetch_users");
-      setSeverity("error");
-    }
+      setToastState({ message: "fail_fetch_users", severity: "error", open: true });
+    };
   };
   if (isLoading) {
     return <IsLoading />;
   }
   return (
-    <div>
-      { !hasError
-        ? <UserCard users={ users } />
-        : <ToastNotification message={ message } severity={ severity } /> }
-    </div>
+    <>
+      { users.length > 0 && <UserCard users={ users } /> }
+    </>
   );
 };

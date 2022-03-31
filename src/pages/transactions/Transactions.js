@@ -1,15 +1,13 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import TransactionsTable from './TransactionsTable';
-import ToastNotification from '../../components/Toast alerts/ToastNotification';
 import IsLoading from '../../components/IsLoading';
+import ToastContext from '../../context/ToastContext';
 
 export default function Transactions() {
   const [transactions, setTransactions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [hasError, setHasError] = useState(false);
-  const [message, setMessage] = useState("");
-  const [severity, setSeverity] = useState("");
+  const { toastState, setToastState } = useContext(ToastContext);
 
   const getTotalPrice = (price, vat) => {
     let priceInt = parseInt(price);
@@ -30,19 +28,15 @@ export default function Transactions() {
       setIsLoading(false);
     } catch (err) {
       setIsLoading(false);
-      setHasError(true);
-      setMessage("fail_fetch_transactions");
-      setSeverity("error");
+      setToastState({ message: "fail_fetch_transactions", severity: "error", open: true });
     }
   };
   if (isLoading) {
     return <IsLoading />;
   }
   return (
-    <div>
-      { !hasError
-        ? <TransactionsTable getTotalPrice={ getTotalPrice } transactions={ transactions } />
-        : <ToastNotification message={ message } severity={ severity } /> }
-    </div>
+    <>
+      { transactions.length > 0 && <TransactionsTable getTotalPrice={ getTotalPrice } transactions={ transactions } /> };
+    </>
   );
 };
