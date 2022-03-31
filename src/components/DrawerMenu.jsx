@@ -6,6 +6,9 @@ import { styled } from "@mui/material/styles";
 import Divider from "@mui/material/Divider";
 import MuiDrawer from "@mui/material/Drawer";
 import ListItems from './ListItems';
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
 
 const drawerWidth = 240;
 
@@ -55,20 +58,25 @@ const DrawerHeader = styled("div")(({ theme }) => ({
     ...theme.mixins.toolbar
 }));
 
-export default function DrawerMenu({ handleDrawerClose, theme, open }) {
+export default function DrawerMenu({ handleDrawerClose, open }) {
+    const theme = useTheme();
     return (
-        <Drawer variant="permanent" open={ open }>
-            <DrawerHeader>
-                <IconButton onClick={ handleDrawerClose }>
-                    { theme.direction === "rtl" ? (
-                        <ChevronRightIcon />
-                    ) : (
-                        <ChevronLeftIcon />
-                    ) }
-                </IconButton>
-            </DrawerHeader>
-            <Divider />
-            <ListItems open={ open } />
-        </Drawer>
+        <Box sx={ { display: "flex" } }>
+            <CssBaseline />
+            <Drawer variant="permanent" open={ open }>
+                <DrawerHeader>
+                    <IconButton onClick={ handleDrawerClose }>
+                        { console.log(open) }
+                        { theme.direction === "rtl" ? (
+                            <ChevronRightIcon />
+                        ) : (
+                            <ChevronLeftIcon />
+                        ) }
+                    </IconButton>
+                </DrawerHeader>
+                <Divider />
+                <ListItems open={ open } />
+            </Drawer>
+        </Box>
     );
 }

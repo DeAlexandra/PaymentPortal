@@ -28,10 +28,7 @@ export default function Transactions() {
       const transactionList = await response.json();
       setTransactions(transactionList);
       setIsLoading(false);
-      setMessage("success_fetch_transactions");
-      setSeverity("success");
     } catch (err) {
-      console.log(err);
       setIsLoading(false);
       setHasError(true);
       setMessage("fail_fetch_transactions");
@@ -44,8 +41,7 @@ export default function Transactions() {
   return (
     <div>
       { !hasError
-        ? <div><ToastNotification message={ message } severity={ severity } />
-          <TransactionsTable getTotalPrice={ getTotalPrice } transactions={ transactions } /></div>
+        ? <TransactionsTable getTotalPrice={ getTotalPrice } transactions={ transactions } />
         : <ToastNotification message={ message } severity={ severity } /> }
     </div>
   );

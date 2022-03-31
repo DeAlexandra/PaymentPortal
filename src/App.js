@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
+import DrawerMenu from "./components/DrawerMenu";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useTranslation } from "react-i18next";
 const Transactions = lazy(() => import("./pages/transactions/Transactions"));
@@ -11,9 +12,15 @@ const Dashboard = lazy(() => import("./pages/dashboard/Dashboard"));
 
 export default function App() {
   const { t } = useTranslation();
+  const [open, setOpen] = React.useState(false);
+
+  const handleDrawerOpen = () => setOpen(true);
+  const handleDrawerClose = () => setOpen(false);
+
   return (
     <Router>
-      <Sidebar />
+      <Header handleDrawerOpen={ handleDrawerOpen } open={ open } />
+      <DrawerMenu handleDrawerClose={ handleDrawerClose } open={ open } />
       <Suspense fallback={ <div>{ t("loading_message") }</div> }>
         <Routes>
           <Route path="/" element={ <Dashboard /> } />
