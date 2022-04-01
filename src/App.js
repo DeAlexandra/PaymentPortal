@@ -15,7 +15,7 @@ const Dashboard = lazy(() => import("./pages/dashboard/Dashboard"));
 
 export default function App() {
   const { t } = useTranslation();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const [toastState, setToastState] = useState({});
 
   const handleDrawerOpen = () => setOpen(true);
