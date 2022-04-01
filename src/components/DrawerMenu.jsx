@@ -66,7 +66,6 @@ export default function DrawerMenu({ handleDrawerClose, open }) {
             <Drawer variant="permanent" open={ open }>
                 <DrawerHeader>
                     <IconButton onClick={ handleDrawerClose }>
-                        { console.log(open) }
                         { theme.direction === "rtl" ? (
                             <ChevronRightIcon />
                         ) : (

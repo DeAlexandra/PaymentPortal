@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 export default function UserCard({ users }) {
     const { t } = useTranslation();
     return (
-        <Grid container spacing={ 2 } sx={ { paddingLeft: "245px", paddingTop: "10px", paddingRight: "25px" } }>
+        <Grid container spacing={ 2 } sx={ { paddingLeft: "200px", paddingTop: "100px", paddingRight: "25px" } }>
             { users.map((user) =>
                 <Grid key={ user.id } item xs={ 12 } sm={ 6 } md={ 4 } lg={ 3 } sx={ { display: "flex" } }>
                     <Card key={ user.id } sx={ { width: "270px" } }>
