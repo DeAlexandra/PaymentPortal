@@ -30,8 +30,7 @@ export default function UserCard({ users }) {
                             </Typography>
                         </CardContent>
                         <CardActions sx={ { justifyContent: "center" } }>
-                            <Button size="small">{ t("edit") }</Button>
-                            <Button size="small">{ t("delete") }</Button>
+                            <Button href={ `/users/${user.id}` } variant="contained" size="small">{ t("details") }</Button>
                         </CardActions>
                     </Card>
                 </Grid>

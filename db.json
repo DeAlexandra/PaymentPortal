@@ -1111,7 +1111,7 @@
       "first_name": "Andreea",
       "last_name": "Cretu",
       "id": 1012,
-      "email": "Andreea_Cretu@gmail.com",
+      "email": "Andreearetu@gmail.com",
       "password": "dfgcvbert",
       "profile_picture": "../../../assets/b12.jpg",
       "role": "Tester",
@@ -1202,7 +1202,7 @@
     {
       "first_name": "Ioana",
       "last_name": "Lavinia",
-      "id": 1021,
+      "id": 1020,
       "email": "Ioana_Lavinia@gmail.com",
       "password": "asadeccer",
       "profile_picture": "../../../assets/b19.jpg",
@@ -1212,7 +1212,7 @@
     {
       "first_name": "Stefan",
       "last_name": "Calugar",
-      "id": 1022,
+      "id": 1021,
       "email": "Stefan_Calugar@gmail.com",
       "password": "999666333",
       "profile_picture": "../../../assets/b20.jpg",

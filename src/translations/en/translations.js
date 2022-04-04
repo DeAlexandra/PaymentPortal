@@ -14,8 +14,20 @@ export const EN_TRANSLATIONS = {
     id: "Id",
     edit: "Edit",
     delete: "Delete",
+    details: "Details",
+    cancel: "Cancel",
+    submit: "Submit",
     fail_fetch_transactions: "Failed to retrieve transaction list.",
     fail_fetch_users: "Failed to retrieve user list.",
+    fail_edit_user: "User update failed",
     success_fetch_transactions: "Successfully retrieved transaction list.",
-    success_fetch_users: "Successfully retrieved user list."
+    success_fetch_users: "Successfully retrieved user list.",
+    success_edit_user: "Successfully updated user",
+    first_name: "First name",
+    last_name: "Last name",
+    email: "Email adress",
+    password: "Password",
+    profile_picture: "Profile picture",
+    user_details: "User details"
+
 };

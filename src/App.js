@@ -12,6 +12,7 @@ const Payouts = lazy(() => import("./pages/payouts/Payouts"));
 const Users = lazy(() => import("./pages/users/Users"));
 const ErrorPage = lazy(() => import("./pages/ErrorPage"));
 const Dashboard = lazy(() => import("./pages/dashboard/Dashboard"));
+const UserDetails = lazy(() => import("./pages/users/UserDetails"));
 
 export default function App() {
   const { t } = useTranslation();
@@ -35,6 +36,7 @@ export default function App() {
               <Route path="/transactions" element={ <Transactions /> } />
               <Route path="/payouts" element={ <Payouts /> } />
               <Route path="/users" element={ <Users /> } />
+              <Route path="/users/:id" element={ <UserDetails /> } />
               <Route path="*" element={ <ErrorPage /> } />
             </Routes>
           </Suspense>
