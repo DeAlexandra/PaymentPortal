@@ -53,8 +53,8 @@ export default function UserDetails() {
     };
 
     return (
-        <> <div style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "center", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "40vw", margin: " 75px auto" } }>
-            <Typography variant="h3" component="h1">{ t("user_details") }</Typography>
+        <> <div style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "40vw", margin: " 75px auto" } }>
+            <Typography variant="h3" component="h1" align="center">{ t("user_details") }</Typography>
             <Formik enableReinitialize={ true } initialValues={ singleUser } onSubmit={ (data, { setSubmitting }) => {
                 setSubmitting(true);
                 updateUser(data);
@@ -106,8 +106,8 @@ export default function UserDetails() {
                             onChange={ handleChange }
                             value={ values.password }
                         />
-
-                        <label htmlFor="profile_picture">{ t("profile_picture") }</label>
+                        <div style={ { marginTop: "10px" } }>
+                            <label htmlFor="profile_picture">{ t("profile_picture") }</label></div>
                         <TextField
                             fullWidth
                             variant="outlined"
@@ -119,7 +119,7 @@ export default function UserDetails() {
                         />
                         <div style={ { display: "flex", justifyContent: "center", marginTop: "10px" } }>
                             <Button sx={ { flex: 2 } } variant="contained" color="success" type="submit" disabled={ isSubmitting }>{ t("submit") }</Button>
-                            <Button sx={ { flex: 2 } } variant="contained" color="warning" type="submit" disabled={ isSubmitting } onClick={ cancelUpdateUser }> { t("cancel") }</Button>
+                            <Button sx={ { flex: 2 } } variant="contained" color="warning" type="button" disabled={ isSubmitting } onClick={ cancelUpdateUser }> { t("cancel") }</Button>
                         </div>
                     </Form>
                 ) }

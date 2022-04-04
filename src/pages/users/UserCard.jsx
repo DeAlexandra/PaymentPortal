@@ -17,10 +17,10 @@ export default function UserCard({ users }) {
                     <Card key={ user.id } sx={ { width: "270px" } }>
                         <CardMedia
                             component="img"
-                            height="100"
-                            image={ user.profile_picture }
+                            height="100px"
+                            image={ `http://localhost:3000/assets/userPics/${user.profile_picture} ` }
                             alt=""
-                        />
+                        /> { console.log(user.profile_picture) }
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
                                 { user.first_name } { user.last_name }
@@ -38,4 +38,3 @@ export default function UserCard({ users }) {
         </ Grid >
     );
 };
-
