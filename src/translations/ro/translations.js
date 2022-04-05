@@ -28,5 +28,9 @@ export const RO_TRANSLATIONS = {
     email: "Adresă email",
     password: "Parolă",
     profile_picture: "Fotografie profil",
-    user_details: "Detalii utilizator"
+    user_details: "Detalii utilizator",
+    required: "Obligatoriu",
+    short_value: "Prea scurt",
+    long_value: "Prea lung",
+    invalid_email: "Email invalid",
 };
