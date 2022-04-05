@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 import ToastContext from '../../context/ToastContext';
 import Button from '@mui/material/Button';
 import { TextField, Typography } from '@material-ui/core';
-import UserValidationSchema from './UserValidationSchema';
 
 export default function UserDetails() {
 
@@ -54,26 +53,25 @@ export default function UserDetails() {
         navigate(-1);
     };
 
-    // const UserValidationSchema = Yup.object({
-    //     first_name: Yup.string()
-    //         .min(2, t("short_value"))
-    //         .max(50, t("long_value"))
-    //         .required(t("required")),
-    //     last_name: Yup.string()
-    //         .min(2, t("short_value"))
-    //         .max(50, t("long_value"))
-    //         .required(t("required")),
-    //     email: Yup.string()
-    //         .email("Invalid email")
-    //         .required(t("required")),
-    //     password: Yup.string()
-    //         .min(6, t("short_value"))
-    //         .max(15, t("long_value"))
-    //         .required(t("required")),
-    //     profile_picture: Yup.string()
-    //         .required(t("required"))
-    // });
-
+    const UserValidationSchema = Yup.object({
+        first_name: Yup.string()
+            .min(2, t("short_value"))
+            .max(50, t("long_value"))
+            .required(t("required")),
+        last_name: Yup.string()
+            .min(2, t("short_value"))
+            .max(50, t("long_value"))
+            .required(t("required")),
+        email: Yup.string()
+            .email("Invalid email")
+            .required(t("required")),
+        password: Yup.string()
+            .min(6, t("short_value"))
+            .max(15, t("long_value"))
+            .required(t("required")),
+        profile_picture: Yup.string()
+            .required(t("required"))
+    });
 
     return (
         <> <div style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "40vw", margin: " 75px auto" } }>
