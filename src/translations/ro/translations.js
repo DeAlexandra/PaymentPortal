@@ -14,8 +14,19 @@ export const RO_TRANSLATIONS = {
     id: "Id",
     edit: "Editează",
     delete: "Șterge",
+    details: "Detalii",
+    cancel: "Renunță",
+    submit: "Trimite",
     fail_fetch_transactions: "Colectare listă tranzacții eșuată.",
     fail_fetch_users: "Colectare lista utilizatori eșuată.",
+    fail_edit_user: "Editare utilizator nereușită.",
     success_fetch_transactions: "Colectare listă tranzacții reușită.",
-    success_fetch_users: "Colectare listă tranzacții reușită."
+    success_fetch_users: "Colectare listă tranzacții reușită.",
+    success_edit_user: "Editare utilizator reușită.",
+    first_name: "Prenume",
+    last_name: "Nume",
+    email: "Adresă email",
+    password: "Parolă",
+    profile_picture: "Fotografie profil",
+    user_details: "Detalii utilizator"
 };

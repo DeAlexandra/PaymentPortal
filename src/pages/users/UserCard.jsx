@@ -17,8 +17,8 @@ export default function UserCard({ users }) {
                     <Card key={ user.id } sx={ { width: "270px" } }>
                         <CardMedia
                             component="img"
-                            height="100"
-                            image={ user.profile_picture }
+                            height="100px"
+                            image={ `http://localhost:3000/assets/userPics/${user.profile_picture} ` }
                             alt=""
                         />
                         <CardContent>
@@ -30,8 +30,7 @@ export default function UserCard({ users }) {
                             </Typography>
                         </CardContent>
                         <CardActions sx={ { justifyContent: "center" } }>
-                            <Button size="small">{ t("edit") }</Button>
-                            <Button size="small">{ t("delete") }</Button>
+                            <Button href={ `/users/${user.id}` } variant="contained" size="small">{ t("details") }</Button>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -39,4 +38,3 @@ export default function UserCard({ users }) {
         </ Grid >
     );
 };
-
