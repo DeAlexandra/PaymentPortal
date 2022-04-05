@@ -8,6 +8,7 @@ import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTranslation } from 'react-i18next';
+import { IconButton } from '@mui/material';
 
 export default function TransactionsTable({ getTotalPrice, transactions }) {
     const { t } = useTranslation();
@@ -56,8 +57,8 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
                             <TableCell align="left">{ row.VAT }</TableCell>
                             <TableCell align="right">{ getTotalPrice(row.price, row.VAT) }</TableCell>
                             <TableCell align="right">
-                                <ArrowForwardIcon color="primary" sx={ { cursor: "pointer" } }
-                                /></TableCell>
+                                <IconButton href={ (`/transactions/${row.id}`) } ><ArrowForwardIcon color="primary" sx={ { cursor: "pointer" } } /></IconButton>
+                            </TableCell>
                         </TableRow>
                     )) }
                 </TableBody>

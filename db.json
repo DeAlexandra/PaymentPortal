@@ -6,7 +6,7 @@
       "category": "expenses",
       "receiver": "emag",
       "price": "600",
-      "VAT": 10,
+      "VAT": "5",
       "total_price": 0,
       "products": [
         {
@@ -211,7 +211,7 @@
       "category": "expenses",
       "receiver": "PC Garage",
       "price": 3000,
-      "VAT": 5,
+      "VAT": "10",
       "total_price": 0,
       "products": [
         {

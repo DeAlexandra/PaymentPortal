@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ToastContext from "./context/ToastContext";
 import ToastNotification from "./components/Toast alerts/ToastNotification";
+import TransactionDetails from "./pages/transactions/TransactionDetails";
 
 const Transactions = lazy(() => import("./pages/transactions/Transactions"));
 const Payouts = lazy(() => import("./pages/payouts/Payouts"));
@@ -34,6 +35,7 @@ export default function App() {
               <Route path="/" element={ <Dashboard /> } />
               <Route path="/dashboard" element={ <Dashboard /> } />
               <Route path="/transactions" element={ <Transactions /> } />
+              <Route path="/transactions/:id" element={ <TransactionDetails /> } />
               <Route path="/payouts" element={ <Payouts /> } />
               <Route path="/users" element={ <Users /> } />
               <Route path="/users/:id" element={ <UserDetails /> } />

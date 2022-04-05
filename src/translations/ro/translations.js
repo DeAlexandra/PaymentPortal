@@ -33,4 +33,8 @@ export const RO_TRANSLATIONS = {
     short_value: "Prea scurt",
     long_value: "Prea lung",
     invalid_email: "Email invalid",
+    fail_edit_transaction: "Editare tranzacție nereușită",
+    success_edit_transaction: "Editare tranzacție reușită",
+    transaction_details: "Detalii tranzacție"
+
 };

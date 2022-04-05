@@ -33,6 +33,8 @@ export const EN_TRANSLATIONS = {
     short_value: "Too short",
     long_value: "Too long",
     invalid_email: "Invalid email",
-
+    fail_edit_transaction: "Failed to update transaction",
+    success_edit_transaction: "Successfully updated transaction",
+    transaction_details: "Transaction details"
 
 };
