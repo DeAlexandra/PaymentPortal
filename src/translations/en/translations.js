@@ -28,6 +28,11 @@ export const EN_TRANSLATIONS = {
     email: "Email adress",
     password: "Password",
     profile_picture: "Profile picture",
-    user_details: "User details"
+    user_details: "User details",
+    required: "Required",
+    short_value: "Too short",
+    long_value: "Too long",
+    invalid_email: "Invalid email",
+
 
 };

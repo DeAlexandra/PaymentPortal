@@ -20,7 +20,7 @@ export default function UserCard({ users }) {
                             height="100px"
                             image={ `http://localhost:3000/assets/userPics/${user.profile_picture} ` }
                             alt=""
-                        /> { console.log(user.profile_picture) }
+                        />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
                                 { user.first_name } { user.last_name }

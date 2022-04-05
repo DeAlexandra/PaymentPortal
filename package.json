@@ -19,14 +19,16 @@
     "react-i18next": "^11.16.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint-fix": "eslint  --fix --ext .js,.jsx ."
+    "lint-fix": "eslint  --fix --ext .js,.jsx .",
+    "start-db": "json-server --watch db.json --port 3004"
   },
   "eslintConfig": {
     "extends": [
