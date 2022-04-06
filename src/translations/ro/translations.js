@@ -14,6 +14,8 @@ export const RO_TRANSLATIONS = {
     id: "Id",
     edit: "Editează",
     delete: "Șterge",
+    product: "Produs",
+    amount: "Bucăți",
     details: "Detalii",
     cancel: "Renunță",
     submit: "Trimite",

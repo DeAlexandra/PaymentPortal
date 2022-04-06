@@ -15,6 +15,8 @@ export const EN_TRANSLATIONS = {
     edit: "Edit",
     delete: "Delete",
     details: "Details",
+    product: "Product",
+    amount: "Amount",
     cancel: "Cancel",
     submit: "Submit",
     fail_fetch_transactions: "Failed to retrieve transaction list.",

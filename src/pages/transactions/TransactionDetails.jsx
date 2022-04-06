@@ -5,9 +5,10 @@ import { Formik, Form } from 'formik';
 import ToastContext from '../../context/ToastContext';
 import { TextField, Typography } from '@material-ui/core';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
 import { getTotalPrice } from './Transactions';
 import { useTranslation } from 'react-i18next';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 
 export default function TransactionDetails() {
 
@@ -38,7 +39,8 @@ export default function TransactionDetails() {
     const TransactionValidationSchema = Yup.object({
         receiver: Yup.string().required(t("required")),
         price: Yup.number().required(t("required")),
-        VAT: Yup.number().required(t("required"))
+        VAT: Yup.number().required(t("required")),
+        products: Yup.array()
     });
 
     const updateTransaction = async (values) => {
@@ -61,20 +63,21 @@ export default function TransactionDetails() {
         navigate(-1);
     };
     return (
-        <>
-            <div style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "30vw", margin: " 75px auto" } }>
-                <Typography variant="h3" component="h1" align="center">{ t("transaction_details") }</Typography>
-                <Formik
-                    enableReinitialize={ true }
-                    initialValues={ singleTransaction }
-                    validationSchema={ TransactionValidationSchema }
-                    onSubmit={ (data, { setSubmitting }) => {
-                        setSubmitting(true);
-                        updateTransaction(data);
-                        setSubmitting(false);
-                    } }>
-                    { ({ values, errors, touched, isSubmitting, handleChange, handleSubmit, handleBlur }) => (
-                        <Form onSubmit={ handleSubmit }>
+        <div style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "80vw", margin: " 75px auto" } }>
+            <Typography variant="h3" component="h1" align="center">{ t("transaction_details") }</Typography>
+            <Formik
+                enableReinitialize={ true }
+                initialValues={ singleTransaction }
+                validationSchema={ TransactionValidationSchema }
+                onSubmit={ (data, { setSubmitting }) => {
+                    setSubmitting(true);
+                    updateTransaction(data);
+                    setSubmitting(false);
+                } }>
+                { ({ values, errors, touched, isSubmitting, handleChange, handleSubmit, handleBlur }) => (
+
+                    <Form onSubmit={ handleSubmit }>
+                        <div style={ { display: "flex", flexDirection: "column", margin: " 0 auto", width: "30vw", minWidth: "300px" } }>
                             <div style={ { marginTop: "10px" } }>
                                 <label htmlFor="receiver">{ t("shop") }</label></div>
                             <TextField
@@ -134,10 +137,36 @@ export default function TransactionDetails() {
                                 <Button sx={ { flex: 2 } } variant="contained" color="success" type="submit" disabled={ isSubmitting }>{ t("submit") }</Button>
                                 <Button sx={ { flex: 2 } } variant="contained" color="warning" type="button" disabled={ isSubmitting } onClick={ cancelUpdateTransaction }> { t("cancel") }</Button>
                             </div>
-                        </Form>
-                    ) }
-                </Formik>
-            </div>
-        </>
+                        </div>
+                        <div style={ { display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap" } }>
+                            { values.products && (values.products).map(product =>
+                                <Card key={ product.id } sx={ { width: 275, margin: "50px 10px 10px" } }>
+                                    <CardContent>
+                                        <Typography sx={ { fontSize: 14 } } gutterBottom>
+                                            { t("product") }
+                                        </Typography>
+                                        <Typography variant="h5" component="div">
+                                            { product.description }
+                                        </Typography>
+                                        <Typography sx={ { mb: 1.5 } } >
+                                            { t("amount") }: { product.amount }
+                                        </Typography>
+                                        <Typography sx={ { mb: 1.5 } } >
+                                            { t("price") }: { product.price }
+                                        </Typography>
+                                        <Typography sx={ { mb: 1.5 } } >
+                                            { t("VAT") }: { product.VAT }
+                                        </Typography>
+                                        <Typography sx={ { mb: 1.5 } } >
+                                            { t("total") }: { product.total_price }
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            ) }
+                        </div>
+                    </Form>
+                ) }
+            </Formik>
+        </div>
     );
 }

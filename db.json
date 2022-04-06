@@ -6,7 +6,7 @@
       "category": "expenses",
       "receiver": "emag",
       "price": "600",
-      "VAT": "5",
+      "VAT": "10",
       "total_price": 0,
       "products": [
         {
@@ -32,8 +32,8 @@
       "date": "09.11.2021",
       "category": "expenses",
       "receiver": "emag",
-      "price": 1500,
-      "VAT": 5,
+      "price": "400",
+      "VAT": "10",
       "total_price": 0,
       "products": [
         {
@@ -108,7 +108,7 @@
       "date": "05.18.2021",
       "category": "expenses",
       "receiver": "Elefant",
-      "price": 700,
+      "price": "1000",
       "VAT": 10,
       "total_price": 0,
       "products": [
@@ -673,7 +673,7 @@
       "date": "06.09.2021",
       "category": "expenses",
       "receiver": "Zara",
-      "price": 200,
+      "price": "100",
       "VAT": 10,
       "total_price": 0,
       "products": [
@@ -807,7 +807,7 @@
       "category": "expenses",
       "receiver": "emag",
       "price": 70,
-      "VAT": 10,
+      "VAT": "5",
       "total_price": 0,
       "products": [
         {
@@ -902,7 +902,7 @@
       "category": "expenses",
       "receiver": "Altex",
       "price": 420,
-      "VAT": 10,
+      "VAT": "11",
       "total_price": 0,
       "products": [
         {
