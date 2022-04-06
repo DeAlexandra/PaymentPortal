@@ -4,16 +4,19 @@ import TransactionsTable from './TransactionsTable';
 import IsLoading from '../../components/IsLoading';
 import ToastContext from '../../context/ToastContext';
 
+
+export const getTotalPrice = (price, vat) => {
+  let priceInt = parseInt(price);
+  let vatValue = (vat / 100) * parseInt(price);
+  return vatValue + priceInt;
+};
+
 export default function Transactions() {
   const [transactions, setTransactions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const { toastState, setToastState } = useContext(ToastContext);
 
-  const getTotalPrice = (price, vat) => {
-    let priceInt = parseInt(price);
-    let vatValue = (vat / 100) * parseInt(price);
-    return vatValue + priceInt;
-  };
+
 
   useEffect(() => {
     fetchTransactions();

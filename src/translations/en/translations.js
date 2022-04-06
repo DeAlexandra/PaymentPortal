@@ -15,6 +15,8 @@ export const EN_TRANSLATIONS = {
     edit: "Edit",
     delete: "Delete",
     details: "Details",
+    product: "Product",
+    amount: "Amount",
     cancel: "Cancel",
     submit: "Submit",
     fail_fetch_transactions: "Failed to retrieve transaction list.",
@@ -33,6 +35,8 @@ export const EN_TRANSLATIONS = {
     short_value: "Too short",
     long_value: "Too long",
     invalid_email: "Invalid email",
-
+    fail_edit_transaction: "Failed to update transaction",
+    success_edit_transaction: "Successfully updated transaction",
+    transaction_details: "Transaction details"
 
 };

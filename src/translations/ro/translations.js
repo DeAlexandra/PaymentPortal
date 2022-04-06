@@ -14,6 +14,8 @@ export const RO_TRANSLATIONS = {
     id: "Id",
     edit: "Editează",
     delete: "Șterge",
+    product: "Produs",
+    amount: "Bucăți",
     details: "Detalii",
     cancel: "Renunță",
     submit: "Trimite",
@@ -33,4 +35,8 @@ export const RO_TRANSLATIONS = {
     short_value: "Prea scurt",
     long_value: "Prea lung",
     invalid_email: "Email invalid",
+    fail_edit_transaction: "Editare tranzacție nereușită",
+    success_edit_transaction: "Editare tranzacție reușită",
+    transaction_details: "Detalii tranzacție"
+
 };
