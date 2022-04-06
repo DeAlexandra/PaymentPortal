@@ -10,8 +10,12 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTranslation } from 'react-i18next';
 import { IconButton } from '@mui/material';
 
+import store from '../../context/redux/store';
+import { setOpen } from "../../context/redux/actions";
+
 export default function TransactionsTable({ getTotalPrice, transactions }) {
     const { t } = useTranslation();
+
     return (
         <TableContainer component={ Paper }
             sx={ {
@@ -57,7 +61,10 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
                             <TableCell align="left">{ row.VAT }</TableCell>
                             <TableCell align="right">{ getTotalPrice(row.price, row.VAT) }</TableCell>
                             <TableCell align="right">
-                                <IconButton href={ (`/transactions/${row.id}`) } ><ArrowForwardIcon color="primary" sx={ { cursor: "pointer" } } /></IconButton>
+                                <IconButton
+                                    // href={ (`/transactions/${row.id}`) } 
+                                    onClick={ () => store.dispatch(setOpen()) }
+                                ><ArrowForwardIcon color="primary" sx={ { cursor: "pointer" } } /></IconButton>
                             </TableCell>
                         </TableRow>
                     )) }

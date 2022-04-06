@@ -74,7 +74,9 @@ export default function UserDetails() {
     });
 
     return (
-        <> <div style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "40vw", margin: " 75px auto" } }>
+        <> <div
+        // style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "40vw", margin: " 75px auto" } }
+        >
             <Typography variant="h3" component="h1" align="center">{ t("user_details") }</Typography>
             <Formik
                 enableReinitialize={ true }

@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import store from '../../context/redux/store';
+import { setOpen } from '../../context/redux/actions';
 
 export default function UserCard({ users }) {
     const { t } = useTranslation();
@@ -30,7 +32,10 @@ export default function UserCard({ users }) {
                             </Typography>
                         </CardContent>
                         <CardActions sx={ { justifyContent: "center" } }>
-                            <Button href={ `/users/${user.id}` } variant="contained" size="small">{ t("details") }</Button>
+                            <Button
+                                // href={ `/users/${user.id}` }
+                                onClick={ () => store.dispatch(setOpen()) }
+                                variant="contained" size="small">{ t("details") }</Button>
                         </CardActions>
                     </Card>
                 </Grid>
