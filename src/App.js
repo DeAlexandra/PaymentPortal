@@ -8,7 +8,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ToastContext from "./context/ToastContext";
 import ToastNotification from "./components/Toast alerts/ToastNotification";
-import TransactionDetails from "./pages/transactions/TransactionDetails";
 import DrawerDetails from "./components/DrawerDetails";
 
 const Transactions = lazy(() => import("./pages/transactions/Transactions"));
