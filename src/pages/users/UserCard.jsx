@@ -9,9 +9,17 @@ import { Grid } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import store from '../../context/redux/store';
 import { setOpen } from '../../context/redux/actions';
+import { useNavigate } from "react-router-dom";
 
 export default function UserCard({ users }) {
     const { t } = useTranslation();
+    const navigate = useNavigate();
+
+    const NavigateToDetails = (userId) => {
+        store.dispatch(setOpen());
+        navigate(`/users/${userId}`);
+    };
+
     return (
         <Grid container spacing={ 2 } sx={ { paddingLeft: "200px", paddingTop: "100px", paddingRight: "25px" } }>
             { users.map((user) =>
@@ -33,8 +41,7 @@ export default function UserCard({ users }) {
                         </CardContent>
                         <CardActions sx={ { justifyContent: "center" } }>
                             <Button
-                                // href={ `/users/${user.id}` }
-                                onClick={ () => store.dispatch(setOpen()) }
+                                onClick={ () => { NavigateToDetails(user.id); } }
                                 variant="contained" size="small">{ t("details") }</Button>
                         </CardActions>
                     </Card>

@@ -1,29 +1,37 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import * as Yup from "yup";
+import React, { useState, useContext, useEffect } from 'react';
 import { Formik, Form } from 'formik';
 import { useTranslation } from 'react-i18next';
-import ToastContext from '../../context/ToastContext';
+import { TextField } from '@material-ui/core';
+import { Typography } from '@mui/material';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import { TextField, Typography } from '@material-ui/core';
+import ToastContext from "../../context/ToastContext";
+import UserValidationSchema from '../../pages/users/UserValidationSchema';
+import { reset } from '../../context/redux/actions';
+import store from '../../context/redux/store';
 
-export default function UserDetails() {
-
+export default function UserForm() {
     const [singleUser, setSingleUser] = useState([]);
+    const { t } = useTranslation();
     const [isLoading, setIsLoading] = useState(false);
     const { setToastState } = useContext(ToastContext);
-    const { id } = useParams();
     const navigate = useNavigate();
-    const { t } = useTranslation();
+    const location = useLocation();
+
+    const getUserId = () => {
+        return (location.pathname).slice(7);
+    };
+
+    const userId = getUserId();
 
     useEffect(() => {
         fetchUser();
-    }, []);
+    }, [userId]);
 
     const fetchUser = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch(`http://localhost:3004/users/${id}`);
+            const response = await fetch(`http://localhost:3004/users/${userId}`);
             const singleUser = await response.json();
             setSingleUser(singleUser);
             setIsLoading(false);
@@ -35,13 +43,14 @@ export default function UserDetails() {
 
     const updateUser = async (values) => {
         try {
-            await fetch(`http://localhost:3004/users/${id}`, {
-                method: "PUT",
+            await fetch(`http://localhost:3004/users/${userId}`, {
+                method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(values)
             });
             setIsLoading(false);
             setToastState({ message: "success_edit_user", severity: "success", open: true });
+            store.dispatch(reset());
             navigate("/users");
         } catch (err) {
             setIsLoading(false);
@@ -51,33 +60,11 @@ export default function UserDetails() {
 
     const cancelUpdateUser = () => {
         navigate(-1);
+        store.dispatch(reset());
     };
 
-    const UserValidationSchema = Yup.object({
-        first_name: Yup.string()
-            .min(2, t("short_value"))
-            .max(50, t("long_value"))
-            .required(t("required")),
-        last_name: Yup.string()
-            .min(2, t("short_value"))
-            .max(50, t("long_value"))
-            .required(t("required")),
-        email: Yup.string()
-            .email("Invalid email")
-            .required(t("required")),
-        password: Yup.string()
-            .min(6, t("short_value"))
-            .max(15, t("long_value"))
-            .required(t("required")),
-        profile_picture: Yup.string()
-            .required(t("required"))
-    });
-
     return (
-        <> <div
-            style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "30vw", margin: " 75px auto" } }
-        >
-            <Typography variant="h3" component="h1" align="center">{ t("user_details") }</Typography>
+        <><Typography variant="h3" component="h1" align="center">{ t("user_details") }</Typography>
             <Formik
                 enableReinitialize={ true }
                 initialValues={ singleUser }
@@ -167,7 +154,6 @@ export default function UserDetails() {
                     </Form>
                 ) }
             </Formik>
-        </div>
         </>
     );
 }
