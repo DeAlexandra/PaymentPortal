@@ -1,15 +1,10 @@
 import React from 'react';
-import { Box } from '@mui/system';
 import { Typography } from '@material-ui/core';
+import BoxContainer from '../../components/BoxContainer';
 export default function Dashboard() {
   return (
-    <Box
-      sx={ {
-        display: "flex",
-        justifyContent: "center",
-        padding: "10% 10%"
-      } }>
-      <Typography>Main Content Dashboard</Typography>
-    </Box>
+    <BoxContainer>
+      Main Content Dashboard
+    </BoxContainer>
   );
 }

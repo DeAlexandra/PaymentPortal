@@ -570,7 +570,7 @@
       "date": "05.06.2021",
       "category": "income",
       "receiver": "emag",
-      "price": 500,
+      "price": "555",
       "VAT": 10,
       "total_price": 0,
       "products": [
@@ -1059,7 +1059,7 @@
     },
     {
       "first_name": "Anastasia",
-      "last_name": "Mire",
+      "last_name": "Mirela",
       "id": 1006,
       "email": "Anastasia_Mirela@gmail.com",
       "password": "yuihjkbnm",

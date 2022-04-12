@@ -3,6 +3,9 @@ import { useState, useEffect, useContext } from 'react';
 import TransactionsTable from './TransactionsTable';
 import IsLoading from '../../components/IsLoading';
 import ToastContext from '../../context/ToastContext';
+import BoxContainer from '../../components/BoxContainer';
+import { fetchRequest } from '../fetchRequests';
+import { useTranslation } from 'react-i18next';
 
 
 export const getTotalPrice = (price, vat) => {
@@ -15,29 +18,33 @@ export default function Transactions() {
   const [transactions, setTransactions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const { toastState, setToastState } = useContext(ToastContext);
+  const url = "http://localhost:3004/transactions";
+  const { t } = useTranslation();
+
 
   useEffect(() => {
     fetchTransactions();
   }, []);
 
   const fetchTransactions = async () => {
-    try {
-      setIsLoading(true);
-      const response = await fetch("http://localhost:3004/transactions");
-      const transactionList = await response.json();
-      setTransactions(transactionList);
-      setIsLoading(false);
-    } catch (err) {
-      setIsLoading(false);
-      setToastState({ message: "fail_fetch_transactions", severity: "error", open: true });
-    }
+    setIsLoading(true);
+    await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_transactions");
   };
+  const successFetchCb = (transactions) => {
+    setTransactions(transactions);
+    setIsLoading(false);
+  };
+  const errorCb = (errorCode) => {
+    setIsLoading(false);
+    setToastState({ message: errorCode, severity: "error", open: true });
+  };
+
   if (isLoading) {
     return <IsLoading />;
   }
   return (
     <>
-      { transactions.length > 0 && <TransactionsTable getTotalPrice={ getTotalPrice } transactions={ transactions } /> };
+      { transactions.length > 0 ? <TransactionsTable getTotalPrice={ getTotalPrice } transactions={ transactions } /> : <BoxContainer>{ t("fail_fetch_transactions") }</BoxContainer> };
     </>
   );
 };

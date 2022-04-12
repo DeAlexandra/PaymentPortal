@@ -21,9 +21,9 @@ export default function UserCard({ users }) {
     };
 
     return (
-        <Grid container spacing={ 2 } sx={ { paddingLeft: "200px", paddingTop: "100px", paddingRight: "25px" } }>
+        <Grid container spacing={ 2 } sx={ { paddingLeft: "75px", paddingTop: "100px", paddingRight: "25px", minHeight: "100vh" } }>
             { users.map((user) =>
-                <Grid key={ user.id } item xs={ 12 } sm={ 6 } md={ 4 } lg={ 3 } sx={ { display: "flex" } }>
+                <Grid key={ user.id } item xs={ 12 } sm={ 6 } md={ 4 } lg={ 3 } xl={ 2 } sx={ { display: "flex", justifyContent: "center" } }>
                     <Card key={ user.id } sx={ { width: "270px" } }>
                         <CardMedia
                             component="img"
