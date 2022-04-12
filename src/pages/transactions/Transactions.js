@@ -16,8 +16,6 @@ export default function Transactions() {
   const [isLoading, setIsLoading] = useState(false);
   const { toastState, setToastState } = useContext(ToastContext);
 
-
-
   useEffect(() => {
     fetchTransactions();
   }, []);

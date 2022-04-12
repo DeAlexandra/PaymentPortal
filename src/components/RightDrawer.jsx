@@ -9,7 +9,7 @@ export default function RightDrawer(props) {
     const open = useSelector(state => state.open);
 
     const handleCloseDrawer = () => {
-        store.dispatch(reset());
+        store.dispatch(reset);
         navigate(-1);
     };
 

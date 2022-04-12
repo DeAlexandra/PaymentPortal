@@ -7,6 +7,7 @@ export default function DrawerDetails() {
     return (
         <>
             <RightDrawer>
+                {/* <TransactionForm /> */ }
                 <UserForm />
             </RightDrawer>
         </>

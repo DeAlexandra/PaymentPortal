@@ -17,7 +17,7 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const NavigateToDetails = (transactionId) => {
-        store.dispatch(setOpen());
+        store.dispatch(setOpen);
         navigate(`/transactions/${transactionId}`);
     };
 

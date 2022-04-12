@@ -10,11 +10,11 @@ import ToastContext from "./context/ToastContext";
 import ToastNotification from "./components/Toast alerts/ToastNotification";
 import DrawerDetails from "./components/DrawerDetails";
 
-const Transactions = lazy(() => import("./pages/transactions/Transactions"));
-const Payouts = lazy(() => import("./pages/payouts/Payouts"));
-const Users = lazy(() => import("./pages/users/Users"));
-const ErrorPage = lazy(() => import("./pages/ErrorPage"));
-const Dashboard = lazy(() => import("./pages/dashboard/Dashboard"));
+const Transactions = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"transactions" */ "./pages/transactions/Transactions"));
+const Payouts = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"payouts" */ "./pages/payouts/Payouts"));
+const Users = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"users" */ "./pages/users/Users"));
+const ErrorPage = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"errorPage"*/ "./pages/ErrorPage"));
+const Dashboard = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"dashboard"*/ "./pages/dashboard/Dashboard"));
 
 export default function App() {
   const { t } = useTranslation();

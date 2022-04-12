@@ -9,6 +9,7 @@ import ToastContext from "../../context/ToastContext";
 import UserValidationSchema from '../../pages/users/UserValidationSchema';
 import { reset } from '../../context/redux/actions';
 import store from '../../context/redux/store';
+import { fetchRequest, patchRequest } from '../../pages/fetchRequests';
 
 export default function UserForm() {
     const [singleUser, setSingleUser] = useState([]);
@@ -19,50 +20,41 @@ export default function UserForm() {
     const location = useLocation();
 
     const getUserId = () => {
-        return (location.pathname).slice(7);
+        const pathArray = location.pathname.split("/");
+        return pathArray[pathArray.length - 1];
     };
 
     const userId = getUserId();
+    const url = `http://localhost:3004/users/${userId}`;
 
     useEffect(() => {
-        fetchUser();
-    }, [userId]);
-
-    const fetchUser = async () => {
-        try {
-            setIsLoading(true);
-            const response = await fetch(`http://localhost:3004/users/${userId}`);
-            const singleUser = await response.json();
-            setSingleUser(singleUser);
-            setIsLoading(false);
-        } catch (err) {
-            setIsLoading(false);
-            setToastState({ message: "fail_fetch_user", severity: "error", open: true });
-        }
+        getUser();
+    }, []);
+    const getUser = async () => {
+        setIsLoading(true);
+        await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_user");
     };
-
     const updateUser = async (values) => {
-        try {
-            await fetch(`http://localhost:3004/users/${userId}`, {
-                method: "PATCH",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(values)
-            });
-            setIsLoading(false);
-            setToastState({ message: "success_edit_user", severity: "success", open: true });
-            store.dispatch(reset());
-            navigate("/users");
-        } catch (err) {
-            setIsLoading(false);
-            setToastState({ message: "fail_edit_user", severity: "error", open: true });
-        }
+        setIsLoading(true);
+        await patchRequest(url, values, successPatchCb, errorCb, "fail_edit_user");
     };
-
+    const successFetchCb = (singleUser) => {
+        setSingleUser(singleUser);
+        setIsLoading(false);
+    };
+    const successPatchCb = () => {
+        setIsLoading(false);
+        setToastState({ message: "success_edit_user", severity: "success", open: true });
+        navigate("/users");
+    };
+    const errorCb = (errorCode) => {
+        setIsLoading(false);
+        setToastState({ message: errorCode, severity: "error", open: true });
+    };
     const cancelUpdateUser = () => {
         navigate(-1);
-        store.dispatch(reset());
+        store.dispatch(reset);
     };
-
     return (
         <><Typography variant="h3" component="h1" align="center">{ t("user_details") }</Typography>
             <Formik

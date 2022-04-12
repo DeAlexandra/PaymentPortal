@@ -32,7 +32,7 @@
       "date": "09.11.2021",
       "category": "expenses",
       "receiver": "emag",
-      "price": "400",
+      "price": "444",
       "VAT": "10",
       "total_price": 0,
       "products": [
@@ -1049,7 +1049,7 @@
   "users": [
     {
       "first_name": "Andrei",
-      "last_name": "Mih",
+      "last_name": "Mihu",
       "id": 1005,
       "email": "Mihai_Mihu@gmail.com",
       "password": "rtyfghvbn",
@@ -1059,7 +1059,7 @@
     },
     {
       "first_name": "Anastasia",
-      "last_name": "Mirela",
+      "last_name": "Mire",
       "id": 1006,
       "email": "Anastasia_Mirela@gmail.com",
       "password": "yuihjkbnm",
@@ -1098,7 +1098,7 @@
       "permissions": "Chunin"
     },
     {
-      "first_name": "Mirela",
+      "first_name": "Mirel",
       "last_name": "Baciu",
       "id": 1011,
       "email": "Mirabela_Baciu@gmail.com",
@@ -1108,7 +1108,7 @@
       "permissions": "Genin"
     },
     {
-      "first_name": "Andrei",
+      "first_name": "Andreea",
       "last_name": "Cretu",
       "id": 1012,
       "email": "Andreearetu@gmail.com",
@@ -1119,16 +1119,16 @@
     },
     {
       "first_name": "Vladimir",
-      "last_name": "Ionescu",
+      "last_name": "Ion",
       "id": 1013,
-      "email": "Vladimir_Ionescu@gmail.com",
+      "email": "Vladimir_Ion@gmail.com",
       "password": "gjkdlp908",
       "profile_picture": "b5.jpg",
       "role": "Tester",
       "permissions": "Chunin"
     },
     {
-      "first_name": "Valentin",
+      "first_name": "Valentina",
       "last_name": "Caprioreanu",
       "id": 1014,
       "email": "Valentin_Caprioreanu@gmail.com",
@@ -1138,7 +1138,7 @@
       "permissions": "Genin"
     },
     {
-      "first_name": "Garofita",
+      "first_name": "Garofit",
       "last_name": "Magdalena",
       "id": 1015,
       "email": "Garofita_Magdalena@gmail.com",

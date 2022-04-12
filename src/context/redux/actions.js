@@ -1,3 +1,3 @@
 
-export const setOpen = () => ({ type: "OPEN" });
-export const reset = () => ({ type: "RESET" });
+export const setOpen = { type: "OPEN" };
+export const reset = { type: "RESET" };

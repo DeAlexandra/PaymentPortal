@@ -11,9 +11,9 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { reset } from '../../context/redux/actions';
 import store from '../../context/redux/store';
+import { fetchRequest, patchRequest } from '../../pages/fetchRequests';
 
 export default function TransactionForm() {
-
     const [singleTransaction, setSingleTransaction] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const { setToastState } = useContext(ToastContext);
@@ -22,50 +22,42 @@ export default function TransactionForm() {
     const { t } = useTranslation();
 
     const getTransactionId = () => {
-        return (location.pathname).slice(14);
+        let pathArray = (location.pathname).split("/");
+        return pathArray[pathArray.length - 1];
     };
 
     const transactionId = getTransactionId();
+    const url = `http://localhost:3004/transactions/${transactionId}`;
 
     useEffect(() => {
-        fetchTransaction();
-    }, [transactionId]);
+        getTransaction();
+    }, []);
 
-    const fetchTransaction = async () => {
-        try {
-            setIsLoading(true);
-            const response = await fetch(`http://localhost:3004/transactions/${transactionId}`);
-            const singleTransaction = await response.json();
-            setSingleTransaction(singleTransaction);
-            setIsLoading(false);
-        } catch (err) {
-            setIsLoading(false);
-            setToastState({ message: "fail_fetch_transaction", severity: "error", open: true });
-        }
+    const getTransaction = async () => {
+        setIsLoading(true);
+        await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_transaction");
     };
-
     const updateTransaction = async (values) => {
-        try {
-            await fetch(`http://localhost:3004/transactions/${transactionId}`, {
-                method: "PATCH",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(values)
-            });
-            setIsLoading(false);
-            setToastState({ message: "success_edit_transaction", severity: "success", open: true });
-            store.dispatch(reset());
-            navigate("/transactions");
-        } catch (err) {
-            setIsLoading(false);
-            setToastState({ message: "fail_edit_transaction", severity: "error", open: true });
-        }
+        setIsLoading(true);
+        await patchRequest(url, values, successPatchCb, errorCb, "fail_edit_transaction");
     };
-
+    const successFetchCb = (singleTransaction) => {
+        setSingleTransaction(singleTransaction);
+        setIsLoading(false);
+    };
+    const successPatchCb = () => {
+        setIsLoading(false);
+        setToastState({ message: "success_edit_transaction", severity: "success", open: true });
+        navigate("/transactions");
+    };
+    const errorCb = (errorCode) => {
+        setIsLoading(false);
+        setToastState({ message: errorCode, severity: "error", open: true });
+    };
     const cancelUpdateTransaction = () => {
         navigate(-1);
-        store.dispatch(reset());
+        store.dispatch(reset);
     };
-
     return (
         <><Typography variant="h3" component="h1" align="center">{ t("transaction_details") }</Typography>
             <Formik

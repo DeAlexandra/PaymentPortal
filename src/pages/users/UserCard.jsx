@@ -16,7 +16,7 @@ export default function UserCard({ users }) {
     const navigate = useNavigate();
 
     const NavigateToDetails = (userId) => {
-        store.dispatch(setOpen());
+        store.dispatch(setOpen);
         navigate(`/users/${userId}`);
     };
 
