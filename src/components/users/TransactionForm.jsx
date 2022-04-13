@@ -11,8 +11,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { reset } from '../../context/redux/actions';
 import store from '../../context/redux/store';
-import { fetchRequest, patchRequest } from '../../pages/fetchRequests';
-
+import { fetchRequest } from '../../pages/fetchRequests';
 export default function TransactionForm() {
     const [singleTransaction, setSingleTransaction] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -35,19 +34,20 @@ export default function TransactionForm() {
 
     const getTransaction = async () => {
         setIsLoading(true);
-        await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_transaction");
+        await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_transaction", "GET");
     };
     const updateTransaction = async (values) => {
         setIsLoading(true);
-        await patchRequest(url, values, successPatchCb, errorCb, "fail_edit_transaction");
+        await fetchRequest(url, successPatchCb, errorCb, "fail_edit_transaction", "PATCH", values);
     };
-    const successFetchCb = (singleTransaction) => {
-        setSingleTransaction(singleTransaction);
+    const successFetchCb = (res) => {
+        setSingleTransaction(res);
         setIsLoading(false);
     };
     const successPatchCb = () => {
         setIsLoading(false);
         setToastState({ message: "success_edit_transaction", severity: "success", open: true });
+        store.dispatch(reset);
         navigate("/transactions");
     };
     const errorCb = (errorCode) => {

@@ -5,7 +5,7 @@
       "date": "10.10.2021",
       "category": "expenses",
       "receiver": "emag",
-      "price": "600",
+      "price": "1000",
       "VAT": "12",
       "total_price": 0,
       "products": [
@@ -1059,7 +1059,7 @@
     },
     {
       "first_name": "Anastasia",
-      "last_name": "Mirela",
+      "last_name": "Mirel",
       "id": 1006,
       "email": "Anastasia_Mirela@gmail.com",
       "password": "yuihjkbnm",

@@ -19,11 +19,11 @@ export default function Users() {
 
   const fetchUsers = async () => {
     setIsLoading(true);
-    await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_users");
+    await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_users", "GET");
   };
 
-  const successFetchCb = (users) => {
-    setUsers(users);
+  const successFetchCb = (res) => {
+    setUsers(res);
     setIsLoading(false);
   };
   const errorCb = (errorCode) => {

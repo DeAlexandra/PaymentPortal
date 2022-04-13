@@ -7,7 +7,6 @@ import BoxContainer from '../../components/BoxContainer';
 import { fetchRequest } from '../fetchRequests';
 import { useTranslation } from 'react-i18next';
 
-
 export const getTotalPrice = (price, vat) => {
   let priceInt = parseInt(price);
   let vatValue = (vat / 100) * parseInt(price);
@@ -21,14 +20,13 @@ export default function Transactions() {
   const url = "http://localhost:3004/transactions";
   const { t } = useTranslation();
 
-
   useEffect(() => {
     fetchTransactions();
   }, []);
 
   const fetchTransactions = async () => {
     setIsLoading(true);
-    await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_transactions");
+    await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_transactions", "GET");
   };
   const successFetchCb = (transactions) => {
     setTransactions(transactions);

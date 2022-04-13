@@ -1,27 +1,18 @@
-import store from "../context/redux/store";
-import { reset } from "../context/redux/actions";
-
-const fetchRequest = async (url, successCb, errorCb, errorCode) => {
+const fetchRequest = async (url, successCb, errorCb, errorCode, reqMethod, values = null) => {
+    let options = {
+        method: reqMethod,
+        headers: { "Content-Type": "application/json" }
+    };
+    if (reqMethod !== "GET") {
+        options.body = JSON.stringify(values);
+    }
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, options);
         const res = await response.json();
-        successCb(res);
-    } catch (err) {
-        errorCb(errorCode);
-    }
-};
-const patchRequest = async (url, values, successCb, errorCb, errorCode) => {
-    try {
-        await fetch(url, {
-            method: "PATCH",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(values)
-        });
-        successCb();
-        store.dispatch(reset);
+        reqMethod === "GET" ? successCb(res) : successCb();
     } catch (err) {
         errorCb(errorCode);
     }
 };
 
-export { fetchRequest, patchRequest };
+export { fetchRequest };

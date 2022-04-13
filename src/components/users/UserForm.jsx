@@ -9,7 +9,7 @@ import ToastContext from "../../context/ToastContext";
 import UserValidationSchema from '../../pages/users/UserValidationSchema';
 import { reset } from '../../context/redux/actions';
 import store from '../../context/redux/store';
-import { fetchRequest, patchRequest } from '../../pages/fetchRequests';
+import { fetchRequest } from '../../pages/fetchRequests';
 
 export default function UserForm() {
     const [singleUser, setSingleUser] = useState([]);
@@ -30,21 +30,23 @@ export default function UserForm() {
     useEffect(() => {
         getUser();
     }, []);
+
     const getUser = async () => {
         setIsLoading(true);
-        await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_user");
+        await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_user", "GET");
     };
     const updateUser = async (values) => {
         setIsLoading(true);
-        await patchRequest(url, values, successPatchCb, errorCb, "fail_edit_user");
+        await fetchRequest(url, successPatchCb, errorCb, "fail_edit_user", "PATCH", values);
     };
-    const successFetchCb = (singleUser) => {
-        setSingleUser(singleUser);
+    const successFetchCb = (res) => {
+        setSingleUser(res);
         setIsLoading(false);
     };
     const successPatchCb = () => {
         setIsLoading(false);
         setToastState({ message: "success_edit_user", severity: "success", open: true });
+        store.dispatch(reset);
         navigate("/users");
     };
     const errorCb = (errorCode) => {
