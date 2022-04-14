@@ -9,9 +9,18 @@ import Table from '@mui/material/Table';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTranslation } from 'react-i18next';
 import { IconButton } from '@mui/material';
+import store from '../../context/redux/store';
+import { setOpen } from "../../context/redux/actions";
+import { useNavigate } from 'react-router-dom';
 
 export default function TransactionsTable({ getTotalPrice, transactions }) {
     const { t } = useTranslation();
+    const navigate = useNavigate();
+    const NavigateToDetails = (transactionId) => {
+        store.dispatch(setOpen);
+        navigate(`/transactions/${transactionId}`);
+    };
+
     return (
         <TableContainer component={ Paper }
             sx={ {
@@ -31,7 +40,7 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
                 boxSizing: "boxSizing",
                 boxShadow: 4,
             } }
-                size="small" aria-label="a table">
+                size="small" aria-label="transactions table">
                 <TableHead sx={ { bgcolor: "primary.main", border: 1, borderColor: "transparent" } }>
                     <TableRow>
                         <TableCell sx={ { color: 'white' } } align="left">{ t("id") }</TableCell>
@@ -57,7 +66,9 @@ export default function TransactionsTable({ getTotalPrice, transactions }) {
                             <TableCell align="left">{ row.VAT }</TableCell>
                             <TableCell align="right">{ getTotalPrice(row.price, row.VAT) }</TableCell>
                             <TableCell align="right">
-                                <IconButton href={ (`/transactions/${row.id}`) } ><ArrowForwardIcon color="primary" sx={ { cursor: "pointer" } } /></IconButton>
+                                <IconButton
+                                    onClick={ () => NavigateToDetails(row.id) }
+                                ><ArrowForwardIcon color="primary" sx={ { cursor: "pointer" } } /></IconButton>
                             </TableCell>
                         </TableRow>
                     )) }

@@ -5,8 +5,8 @@
       "date": "10.10.2021",
       "category": "expenses",
       "receiver": "emag",
-      "price": "600",
-      "VAT": "10",
+      "price": "1000",
+      "VAT": "12",
       "total_price": 0,
       "products": [
         {
@@ -32,7 +32,7 @@
       "date": "09.11.2021",
       "category": "expenses",
       "receiver": "emag",
-      "price": "400",
+      "price": "444",
       "VAT": "10",
       "total_price": 0,
       "products": [
@@ -108,7 +108,7 @@
       "date": "05.18.2021",
       "category": "expenses",
       "receiver": "Elefant",
-      "price": "1000",
+      "price": "777",
       "VAT": 10,
       "total_price": 0,
       "products": [
@@ -570,7 +570,7 @@
       "date": "05.06.2021",
       "category": "income",
       "receiver": "emag",
-      "price": 500,
+      "price": "555",
       "VAT": 10,
       "total_price": 0,
       "products": [
@@ -1069,7 +1069,7 @@
     },
     {
       "first_name": "Catalin",
-      "last_name": "Para",
+      "last_name": "Parara",
       "id": 1007,
       "email": "Catalin_Para@gmail.com",
       "password": "poilkjmnb",
@@ -1089,7 +1089,7 @@
     },
     {
       "first_name": "Darius",
-      "last_name": "Berenghi",
+      "last_name": "Bere",
       "id": 1010,
       "email": "Darius_Berenghi@gmail.com",
       "password": "789456123",
@@ -1098,7 +1098,7 @@
       "permissions": "Chunin"
     },
     {
-      "first_name": "Mirela",
+      "first_name": "Mirel",
       "last_name": "Baciu",
       "id": 1011,
       "email": "Mirabela_Baciu@gmail.com",
@@ -1119,9 +1119,9 @@
     },
     {
       "first_name": "Vladimir",
-      "last_name": "Ionescu",
+      "last_name": "Ion",
       "id": 1013,
-      "email": "Vladimir_Ionescu@gmail.com",
+      "email": "Vladimir_Ion@gmail.com",
       "password": "gjkdlp908",
       "profile_picture": "b5.jpg",
       "role": "Tester",
@@ -1138,7 +1138,7 @@
       "permissions": "Genin"
     },
     {
-      "first_name": "Garofita",
+      "first_name": "Garofit",
       "last_name": "Magdalena",
       "id": 1015,
       "email": "Garofita_Magdalena@gmail.com",

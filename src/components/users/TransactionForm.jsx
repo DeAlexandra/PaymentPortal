@@ -1,70 +1,65 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import * as Yup from "yup";
 import { Formik, Form } from 'formik';
-import ToastContext from '../../context/ToastContext';
 import { TextField, Typography } from '@material-ui/core';
-import Button from '@mui/material/Button';
-import { getTotalPrice } from './Transactions';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Button from '@mui/material/Button';
+import TransactionValidationSchema from '../../pages/transactions/TransactionValidationSchema';
+import ToastContext from '../../context/ToastContext';
+import { getTotalPrice } from '../../pages/transactions/Transactions';
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-
-export default function TransactionDetails() {
-
+import { reset } from '../../context/redux/actions';
+import store from '../../context/redux/store';
+import { fetchRequest } from '../../pages/fetchRequests';
+export default function TransactionForm() {
     const [singleTransaction, setSingleTransaction] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const { setToastState } = useContext(ToastContext);
     const navigate = useNavigate();
-    const { id } = useParams();
+    const location = useLocation();
     const { t } = useTranslation();
 
+    const getTransactionId = () => {
+        let pathArray = (location.pathname).split("/");
+        return pathArray[pathArray.length - 1];
+    };
+
+    const transactionId = getTransactionId();
+    const url = `http://localhost:3004/transactions/${transactionId}`;
+
     useEffect(() => {
-        fetchTransaction();
+        getTransaction();
     }, []);
 
-    const fetchTransaction = async () => {
-        try {
-            setIsLoading(true);
-            const response = await fetch(`http://localhost:3004/transactions/${id}`);
-            const singleTransaction = await response.json();
-            setSingleTransaction(singleTransaction);
-            setIsLoading(false);
-        } catch (err) {
-            setIsLoading(false);
-            setToastState({ message: "fail_fetch_transaction", severity: "error", open: true });
-        }
+    const getTransaction = async () => {
+        setIsLoading(true);
+        await fetchRequest(url, successFetchCb, errorCb, "fail_fetch_transaction", "GET");
     };
-
-    const TransactionValidationSchema = Yup.object({
-        receiver: Yup.string().required(t("required")),
-        price: Yup.number().required(t("required")),
-        VAT: Yup.number().required(t("required")),
-        products: Yup.array()
-    });
-
     const updateTransaction = async (values) => {
-        try {
-            await fetch(`http://localhost:3004/transactions/${id}`, {
-                method: "PUT",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(values)
-            });
-            setIsLoading(false);
-            setToastState({ message: "success_edit_transaction", severity: "success", open: true });
-            navigate("/transactions");
-        } catch (err) {
-            setIsLoading(false);
-            setToastState({ message: "fail_edit_transaction", severity: "error", open: true });
-        }
+        setIsLoading(true);
+        await fetchRequest(url, successPatchCb, errorCb, "fail_edit_transaction", "PATCH", values);
     };
-
+    const successFetchCb = (res) => {
+        setSingleTransaction(res);
+        setIsLoading(false);
+    };
+    const successPatchCb = () => {
+        setIsLoading(false);
+        setToastState({ message: "success_edit_transaction", severity: "success", open: true });
+        store.dispatch(reset);
+        navigate("/transactions");
+    };
+    const errorCb = (errorCode) => {
+        setIsLoading(false);
+        setToastState({ message: errorCode, severity: "error", open: true });
+    };
     const cancelUpdateTransaction = () => {
         navigate(-1);
+        store.dispatch(reset);
     };
     return (
-        <div style={ { display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100vh", marginLeft: "90px", marginTop: "75px", paddingTop: "10px", width: "80vw", margin: " 75px auto" } }>
-            <Typography variant="h3" component="h1" align="center">{ t("transaction_details") }</Typography>
+        <><Typography variant="h3" component="h1" align="center">{ t("transaction_details") }</Typography>
             <Formik
                 enableReinitialize={ true }
                 initialValues={ singleTransaction }
@@ -167,6 +162,6 @@ export default function TransactionDetails() {
                     </Form>
                 ) }
             </Formik>
-        </div>
+        </>
     );
 }

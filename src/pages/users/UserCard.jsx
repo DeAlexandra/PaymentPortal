@@ -7,13 +7,23 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import store from '../../context/redux/store';
+import { setOpen } from '../../context/redux/actions';
+import { useNavigate } from "react-router-dom";
 
 export default function UserCard({ users }) {
     const { t } = useTranslation();
+    const navigate = useNavigate();
+
+    const NavigateToDetails = (userId) => {
+        store.dispatch(setOpen);
+        navigate(`/users/${userId}`);
+    };
+
     return (
-        <Grid container spacing={ 2 } sx={ { paddingLeft: "200px", paddingTop: "100px", paddingRight: "25px" } }>
+        <Grid container spacing={ 2 } sx={ { paddingLeft: "75px", paddingTop: "100px", paddingRight: "25px", minHeight: "100vh" } }>
             { users.map((user) =>
-                <Grid key={ user.id } item xs={ 12 } sm={ 6 } md={ 4 } lg={ 3 } sx={ { display: "flex" } }>
+                <Grid key={ user.id } item xs={ 12 } sm={ 6 } md={ 4 } lg={ 3 } xl={ 2 } sx={ { display: "flex", justifyContent: "center" } }>
                     <Card key={ user.id } sx={ { width: "270px" } }>
                         <CardMedia
                             component="img"
@@ -30,7 +40,9 @@ export default function UserCard({ users }) {
                             </Typography>
                         </CardContent>
                         <CardActions sx={ { justifyContent: "center" } }>
-                            <Button href={ `/users/${user.id}` } variant="contained" size="small">{ t("details") }</Button>
+                            <Button
+                                onClick={ () => { NavigateToDetails(user.id); } }
+                                variant="contained" size="small">{ t("details") }</Button>
                         </CardActions>
                     </Card>
                 </Grid>
