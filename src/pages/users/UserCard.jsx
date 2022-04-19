@@ -28,17 +28,18 @@ export default function UserCard({ users }) {
                         <CardMedia
                             component="img"
                             height="100px"
-                            image={ `http://localhost:3000/assets/userPics/${user.profile_picture} ` }
+                            // image={ `http://localhost:3000/assets/userPics/${user.profile_picture} ` }
+                            image={ user.profile_picture }
                             alt=""
                         />
-                        <CardContent>
+                        <CardContent sx={ { height: "110px" } }>
                             <Typography gutterBottom variant="h5" component="div">
                                 { user.first_name } { user.last_name }
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 { user.email }
                             </Typography>
-                        </CardContent>
+                        </CardContent >
                         <CardActions sx={ { justifyContent: "center" } }>
                             <Button
                                 onClick={ () => { NavigateToDetails(user.id); } }

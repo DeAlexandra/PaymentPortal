@@ -7,15 +7,18 @@
     "@emotion/styled": "^11.8.1",
     "@material-ui/core": "^4.12.3",
     "@mui/icons-material": "^5.5.1",
+    "@mui/lab": "^5.0.0-alpha.77",
     "@mui/material": "^5.5.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "chart.js": "^3.7.1",
     "formik": "^2.2.9",
     "i18next": "^21.6.14",
     "i18next-browser-languagedetector": "^6.1.3",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
+    "react-chartjs-2": "^4.1.0",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.16.1",
     "react-redux": "^7.2.8",
@@ -31,7 +34,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint-fix": "eslint  --fix --ext .js,.jsx .",
-    "start-db": "json-server --watch db.json --port 3004"
+    "start-db": "json-server --watch db.json --port 3004",
+    "start-second-db": "json-server --watch db_meow.json --port 3004",
+    "generate-db": "node ./src/common/transactions.generator.js"
   },
   "eslintConfig": {
     "extends": [
@@ -56,5 +61,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.1.2"
   }
 }
