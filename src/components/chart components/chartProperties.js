@@ -1,6 +1,5 @@
-const generateDataChartObj = (labels, data) => {
+const generateChartStyle = (labels, data) => {
     return {
-        type: "bar",
         labels: labels,
         datasets: [{
             data: data,
@@ -53,4 +52,4 @@ const generateOptions = (chartTitle) => {
     };
 };
 
-export { generateDataChartObj, generateOptions };
+export { generateChartStyle, generateOptions };

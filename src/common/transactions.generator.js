@@ -13,11 +13,21 @@ const LAST_YEAR = "Last Year";
 const LAST_TWO_YEARS = "Last Two Years";
 
 
-const TRANSACTION_DATE = [dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS)];
+
+const generateDatesArray = (number) => {
+    let array = [];
+    let typeOfDate = [LAST_TEN_DAYS, LAST_MONTH, LAST_YEAR, LAST_TWO_YEARS];
+    for (let i = 0; i < number; i++) {
+        array[i] = dateFrom(typeOfDate[Math.floor(Math.random() * 4)]);
+    }
+    return array;
+};
+
+// const TRANSACTION_DATE = [dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS)];
 
 let transactionTable = {
     "transactions":
-        generate.addMultiple("transactions", 20, TRANSACTION_DATE),
+        generate.addMultiple("transactions", 60, generateDatesArray(60)),
     "users":
         generate.addMultiple("users", 20)
 };

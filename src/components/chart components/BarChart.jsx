@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Title } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { generateLabels, generateChartData } from "./chartsFunctions";
-import { generateDataChartObj, generateOptions } from "./chartProperties";
+import { generateChartStyle, generateOptions } from "./chartProperties";
 
 ChartJS.register(
     CategoryScale,
@@ -31,7 +31,7 @@ export default function BarChart({ timeInterval, chartTitle }) {
 
     return (
         <Bar
-            data={ generateDataChartObj(
+            data={ generateChartStyle(
                 generateLabels(timeInterval),
                 generateChartData(timeInterval, chart),
             ) }
