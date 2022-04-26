@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 export const getTotalPrice = (price, vat) => {
   let priceInt = parseInt(price);
   let vatValue = (vat / 100) * parseInt(price);
-  return vatValue + priceInt;
+  return (vatValue + priceInt).toFixed(2);
 };
 
 export default function Transactions() {

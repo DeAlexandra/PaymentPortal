@@ -1,7 +1,7 @@
 import React from 'react';
 import RightDrawer from './RightDrawer';
-import UserForm from './users/UserForm';
-import TransactionForm from './users/TransactionForm';
+import UserForm from './forms/UserForm';
+import TransactionForm from './forms/TransactionForm';
 import { useLocation } from 'react-router-dom';
 
 export default function DrawerDetails() {

@@ -1,8 +1,11 @@
+import { t } from "i18next";
+
 const generateChartStyle = (labels, data) => {
     return {
         labels: labels,
         datasets: [{
             data: data,
+            label: t("transactions"),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -19,7 +22,7 @@ const generateChartStyle = (labels, data) => {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 3
         }]
     };
 

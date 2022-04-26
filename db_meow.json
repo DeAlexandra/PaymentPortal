@@ -1,26 +1,921 @@
 {
   "transactions": [
     {
-      "id": "bd406f9c-337a-49af-ab58-3115c7956f41",
-      "date": "4.11.2022",
+      "id": "0d5133c3-eef7-4339-98bd-b1df18e48293",
+      "date": "6.4.2021",
       "category": "expenses",
-      "receiver": "Schroeder - Stiedemann",
-      "price": "161.00",
+      "receiver": "Harber, Smitham and Hamill",
+      "price": "351",
+      "VAT": 26,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "97d5a5f9-56d2-4f67-89fd-89580e61e395",
+          "description": "Sleek Wooden Fish",
+          "amount": 0,
+          "price": "167.00",
+          "VAT": 27,
+          "total_price": 0
+        },
+        {
+          "id": "c1294450-2ed8-4ff8-9b92-21adc8cdd224",
+          "description": "Generic Rubber Chips",
+          "amount": 99,
+          "price": "190.00",
+          "VAT": 30,
+          "total_price": 0
+        },
+        {
+          "id": "e1ea5119-54a1-4a02-be64-d36a7db6a6b0",
+          "description": "Incredible Fresh Bacon",
+          "amount": 46,
+          "price": "106.00",
+          "VAT": 10,
+          "total_price": 0
+        },
+        {
+          "id": "26274c56-1c51-4d0b-90bf-48e1adc95092",
+          "description": "Fantastic Granite Tuna",
+          "amount": 23,
+          "price": "141.00",
+          "VAT": 8,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "9ee9747e-e35e-4b98-a8d2-af03cb9f6504",
+      "date": "10.30.2020",
+      "category": "expenses",
+      "receiver": "Fahey and Sons",
+      "price": "150.00",
+      "VAT": 4,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "45c1b9cf-2b79-4176-9ea1-7a4d6dc28ad2",
+          "description": "Tasty Granite Hat",
+          "amount": 64,
+          "price": "194.00",
+          "VAT": 17,
+          "total_price": 0
+        },
+        {
+          "id": "cdeacf97-8f75-4414-967a-0417127a2348",
+          "description": "Small Rubber Keyboard",
+          "amount": 37,
+          "price": "132.00",
+          "VAT": 9,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "a947b28b-39d3-4a81-ab22-fb0d612d0ae7",
+      "date": "3.25.2021",
+      "category": "income",
+      "receiver": "Mann - Murray",
+      "price": "199.00",
+      "VAT": 17,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "ddd0f4cc-3f94-4bf5-bfd5-0876b9d0fbf1",
+          "description": "Fantastic Cotton Ball",
+          "amount": 58,
+          "price": "140.00",
+          "VAT": 24,
+          "total_price": 0
+        },
+        {
+          "id": "a40ba465-42f3-4774-a973-6a7fddaa6f1d",
+          "description": "Licensed Granite Pizza",
+          "amount": 83,
+          "price": "182.00",
+          "VAT": 22,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "cd2708b9-ee6f-4e8a-8067-5300070f8526",
+      "date": "5.4.2021",
+      "category": "expenses",
+      "receiver": "Rolfson Group",
+      "price": "195.00",
+      "VAT": 30,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "a9163b8c-0857-4c74-ab3a-ee28b1c28661",
+          "description": "Incredible Metal Chair",
+          "amount": 71,
+          "price": "145.00",
+          "VAT": 0,
+          "total_price": 0
+        },
+        {
+          "id": "419cf028-7075-47fc-94a8-728cc6233171",
+          "description": "Incredible Frozen Bike",
+          "amount": 1,
+          "price": "150.00",
+          "VAT": 29,
+          "total_price": 0
+        },
+        {
+          "id": "314e3fe7-001e-4c78-ae6c-bae845d83adb",
+          "description": "Fantastic Concrete Fish",
+          "amount": 86,
+          "price": "123.00",
+          "VAT": 14,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "db606408-8774-4a03-9a6d-cf4e74549be3",
+      "date": "3.3.2022",
+      "category": "expenses",
+      "receiver": "Ebert Group",
+      "price": "168.00",
+      "VAT": 8,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "baa68701-a797-40d2-80f8-5257c5e3a67f",
+          "description": "Incredible Granite Bacon",
+          "amount": 66,
+          "price": "114.00",
+          "VAT": 16,
+          "total_price": 0
+        },
+        {
+          "id": "1276a100-3e6b-4327-8df3-d597e9d117d5",
+          "description": "Practical Wooden Cheese",
+          "amount": 38,
+          "price": "170.00",
+          "VAT": 8,
+          "total_price": 0
+        },
+        {
+          "id": "bfe05d7d-d745-4ee3-8807-1b418a280baf",
+          "description": "Practical Soft Sausages",
+          "amount": 3,
+          "price": "188.00",
+          "VAT": 19,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "44e1f4e7-d2b6-4330-b22e-d58ec6a159d1",
+      "date": "2.3.2022",
+      "category": "expenses",
+      "receiver": "Harris - Collier",
+      "price": "187.00",
+      "VAT": 9,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "abe861fc-5931-490e-8d08-50fe37757a61",
+          "description": "Refined Frozen Sausages",
+          "amount": 45,
+          "price": "148.00",
+          "VAT": 30,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "1ba9102e-fe46-4e6e-96e4-6f457d550d22",
+      "date": "4.15.2022",
+      "category": "expenses",
+      "receiver": "Olson and Sons",
+      "price": "133.00",
+      "VAT": 17,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "013e39bd-a531-446c-b179-3ffda3cff9ea",
+          "description": "Awesome Concrete Fish",
+          "amount": 13,
+          "price": "138.00",
+          "VAT": 6,
+          "total_price": 0
+        },
+        {
+          "id": "ce802753-a999-422c-97e8-9c2688481d85",
+          "description": "Awesome Steel Keyboard",
+          "amount": 5,
+          "price": "143.00",
+          "VAT": 23,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "a24e34ca-aa9b-429a-b7f9-dc3363f9c843",
+      "date": "12.27.2021",
+      "category": "income",
+      "receiver": "Casper, Bogan and Zboncak",
+      "price": "121.00",
+      "VAT": 9,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "7cb646e8-74d4-42e2-a22f-b13e9e9d9f71",
+          "description": "Gorgeous Soft Cheese",
+          "amount": 62,
+          "price": "126.00",
+          "VAT": 16,
+          "total_price": 0
+        },
+        {
+          "id": "57ec9caf-b050-48b4-9778-a606994ee828",
+          "description": "Gorgeous Granite Bacon",
+          "amount": 98,
+          "price": "151.00",
+          "VAT": 17,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "8553973e-04b3-4633-960b-fb001869fd70",
+      "date": "4.13.2022",
+      "category": "income",
+      "receiver": "Upton, Schowalter and Upton",
+      "price": "121.00",
+      "VAT": 5,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "ed3b38c9-7dea-4306-90d7-f6bb1d5a7af8",
+          "description": "Incredible Steel Chicken",
+          "amount": 58,
+          "price": "110.00",
+          "VAT": 1,
+          "total_price": 0
+        },
+        {
+          "id": "37f5014a-9600-444b-a391-602cf0604fce",
+          "description": "Awesome Cotton Soap",
+          "amount": 29,
+          "price": "150.00",
+          "VAT": 13,
+          "total_price": 0
+        },
+        {
+          "id": "5ff214b8-fd1b-4ba6-9248-a6c4b774119f",
+          "description": "Fantastic Cotton Pants",
+          "amount": 33,
+          "price": "143.00",
+          "VAT": 29,
+          "total_price": 0
+        },
+        {
+          "id": "dfb9820d-91ec-4976-b097-6069e710e5f2",
+          "description": "Generic Granite Pizza",
+          "amount": 5,
+          "price": "167.00",
+          "VAT": 26,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "51e854d1-c01b-4b45-824a-be61ace8cfc6",
+      "date": "2.10.2022",
+      "category": "income",
+      "receiver": "Rolfson - Heller",
+      "price": "147.00",
+      "VAT": 25,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "e03cc98f-e6df-4b03-8d08-0c2f98289ff8",
+          "description": "Ergonomic Metal Towels",
+          "amount": 89,
+          "price": "152.00",
+          "VAT": 8,
+          "total_price": 0
+        },
+        {
+          "id": "ca71f746-4999-48e9-acb8-b4adeb740ded",
+          "description": "Generic Steel Chicken",
+          "amount": 72,
+          "price": "184.00",
+          "VAT": 5,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "3f76c44e-2695-4066-8e2c-1c4cefa8b8ab",
+      "date": "6.3.2020",
+      "category": "income",
+      "receiver": "Keebler, Schroeder and Lemke",
+      "price": "116.00",
+      "VAT": 2,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "535582d5-b8dd-46d2-9813-1f2a15df9968",
+          "description": "Refined Frozen Table",
+          "amount": 31,
+          "price": "163.00",
+          "VAT": 21,
+          "total_price": 0
+        },
+        {
+          "id": "23118367-2d50-45ea-a0da-72236c6e9ca8",
+          "description": "Gorgeous Wooden Towels",
+          "amount": 7,
+          "price": "135.00",
+          "VAT": 5,
+          "total_price": 0
+        },
+        {
+          "id": "8d1e58cd-fc62-4d57-851e-3ac7e0986895",
+          "description": "Refined Soft Car",
+          "amount": 70,
+          "price": "128.00",
+          "VAT": 28,
+          "total_price": 0
+        },
+        {
+          "id": "e7117e06-f734-49d3-9edc-85bd40cfa733",
+          "description": "Intelligent Granite Tuna",
+          "amount": 77,
+          "price": "196.00",
+          "VAT": 18,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "49ea0979-e7bb-4f48-a106-bb504606178f",
+      "date": "3.4.2022",
+      "category": "expenses",
+      "receiver": "Moen, Zemlak and Lockman",
+      "price": "144.00",
+      "VAT": 4,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "2877729b-8da4-466f-b452-fab548cce135",
+          "description": "Refined Frozen Tuna",
+          "amount": 33,
+          "price": "111.00",
+          "VAT": 4,
+          "total_price": 0
+        },
+        {
+          "id": "ea960ee0-5b2e-429a-96e3-9b0dc93b3014",
+          "description": "Tasty Plastic Pants",
+          "amount": 3,
+          "price": "195.00",
+          "VAT": 7,
+          "total_price": 0
+        },
+        {
+          "id": "e04b670b-7339-454c-8022-a216d25b43f3",
+          "description": "Sleek Granite Shirt",
+          "amount": 25,
+          "price": "104.00",
+          "VAT": 15,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "e4ef8436-0d75-4d05-9f39-618f1c0ffce5",
+      "date": "1.26.2021",
+      "category": "income",
+      "receiver": "Leuschke, Sauer and Hills",
+      "price": "200.00",
+      "VAT": 15,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "bb8e4ed8-4211-4786-bacd-8650b65dd2b4",
+          "description": "Small Frozen Car",
+          "amount": 4,
+          "price": "156.00",
+          "VAT": 22,
+          "total_price": 0
+        },
+        {
+          "id": "62e1c1dc-38bc-4d44-8079-304818bbfd2e",
+          "description": "Sleek Cotton Pizza",
+          "amount": 82,
+          "price": "123.00",
+          "VAT": 4,
+          "total_price": 0
+        },
+        {
+          "id": "ec17aa84-83f8-4dd7-85bd-4a4fb7ed4236",
+          "description": "Tasty Rubber Shoes",
+          "amount": 74,
+          "price": "123.00",
+          "VAT": 25,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "5c28edfe-28f5-4f95-84e2-9186f3228005",
+      "date": "5.16.2021",
+      "category": "income",
+      "receiver": "Hickle, Cruickshank and Dietrich",
+      "price": "113.00",
       "VAT": 3,
       "total_price": 0,
       "products": [
         {
-          "id": "6aecc838-cf61-49fd-804c-ba908856941a",
-          "description": "Gorgeous Wooden Pants",
-          "amount": 33,
-          "price": "177.00",
+          "id": "d13ea721-b758-46d0-afb0-e747c67674df",
+          "description": "Licensed Fresh Keyboard",
+          "amount": 77,
+          "price": "110.00",
           "VAT": 15,
           "total_price": 0
         },
         {
-          "id": "c1f46f41-27c2-4e9b-8015-c8746b6c472d",
-          "description": "Practical Cotton Bike",
-          "amount": 46,
+          "id": "f91459f0-d4b5-499f-8543-23aef0e1948a",
+          "description": "Tasty Steel Gloves",
+          "amount": 91,
+          "price": "159.00",
+          "VAT": 9,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "5e7e39f2-fd8d-4b4e-9842-e3330857a0d3",
+      "date": "4.20.2022",
+      "category": "income",
+      "receiver": "Champlin LLC",
+      "price": "168.00",
+      "VAT": 2,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "c587e065-b97a-4cdf-bd33-816a87f450ec",
+          "description": "Intelligent Steel Gloves",
+          "amount": 48,
+          "price": "124.00",
+          "VAT": 15,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "0460c2cd-c455-4701-9b60-6da82d246474",
+      "date": "3.5.2022",
+      "category": "income",
+      "receiver": "Brekke - Kuhic",
+      "price": "139.00",
+      "VAT": 28,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "0bfd6393-30f2-4941-b3eb-9c36d08f40f5",
+          "description": "Small Metal Computer",
+          "amount": 78,
+          "price": "154.00",
+          "VAT": 15,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "5398200c-237d-4cb9-b433-14d1274d74f9",
+      "date": "4.13.2022",
+      "category": "income",
+      "receiver": "Gerhold - Medhurst",
+      "price": "138.00",
+      "VAT": 14,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "f6d054ef-bafe-416c-8f26-49d8f6daa246",
+          "description": "Intelligent Rubber Towels",
+          "amount": 87,
+          "price": "126.00",
+          "VAT": 8,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "81398acc-9e33-4920-8077-2519307c43cd",
+      "date": "1.28.2022",
+      "category": "expenses",
+      "receiver": "Cormier Group",
+      "price": "194.00",
+      "VAT": 15,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "33254171-4742-4fec-957f-1070eb0da489",
+          "description": "Awesome Granite Towels",
+          "amount": 30,
+          "price": "119.00",
+          "VAT": 8,
+          "total_price": 0
+        },
+        {
+          "id": "8e08e311-4762-407a-a513-4334c66f319e",
+          "description": "Handcrafted Rubber Keyboard",
+          "amount": 38,
+          "price": "194.00",
+          "VAT": 2,
+          "total_price": 0
+        },
+        {
+          "id": "cfce7fee-bc45-465b-a1c9-a3603e1fdea1",
+          "description": "Small Soft Shoes",
+          "amount": 50,
+          "price": "175.00",
+          "VAT": 6,
+          "total_price": 0
+        },
+        {
+          "id": "54780239-76a4-4cb5-b387-674c3a18b90e",
+          "description": "Practical Soft Pants",
+          "amount": 16,
+          "price": "184.00",
+          "VAT": 2,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "af82cfee-361d-4921-bfc8-770fc14f0f9a",
+      "date": "12.24.2021",
+      "category": "income",
+      "receiver": "Stiedemann LLC",
+      "price": "116.00",
+      "VAT": 14,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "0ad8ee1d-bf31-48ee-9765-4dc724db5bc3",
+          "description": "Rustic Concrete Chicken",
+          "amount": 72,
+          "price": "155.00",
+          "VAT": 17,
+          "total_price": 0
+        },
+        {
+          "id": "da1af0e1-077f-428a-8cad-9e88ca7ba55f",
+          "description": "Gorgeous Frozen Chips",
+          "amount": 77,
+          "price": "169.00",
+          "VAT": 11,
+          "total_price": 0
+        },
+        {
+          "id": "b804cd08-53c2-4cae-a920-636a6c17fe44",
+          "description": "Small Granite Pizza",
+          "amount": 2,
+          "price": "130.00",
+          "VAT": 25,
+          "total_price": 0
+        },
+        {
+          "id": "429a2f0d-de55-4a24-bcec-163d28eab907",
+          "description": "Intelligent Concrete Chair",
+          "amount": 38,
+          "price": "135.00",
+          "VAT": 0,
+          "total_price": 0
+        },
+        {
+          "id": "9b88aaa8-2974-4467-a78e-16a461990712",
+          "description": "Ergonomic Granite Ball",
+          "amount": 77,
+          "price": "199.00",
+          "VAT": 27,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "fa6c8a7c-d9c9-4ffc-976f-597d65f93a64",
+      "date": "9.7.2020",
+      "category": "income",
+      "receiver": "Hills - Cremin",
+      "price": "102.00",
+      "VAT": 12,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "0aef04a6-2cf2-4929-a027-575fb392c387",
+          "description": "Small Rubber Computer",
+          "amount": 59,
+          "price": "140.00",
+          "VAT": 13,
+          "total_price": 0
+        },
+        {
+          "id": "147968a3-1c40-4b61-9169-7111879bd6b2",
+          "description": "Unbranded Fresh Pants",
+          "amount": 56,
+          "price": "167.00",
+          "VAT": 6,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "980ae973-18f9-4747-984b-6944e11052cc",
+      "date": "3.17.2022",
+      "category": "income",
+      "receiver": "Schaefer, Sporer and Blanda",
+      "price": "164.00",
+      "VAT": 29,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "09761745-82a4-4d08-b9c6-12d45a04b51b",
+          "description": "Tasty Cotton Sausages",
+          "amount": 80,
+          "price": "147.00",
+          "VAT": 17,
+          "total_price": 0
+        },
+        {
+          "id": "64343e98-90c0-43d1-8f7f-466e53eb426a",
+          "description": "Sleek Frozen Bacon",
+          "amount": 91,
+          "price": "194.00",
+          "VAT": 13,
+          "total_price": 0
+        },
+        {
+          "id": "f35d2484-d6d5-40d3-9cf7-5d78023bff82",
+          "description": "Awesome Soft Sausages",
+          "amount": 100,
+          "price": "125.00",
+          "VAT": 30,
+          "total_price": 0
+        },
+        {
+          "id": "1524db84-1cc4-466e-a509-569b74dcf0c8",
+          "description": "Awesome Soft Ball",
+          "amount": 58,
+          "price": "123.00",
+          "VAT": 14,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "40d13c57-1360-45c3-aaff-75d146b54ff0",
+      "date": "3.4.2022",
+      "category": "income",
+      "receiver": "Schmidt Group",
+      "price": "162.00",
+      "VAT": 17,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "65621eb3-a5c6-4ed4-b764-2ce25024060c",
+          "description": "Tasty Wooden Keyboard",
+          "amount": 79,
+          "price": "191.00",
+          "VAT": 12,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "9c32b17c-5cc8-45ce-896e-70dca366aadc",
+      "date": "7.9.2020",
+      "category": "expenses",
+      "receiver": "Bernier Group",
+      "price": "114.00",
+      "VAT": 29,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "b8f9ec9b-ba65-4e10-9359-73c651168164",
+          "description": "Ergonomic Granite Chips",
+          "amount": 86,
+          "price": "164.00",
+          "VAT": 9,
+          "total_price": 0
+        },
+        {
+          "id": "2286f672-20f7-4281-a896-007832fb5f48",
+          "description": "Fantastic Wooden Chips",
+          "amount": 24,
+          "price": "107.00",
+          "VAT": 23,
+          "total_price": 0
+        },
+        {
+          "id": "56919361-af0e-4ba3-9c5d-85b7496ee66c",
+          "description": "Rustic Metal Hat",
+          "amount": 2,
+          "price": "188.00",
+          "VAT": 3,
+          "total_price": 0
+        },
+        {
+          "id": "be5028c9-55d6-48c5-bead-3e344b8b896b",
+          "description": "Unbranded Soft Car",
+          "amount": 77,
+          "price": "167.00",
+          "VAT": 27,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "ea950f3d-4eba-4e68-88ab-acad3edfa9e8",
+      "date": "4.22.2022",
+      "category": "expenses",
+      "receiver": "Howell, Wuckert and Labadie",
+      "price": "188.00",
+      "VAT": 7,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "4bd72304-2d7a-486e-a6b6-776480e53786",
+          "description": "Licensed Wooden Chair",
+          "amount": 44,
+          "price": "108.00",
+          "VAT": 19,
+          "total_price": 0
+        },
+        {
+          "id": "424bcbea-3ef6-489e-8521-52b77d0240ab",
+          "description": "Rustic Concrete Computer",
+          "amount": 75,
+          "price": "195.00",
+          "VAT": 28,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "e2f47277-8c45-4955-9e90-7610be62b8b0",
+      "date": "3.6.2022",
+      "category": "expenses",
+      "receiver": "Effertz LLC",
+      "price": "183.00",
+      "VAT": 27,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "469988ba-e214-4b74-9329-43696c2ef1b0",
+          "description": "Ergonomic Soft Tuna",
+          "amount": 42,
+          "price": "131.00",
+          "VAT": 30,
+          "total_price": 0
+        },
+        {
+          "id": "dbae981e-2353-4477-a9e4-a6a292e21c5a",
+          "description": "Generic Steel Tuna",
+          "amount": 93,
+          "price": "163.00",
+          "VAT": 2,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "de5aecd6-0253-4e40-b7b0-d241fc5d7484",
+      "date": "3.9.2022",
+      "category": "income",
+      "receiver": "Deckow, Daugherty and Lynch",
+      "price": "123.00",
+      "VAT": 26,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "aad8829c-c15b-4b4a-b115-de068ef443c0",
+          "description": "Awesome Cotton Soap",
+          "amount": 97,
+          "price": "156.00",
+          "VAT": 11,
+          "total_price": 0
+        },
+        {
+          "id": "4495b7fe-4620-40c9-9dac-286c86517366",
+          "description": "Handmade Soft Ball",
+          "amount": 77,
+          "price": "155.00",
+          "VAT": 6,
+          "total_price": 0
+        },
+        {
+          "id": "c4dfd242-847a-4d00-b7a1-5b0b4c533189",
+          "description": "Practical Rubber Cheese",
+          "amount": 41,
+          "price": "137.00",
+          "VAT": 11,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "62123e2c-b945-42c4-a8d7-290cf78f9abf",
+      "date": "12.15.2020",
+      "category": "income",
+      "receiver": "Little, Turner and Gleichner",
+      "price": "189.00",
+      "VAT": 0,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "01c475e0-95e2-4b79-b9a9-ab5c151134bd",
+          "description": "Incredible Soft Mouse",
+          "amount": 90,
+          "price": "136.00",
+          "VAT": 12,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "9dec735f-23c7-4d93-ab3b-df3ab6c7a261",
+      "date": "3.21.2022",
+      "category": "income",
+      "receiver": "Turcotte - Beatty",
+      "price": "179.00",
+      "VAT": 30,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "78cc02c4-5fa8-48f9-803c-17312af01425",
+          "description": "Gorgeous Plastic Cheese",
+          "amount": 100,
+          "price": "115.00",
+          "VAT": 0,
+          "total_price": 0
+        },
+        {
+          "id": "a0d3ec61-8b40-4619-a55b-dcf94e30e0e7",
+          "description": "Handcrafted Wooden Chair",
+          "amount": 30,
+          "price": "135.00",
+          "VAT": 12,
+          "total_price": 0
+        },
+        {
+          "id": "730796fd-2e8e-4148-b29e-130689487234",
+          "description": "Unbranded Fresh Mouse",
+          "amount": 72,
+          "price": "177.00",
+          "VAT": 27,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "fc2d6f6d-b731-43d6-a661-af463ae10b52",
+      "date": "6.30.2020",
+      "category": "expenses",
+      "receiver": "Fay - Rowe",
+      "price": "133.00",
+      "VAT": 3,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "37916592-f061-4a02-95d1-8d008de3541b",
+          "description": "Handmade Granite Bacon",
+          "amount": 73,
+          "price": "146.00",
+          "VAT": 27,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "2e2bb2d2-f244-4608-982a-965ce5b1bc8e",
+      "date": "4.19.2022",
+      "category": "expenses",
+      "receiver": "Reilly and Sons",
+      "price": "142.00",
+      "VAT": 11,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "54374eb0-678e-4852-aa5f-022be72ae893",
+          "description": "Tasty Wooden Chips",
+          "amount": 7,
+          "price": "190.00",
+          "VAT": 7,
+          "total_price": 0
+        },
+        {
+          "id": "4d0f9760-7e46-44b5-83ec-656c89c1080c",
+          "description": "Incredible Wooden Sausages",
+          "amount": 24,
           "price": "198.00",
           "VAT": 15,
           "total_price": 0
@@ -28,1608 +923,452 @@
       ]
     },
     {
-      "id": "20ba322f-c30c-4da0-ad4a-af6e2235c0a3",
-      "date": "3.21.2022",
+      "id": "b4d01873-f583-4113-b50f-8183887fa2ad",
+      "date": "9.20.2021",
       "category": "income",
-      "receiver": "Schmidt LLC",
-      "price": "154.00",
-      "VAT": 13,
+      "receiver": "Glover Inc",
+      "price": "194.00",
+      "VAT": 4,
       "total_price": 0,
       "products": [
         {
-          "id": "bd5a41da-ba83-4af2-826a-ed341ffbe2dc",
-          "description": "Small Plastic Chair",
-          "amount": 61,
-          "price": "115.00",
-          "VAT": 15,
+          "id": "b4af0083-36ec-4bf3-b933-8b9bd659f5d4",
+          "description": "Incredible Wooden Chair",
+          "amount": 83,
+          "price": "185.00",
+          "VAT": 27,
           "total_price": 0
         },
         {
-          "id": "57147475-918c-4f30-9071-16d2cb4dc604",
-          "description": "Gorgeous Plastic Chips",
-          "amount": 13,
-          "price": "116.00",
-          "VAT": 4,
+          "id": "7a3a7e01-277c-4e88-839c-dca79552a959",
+          "description": "Fantastic Metal Bacon",
+          "amount": 15,
+          "price": "177.00",
+          "VAT": 5,
+          "total_price": 0
+        },
+        {
+          "id": "2fd0f220-456b-4e86-b9e4-05924bbcfce7",
+          "description": "Licensed Rubber Mouse",
+          "amount": 84,
+          "price": "185.00",
+          "VAT": 25,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "6fbfa128-ed08-4c6a-8fa8-dec60728328a",
-      "date": "4.16.2022",
-      "category": "expenses",
-      "receiver": "Gleichner, Oberbrunner and Koch",
-      "price": "161.00",
-      "VAT": 22,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "82a6c7b9-40bd-4835-8aba-a97e09d6ab3c",
-          "description": "Gorgeous Fresh Bacon",
-          "amount": 80,
-          "price": "148.00",
-          "VAT": 29,
-          "total_price": 0
-        },
-        {
-          "id": "0dae4209-ee09-481e-8359-a080db0bf717",
-          "description": "Intelligent Concrete Pants",
-          "amount": 40,
-          "price": "156.00",
-          "VAT": 6,
-          "total_price": 0
-        },
-        {
-          "id": "be2f30cf-30f6-4820-a295-071eb5ec0edd",
-          "description": "Licensed Concrete Sausages",
-          "amount": 28,
-          "price": "190.00",
-          "VAT": 2,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "a0ca322d-d2b1-488d-b883-000b3bc5d72c",
-      "date": "3.16.2022",
+      "id": "eb52d29f-a0fb-400c-a947-6e2db21bfb5c",
+      "date": "2.8.2021",
       "category": "income",
-      "receiver": "Donnelly, Pfeffer and Rippin",
-      "price": "121.00",
-      "VAT": 11,
+      "receiver": "Greenfelder - Moen",
+      "price": "167.00",
+      "VAT": 6,
       "total_price": 0,
       "products": [
         {
-          "id": "55aa2054-e4f8-4cda-8b86-95357a45981f",
-          "description": "Practical Metal Chair",
-          "amount": 35,
-          "price": "105.00",
-          "VAT": 17,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "77261d8d-3f14-442a-bb90-bd602df06adc",
-      "date": "9.24.2020",
-      "category": "income",
-      "receiver": "Hand - Kulas",
-      "price": "193.00",
-      "VAT": 14,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "b221826e-4ed7-45f9-978e-e1a5dc122889",
-          "description": "Sleek Granite Chair",
-          "amount": 63,
-          "price": "120.00",
-          "VAT": 8,
-          "total_price": 0
-        },
-        {
-          "id": "417ba974-2463-4046-badb-d44e8d7fc5eb",
-          "description": "Tasty Frozen Fish",
-          "amount": 28,
-          "price": "170.00",
-          "VAT": 11,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "39a0effc-c9b0-4361-b9e8-fa32b909c218",
-      "date": "3.7.2022",
-      "category": "income",
-      "receiver": "Shields - Grimes",
-      "price": "175.00",
-      "VAT": 25,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "ec147f5e-c850-4382-8c8b-b2e888708bc4",
-          "description": "Awesome Steel Chicken",
-          "amount": 27,
-          "price": "115.00",
+          "id": "f731919e-6d5d-4e77-80b3-687a75a857b2",
+          "description": "Ergonomic Plastic Bike",
+          "amount": 69,
+          "price": "142.00",
           "VAT": 9,
           "total_price": 0
         },
         {
-          "id": "588c3853-ef06-4561-b454-16fff039b31d",
-          "description": "Fantastic Cotton Shoes",
-          "amount": 72,
-          "price": "146.00",
-          "VAT": 15,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "6b85767d-18ee-4cc4-a7da-f5e4868bb5b2",
-      "date": "3.22.2021",
-      "category": "expenses",
-      "receiver": "Homenick, Corkery and Brekke",
-      "price": "161.00",
-      "VAT": 26,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "0ae92248-2d67-43bb-9171-74de2a6dca74",
-          "description": "Fantastic Steel Ball",
-          "amount": 29,
-          "price": "150.00",
-          "VAT": 13,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "318adaad-79b6-4356-b7e7-0186342d6c93",
-      "date": "3.4.2022",
-      "category": "expenses",
-      "receiver": "Feeney, Schowalter and Fadel",
-      "price": "116.00",
-      "VAT": 20,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "f6ce7e89-c42d-4822-87b1-6ce9eee57885",
-          "description": "Intelligent Concrete Chips",
-          "amount": 50,
-          "price": "173.00",
-          "VAT": 18,
-          "total_price": 0
-        },
-        {
-          "id": "73cce65f-8eae-4340-af6c-11c0d680739a",
-          "description": "Refined Metal Table",
-          "amount": 1,
-          "price": "161.00",
-          "VAT": 18,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "e204bb7d-a939-41fa-b8fa-1d691d2b2608",
-      "date": "3.19.2022",
-      "category": "expenses",
-      "receiver": "Donnelly - Prohaska",
-      "price": "152.00",
-      "VAT": 2,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "4c135c20-faa7-4949-aa59-16654ab22168",
-          "description": "Intelligent Fresh Keyboard",
-          "amount": 29,
-          "price": "165.00",
-          "VAT": 18,
-          "total_price": 0
-        },
-        {
-          "id": "d92dc234-12dc-4ceb-b1c3-00ccac32abfa",
-          "description": "Handmade Fresh Bacon",
-          "amount": 21,
-          "price": "131.00",
-          "VAT": 6,
-          "total_price": 0
-        },
-        {
-          "id": "565e32f9-5a84-4582-88cd-63e3761a9a02",
-          "description": "Practical Granite Bike",
-          "amount": 51,
-          "price": "162.00",
-          "VAT": 24,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "17bb109a-81f2-41ce-b46c-ca8a21910a71",
-      "date": "5.6.2021",
-      "category": "income",
-      "receiver": "Haag - Kihn",
-      "price": "157.00",
-      "VAT": 21,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "db10739c-112a-45a9-9296-77cc6a6d5aba",
-          "description": "Unbranded Metal Tuna",
-          "amount": 17,
-          "price": "193.00",
-          "VAT": 17,
-          "total_price": 0
-        },
-        {
-          "id": "a202a209-bf10-489d-9d94-937b0127e9df",
-          "description": "Ergonomic Frozen Keyboard",
-          "amount": 21,
-          "price": "163.00",
-          "VAT": 30,
-          "total_price": 0
-        },
-        {
-          "id": "8327ccb3-8f58-48ac-8091-d1bcf185d779",
-          "description": "Intelligent Metal Salad",
-          "amount": 0,
-          "price": "126.00",
-          "VAT": 17,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "afa93cbd-a21c-4ea1-a579-e04671ccc68e",
-      "date": "2.9.2022",
-      "category": "expenses",
-      "receiver": "Predovic - Wiegand",
-      "price": "153.00",
-      "VAT": 24,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "1c251b9b-ae5b-4fc3-9906-f5b10921fee0",
-          "description": "Awesome Granite Fish",
-          "amount": 90,
-          "price": "109.00",
-          "VAT": 7,
-          "total_price": 0
-        },
-        {
-          "id": "70468b4c-fa68-4167-a6bb-c08af3978a5c",
-          "description": "Awesome Plastic Shirt",
-          "amount": 95,
-          "price": "159.00",
-          "VAT": 21,
-          "total_price": 0
-        },
-        {
-          "id": "989bdea6-26b4-45ba-9fe3-29b5deda8e13",
-          "description": "Sleek Concrete Fish",
-          "amount": 38,
-          "price": "124.00",
-          "VAT": 3,
-          "total_price": 0
-        },
-        {
-          "id": "6f7136ca-26d2-4855-89f1-e212146bf044",
-          "description": "Small Plastic Shoes",
-          "amount": 10,
-          "price": "180.00",
-          "VAT": 6,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "fa1273a8-52d9-451e-9d23-c92105d4ef87",
-      "date": "3.18.2022",
-      "category": "expenses",
-      "receiver": "Emard LLC",
-      "price": "184.00",
-      "VAT": 17,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "d86f806f-aa5e-4667-ac04-6ee6b9ed0b96",
-          "description": "Gorgeous Wooden Keyboard",
-          "amount": 49,
-          "price": "194.00",
-          "VAT": 28,
-          "total_price": 0
-        },
-        {
-          "id": "dec951ef-aae7-4950-bb87-7da760a1d86d",
-          "description": "Ergonomic Steel Bike",
-          "amount": 46,
-          "price": "100.00",
-          "VAT": 3,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "f71761a8-cc52-4cef-9869-d8b01b04abc0",
-      "date": "3.4.2022",
-      "category": "expenses",
-      "receiver": "Keeling - Franey",
-      "price": "186.00",
-      "VAT": 28,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "8ba81fc0-6d5c-413b-99f4-e5ace04d5387",
-          "description": "Refined Concrete Bacon",
-          "amount": 89,
-          "price": "134.00",
-          "VAT": 4,
-          "total_price": 0
-        },
-        {
-          "id": "c6d26269-6666-4e4f-9f8b-b3698b8ad4d6",
-          "description": "Handcrafted Wooden Soap",
-          "amount": 37,
-          "price": "191.00",
-          "VAT": 24,
-          "total_price": 0
-        },
-        {
-          "id": "fbaa1c70-a53b-44d9-85a7-30f89c251ffd",
-          "description": "Gorgeous Plastic Fish",
-          "amount": 49,
-          "price": "128.00",
-          "VAT": 13,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "ab6162c1-a1f2-4d2b-a4e9-8e4bf84de09b",
-      "date": "11.24.2021",
-      "category": "expenses",
-      "receiver": "Jakubowski, Frami and Kuhlman",
-      "price": "191.00",
-      "VAT": 11,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "861d338d-8c4d-4d58-a5a3-abd7166e43aa",
-          "description": "Gorgeous Rubber Shirt",
-          "amount": 3,
-          "price": "170.00",
-          "VAT": 6,
-          "total_price": 0
-        },
-        {
-          "id": "919d8160-2e82-4f1e-9fee-6381dcb7c017",
-          "description": "Refined Granite Computer",
-          "amount": 1,
-          "price": "105.00",
-          "VAT": 19,
-          "total_price": 0
-        },
-        {
-          "id": "a883fa08-ffec-4d9d-a997-a0fe43df057e",
-          "description": "Rustic Frozen Soap",
-          "amount": 23,
-          "price": "147.00",
-          "VAT": 21,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "85d905fc-7390-470a-bc49-4bf976d860eb",
-      "date": "3.22.2022",
-      "category": "expenses",
-      "receiver": "Wiegand, Stamm and Krajcik",
-      "price": "190.00",
-      "VAT": 22,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "3f3ffed6-4ab6-43ae-95c9-ea93d0b2edca",
-          "description": "Intelligent Concrete Car",
-          "amount": 27,
-          "price": "163.00",
-          "VAT": 11,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "7a139f91-ef26-46dd-8c2b-dc750ccd1f2a",
-      "date": "4.12.2022",
-      "category": "expenses",
-      "receiver": "Strosin, Dietrich and Lowe",
-      "price": "129.00",
-      "VAT": 9,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "b2aa5e5b-843a-46b4-bc45-2a7d6b47445d",
-          "description": "Generic Granite Ball",
-          "amount": 2,
-          "price": "180.00",
-          "VAT": 4,
-          "total_price": 0
-        },
-        {
-          "id": "b4ae3d32-c986-44a8-b688-9fc44eb2a07a",
-          "description": "Handmade Frozen Pizza",
-          "amount": 87,
-          "price": "175.00",
-          "VAT": 13,
-          "total_price": 0
-        },
-        {
-          "id": "c89633f1-0fab-44ec-8f02-41d6a4d66bea",
-          "description": "Generic Fresh Bike",
-          "amount": 57,
-          "price": "143.00",
-          "VAT": 7,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "83c4d9c5-3d35-49a2-bb7c-6d9e709fa414",
-      "date": "10.24.2021",
-      "category": "income",
-      "receiver": "Cassin - Davis",
-      "price": "110.00",
-      "VAT": 21,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "978025c9-c851-485b-8ef1-1dd3f8a10709",
-          "description": "Ergonomic Concrete Car",
-          "amount": 77,
+          "id": "ffd6d24b-b32a-4f72-a745-b248f9e60da2",
+          "description": "Licensed Cotton Shirt",
+          "amount": 85,
           "price": "144.00",
-          "VAT": 19,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "3894c8a4-4040-4f3a-a080-27f39dc5d05f",
-      "date": "11.25.2021",
-      "category": "income",
-      "receiver": "McDermott, Hettinger and Mohr",
-      "price": "140.00",
-      "VAT": 22,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "ba08d6b9-9756-40af-af74-ef0c148c7d8c",
-          "description": "Ergonomic Metal Shoes",
-          "amount": 68,
-          "price": "172.00",
-          "VAT": 19,
+          "VAT": 21,
           "total_price": 0
         },
         {
-          "id": "4df7c80b-4804-41f9-be14-a4e09148a6fa",
-          "description": "Intelligent Frozen Sausages",
-          "amount": 30,
-          "price": "139.00",
-          "VAT": 29,
+          "id": "b982ce75-56f9-4337-819f-2c74b01f6b0f",
+          "description": "Rustic Frozen Sausages",
+          "amount": 62,
+          "price": "154.00",
+          "VAT": 6,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "0e4732e5-b08b-47b6-a98c-54e757cfc366",
-      "date": "6.25.2020",
+      "id": "e665c8ea-af39-4e70-9f6d-38d51c2bf77a",
+      "date": "9.2.2021",
       "category": "expenses",
-      "receiver": "Olson and Sons",
-      "price": "147.00",
-      "VAT": 28,
+      "receiver": "Hettinger LLC",
+      "price": "113.00",
+      "VAT": 18,
       "total_price": 0,
       "products": [
         {
-          "id": "e698879a-0e1a-4efa-ad11-d77944cb5bb9",
-          "description": "Handcrafted Frozen Pants",
-          "amount": 63,
-          "price": "135.00",
+          "id": "1528186b-8e95-4a4c-bdd9-3c7166d40a20",
+          "description": "Gorgeous Fresh Shoes",
+          "amount": 43,
+          "price": "102.00",
+          "VAT": 7,
+          "total_price": 0
+        },
+        {
+          "id": "119b4868-478b-4789-afa0-07529cdfedc6",
+          "description": "Small Soft Pants",
+          "amount": 54,
+          "price": "168.00",
           "VAT": 0,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "e0a33128-06d0-4ee1-8c22-c743c2a6524c",
-      "date": "1.5.2022",
+      "id": "96292fe3-b9c9-43b3-bcd5-c3cd8ae46d7f",
+      "date": "3.9.2022",
       "category": "expenses",
-      "receiver": "Thompson, Green and Torphy",
-      "price": "189.00",
-      "VAT": 21,
+      "receiver": "White, Shanahan and Konopelski",
+      "price": "114.00",
+      "VAT": 10,
       "total_price": 0,
       "products": [
         {
-          "id": "5c635e56-e994-49a4-a699-719d61b303fc",
-          "description": "Tasty Wooden Shirt",
-          "amount": 16,
-          "price": "172.00",
-          "VAT": 3,
+          "id": "bd950651-81c4-4253-8e1e-db089c00c4a5",
+          "description": "Ergonomic Plastic Bike",
+          "amount": 11,
+          "price": "121.00",
+          "VAT": 4,
           "total_price": 0
         },
         {
-          "id": "a738bc2a-a7d5-46f8-a7cf-777d930ebd82",
-          "description": "Awesome Granite Pants",
-          "amount": 29,
-          "price": "169.00",
-          "VAT": 3,
+          "id": "0e4ae4de-ec08-428d-bc8e-d50942b9aad0",
+          "description": "Intelligent Granite Sausages",
+          "amount": 70,
+          "price": "147.00",
+          "VAT": 27,
           "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "5e670790-1b87-4697-90ee-f8ac90df7741",
-      "date": "1.10.2021",
-      "category": "expenses",
-      "receiver": "Will, Dickens and Hilll",
-      "price": "172.00",
-      "VAT": 8,
-      "total_price": 0,
-      "products": [
+        },
         {
-          "id": "6115c474-b368-403e-b705-0c3c6575a47c",
-          "description": "Awesome Metal Hat",
-          "amount": 27,
-          "price": "134.00",
+          "id": "05ac3cfe-2a7f-4952-9950-a3158220e36e",
+          "description": "Licensed Frozen Towels",
+          "amount": 18,
+          "price": "105.00",
           "VAT": 3,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "2a0fbba2-ec78-482a-9a50-0e00f03d5b49",
-      "date": "3.12.2022",
+      "id": "96e49514-519c-473a-af18-df4a7c64f53f",
+      "date": "9.27.2021",
       "category": "income",
-      "receiver": "Mohr, Towne and Will",
-      "price": "100.00",
-      "VAT": 13,
+      "receiver": "Terry - Mante",
+      "price": "152.00",
+      "VAT": 3,
       "total_price": 0,
       "products": [
         {
-          "id": "f97b5f1d-545d-4e7d-94dd-21057f7e1b3f",
-          "description": "Licensed Wooden Computer",
-          "amount": 98,
-          "price": "127.00",
-          "VAT": 24,
+          "id": "3b8120da-44cf-43b0-bb49-18de5934e529",
+          "description": "Practical Rubber Ball",
+          "amount": 22,
+          "price": "146.00",
+          "VAT": 9,
+          "total_price": 0
+        },
+        {
+          "id": "0dff461d-5bf3-416e-a373-7f502673213d",
+          "description": "Practical Granite Shirt",
+          "amount": 9,
+          "price": "104.00",
+          "VAT": 13,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "c9009813-ed4b-4dac-a341-be219e35b9b5",
-      "date": "11.28.2021",
+      "id": "bc11d21d-9127-41f8-b241-b2ff611150ab",
+      "date": "3.6.2022",
       "category": "expenses",
-      "receiver": "Yost - Beer",
+      "receiver": "Carter, Wintheiser and Muller",
       "price": "199.00",
       "VAT": 16,
       "total_price": 0,
       "products": [
         {
-          "id": "822d275d-434b-42f6-a857-e1430bd4c64d",
-          "description": "Handcrafted Wooden Ball",
-          "amount": 19,
-          "price": "174.00",
-          "VAT": 25,
-          "total_price": 0
-        },
-        {
-          "id": "0c1f27e5-cc31-4819-8ad5-281f51ae286b",
-          "description": "Gorgeous Rubber Gloves",
-          "amount": 96,
-          "price": "122.00",
-          "VAT": 15,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "9f319b10-1df5-4d23-9bd6-80d06fe80188",
-      "date": "4.23.2021",
-      "category": "expenses",
-      "receiver": "VonRueden - Bradtke",
-      "price": "118.00",
-      "VAT": 26,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "01534f1b-6d01-4111-840c-3b89119d9f67",
-          "description": "Rustic Soft Car",
-          "amount": 14,
-          "price": "134.00",
-          "VAT": 0,
-          "total_price": 0
-        },
-        {
-          "id": "b9ecbde3-9b6d-47bc-8f63-425a4a294f8e",
-          "description": "Sleek Rubber Pizza",
-          "amount": 1,
-          "price": "144.00",
-          "VAT": 19,
-          "total_price": 0
-        },
-        {
-          "id": "0c2f7033-9e1c-40c0-9a03-06ba67caa2fd",
-          "description": "Handmade Concrete Towels",
-          "amount": 8,
-          "price": "109.00",
-          "VAT": 5,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "168f424b-f743-4be1-a6d1-2e3af00b448d",
-      "date": "3.1.2022",
-      "category": "income",
-      "receiver": "Lehner LLC",
-      "price": "175.00",
-      "VAT": 6,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "77165f77-9465-4f89-9743-ccf7c5104627",
-          "description": "Ergonomic Plastic Bike",
-          "amount": 67,
-          "price": "110.00",
-          "VAT": 28,
-          "total_price": 0
-        },
-        {
-          "id": "84f13be0-7671-4ee8-ada2-671795c20342",
-          "description": "Intelligent Soft Ball",
-          "amount": 58,
-          "price": "176.00",
+          "id": "4c2a989d-da81-41c4-bd65-bf6e1695c350",
+          "description": "Small Concrete Computer",
+          "amount": 83,
+          "price": "146.00",
           "VAT": 16,
           "total_price": 0
         },
         {
-          "id": "38388f65-9e13-4203-bfed-ac7a78ca6ed8",
-          "description": "Rustic Steel Pizza",
-          "amount": 23,
-          "price": "123.00",
-          "VAT": 28,
-          "total_price": 0
-        },
-        {
-          "id": "02049cf8-3ba4-40c6-9eb5-e5faad60040c",
-          "description": "Rustic Wooden Cheese",
-          "amount": 58,
-          "price": "104.00",
-          "VAT": 5,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "6e2458f8-00eb-4f98-b694-2c1151d40378",
-      "date": "12.25.2021",
-      "category": "income",
-      "receiver": "Thiel Group",
-      "price": "176.00",
-      "VAT": 3,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "42c66d10-ef76-485e-87d9-77d0d7b5ca0e",
-          "description": "Sleek Soft Sausages",
-          "amount": 32,
-          "price": "132.00",
-          "VAT": 11,
-          "total_price": 0
-        },
-        {
-          "id": "22d04aec-3e5d-4f78-9229-f53bafcfdab0",
-          "description": "Ergonomic Granite Keyboard",
-          "amount": 26,
-          "price": "117.00",
-          "VAT": 28,
-          "total_price": 0
-        },
-        {
-          "id": "66d4ef1c-7978-492e-8055-dec5f5e0633e",
-          "description": "Small Steel Cheese",
-          "amount": 14,
-          "price": "116.00",
-          "VAT": 19,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "d06831ff-1396-4b54-9a62-6c628703f0d8",
-      "date": "4.11.2022",
-      "category": "income",
-      "receiver": "King - Langosh",
-      "price": "184.00",
-      "VAT": 24,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "48df3d28-4250-43e0-a4f1-972511415a60",
-          "description": "Rustic Concrete Table",
-          "amount": 48,
-          "price": "180.00",
-          "VAT": 21,
-          "total_price": 0
-        },
-        {
-          "id": "2ba3ef82-2e60-4fbd-9e10-9f77a21ca4fc",
-          "description": "Gorgeous Granite Pants",
-          "amount": 15,
-          "price": "129.00",
-          "VAT": 27,
-          "total_price": 0
-        },
-        {
-          "id": "3d821f4a-5433-40c8-b933-842152c8c645",
-          "description": "Generic Rubber Shoes",
-          "amount": 12,
-          "price": "103.00",
-          "VAT": 12,
-          "total_price": 0
-        },
-        {
-          "id": "2b116043-51d3-4f67-85a3-a0b9e7e8f0fe",
-          "description": "Tasty Soft Gloves",
+          "id": "ffe9c0b0-02aa-4de7-9ca9-fab9ccbd7294",
+          "description": "Refined Rubber Ball",
           "amount": 38,
-          "price": "101.00",
-          "VAT": 8,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "af25cfc5-2773-42aa-95a3-165e01966935",
-      "date": "2.8.2021",
-      "category": "expenses",
-      "receiver": "Mueller Inc",
-      "price": "140.00",
-      "VAT": 16,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "caecf788-7432-4fd8-abee-29f59828143e",
-          "description": "Ergonomic Cotton Bike",
-          "amount": 61,
-          "price": "126.00",
-          "VAT": 30,
+          "price": "156.00",
+          "VAT": 10,
           "total_price": 0
         },
         {
-          "id": "863bfb80-5f04-4b8e-ad42-725f780e67c8",
-          "description": "Practical Metal Shoes",
-          "amount": 48,
-          "price": "175.00",
-          "VAT": 16,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "dda6480b-3140-4e50-9772-391a1f1a2771",
-      "date": "3.23.2022",
-      "category": "income",
-      "receiver": "Block, Swift and Raynor",
-      "price": "157.00",
-      "VAT": 23,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "b18b2d00-29a7-4f34-82b0-3d741b299029",
-          "description": "Gorgeous Cotton Keyboard",
-          "amount": 35,
-          "price": "129.00",
-          "VAT": 15,
-          "total_price": 0
-        },
-        {
-          "id": "70943aa5-8fed-4a98-bec9-6b11d424bb0a",
-          "description": "Generic Metal Gloves",
-          "amount": 80,
-          "price": "185.00",
-          "VAT": 11,
-          "total_price": 0
-        },
-        {
-          "id": "bf5f6f85-c1fa-43c0-82e2-3cda3ad3c909",
-          "description": "Refined Wooden Shirt",
-          "amount": 22,
+          "id": "6b809495-f131-4687-a84c-995ccb52e86b",
+          "description": "Handcrafted Rubber Table",
+          "amount": 53,
           "price": "197.00",
-          "VAT": 7,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "ce9c9e5f-0d77-44ad-a4e2-af1ddc9cc6f1",
-      "date": "4.12.2022",
-      "category": "expenses",
-      "receiver": "Smith - Thompson",
-      "price": "143.00",
-      "VAT": 5,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "c0b17694-8621-4056-bb05-8494deabf5d9",
-          "description": "Ergonomic Wooden Table",
-          "amount": 48,
-          "price": "156.00",
-          "VAT": 29,
-          "total_price": 0
-        },
-        {
-          "id": "3b65799f-8b27-4a29-8053-ec3f553a58d0",
-          "description": "Fantastic Steel Hat",
-          "amount": 32,
-          "price": "128.00",
-          "VAT": 30,
-          "total_price": 0
-        },
-        {
-          "id": "3df508f1-a22a-4f0e-b227-909b3bdc1bd9",
-          "description": "Intelligent Rubber Fish",
-          "amount": 87,
-          "price": "134.00",
-          "VAT": 30,
-          "total_price": 0
-        },
-        {
-          "id": "7a0b9d49-b75b-4e26-87f1-319c4ec13372",
-          "description": "Ergonomic Steel Bike",
-          "amount": 76,
-          "price": "111.00",
-          "VAT": 14,
-          "total_price": 0
-        },
-        {
-          "id": "57dfe7df-b02d-4b02-9f02-74b949d4f186",
-          "description": "Rustic Steel Pants",
-          "amount": 38,
-          "price": "166.00",
-          "VAT": 30,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "2a3e984d-cc99-49c0-8d1b-8a9ec0ef8f31",
-      "date": "7.18.2020",
-      "category": "income",
-      "receiver": "Quigley and Sons",
-      "price": "112.00",
-      "VAT": 9,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "66a7a39f-a4ba-4c88-b3b3-03805838f24c",
-          "description": "Practical Fresh Bike",
-          "amount": 44,
-          "price": "137.00",
-          "VAT": 4,
-          "total_price": 0
-        },
-        {
-          "id": "5c554efb-730b-422e-9ef4-0ed00caece59",
-          "description": "Fantastic Cotton Soap",
-          "amount": 29,
-          "price": "178.00",
-          "VAT": 26,
-          "total_price": 0
-        },
-        {
-          "id": "830de8ed-b00d-4754-9553-f54e067b61da",
-          "description": "Fantastic Rubber Cheese",
-          "amount": 100,
-          "price": "149.00",
-          "VAT": 30,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "b6c8ea46-c919-40ef-81ed-ae82a3d267b6",
-      "date": "4.18.2022",
-      "category": "income",
-      "receiver": "Jones Inc",
-      "price": "108.00",
-      "VAT": 24,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "fa69337e-1f2e-4ccd-b86c-bc76a19e2d87",
-          "description": "Handcrafted Soft Car",
-          "amount": 74,
-          "price": "114.00",
-          "VAT": 25,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "36f5dc59-5af6-4633-8cb7-5c862a6abb21",
-      "date": "3.20.2022",
-      "category": "expenses",
-      "receiver": "Kovacek, Hoppe and Lemke",
-      "price": "195.00",
-      "VAT": 18,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "cefbfeb7-ec76-421a-8239-56d14a32d81d",
-          "description": "Tasty Steel Keyboard",
-          "amount": 19,
-          "price": "174.00",
-          "VAT": 12,
-          "total_price": 0
-        },
-        {
-          "id": "d1cc7d80-2806-43b1-a11a-92063985103b",
-          "description": "Intelligent Soft Pants",
-          "amount": 27,
-          "price": "176.00",
-          "VAT": 19,
-          "total_price": 0
-        },
-        {
-          "id": "3a40bd3f-6296-49f3-9385-425ed0186812",
-          "description": "Tasty Plastic Gloves",
-          "amount": 76,
-          "price": "177.00",
-          "VAT": 30,
-          "total_price": 0
-        },
-        {
-          "id": "cec4f14b-15e0-4b32-ab9a-9916b5d67aa1",
-          "description": "Rustic Metal Chair",
-          "amount": 54,
-          "price": "156.00",
-          "VAT": 6,
-          "total_price": 0
-        },
-        {
-          "id": "566967c3-39fd-4161-b86a-fcea5d95bf07",
-          "description": "Sleek Fresh Pants",
-          "amount": 49,
-          "price": "112.00",
-          "VAT": 22,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "5d64f292-394a-4676-b90c-f841d4a1e96c",
-      "date": "4.21.2020",
-      "category": "expenses",
-      "receiver": "Labadie Inc",
-      "price": "193.00",
-      "VAT": 27,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "e8337e6e-ec10-4767-9bab-2cfdc1d4cb21",
-          "description": "Unbranded Metal Computer",
-          "amount": 6,
-          "price": "117.00",
-          "VAT": 9,
-          "total_price": 0
-        },
-        {
-          "id": "3b6eb484-cc61-42d7-82e1-65b4b4c7acbe",
-          "description": "Licensed Fresh Shirt",
-          "amount": 100,
-          "price": "195.00",
-          "VAT": 20,
-          "total_price": 0
-        },
-        {
-          "id": "2d1b3a36-7a26-4876-a83b-15772fb83c4d",
-          "description": "Rustic Frozen Bike",
-          "amount": 39,
-          "price": "132.00",
-          "VAT": 6,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "5821e422-11e9-4fad-888b-ebcaecd8830a",
-      "date": "3.19.2022",
-      "category": "expenses",
-      "receiver": "Bradtke and Sons",
-      "price": "198.00",
-      "VAT": 1,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "0d74947d-349d-4dbd-9356-f93bf8eede85",
-          "description": "Tasty Granite Mouse",
-          "amount": 50,
-          "price": "131.00",
-          "VAT": 8,
-          "total_price": 0
-        },
-        {
-          "id": "431b7eb5-9347-462e-8d94-3b4618a95bc7",
-          "description": "Fantastic Frozen Sausages",
-          "amount": 70,
-          "price": "183.00",
-          "VAT": 1,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "cd2808ea-7e4f-495b-93f8-5f2f1ba6329e",
-      "date": "4.19.2022",
-      "category": "income",
-      "receiver": "Bins Group",
-      "price": "128.00",
-      "VAT": 21,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "acdca7a5-0399-4812-9b32-82a554a6ef0b",
-          "description": "Sleek Granite Tuna",
-          "amount": 95,
-          "price": "101.00",
           "VAT": 13,
           "total_price": 0
         },
         {
-          "id": "ccdaaad9-39ba-4355-b806-925289549ae6",
-          "description": "Sleek Fresh Sausages",
-          "amount": 37,
-          "price": "126.00",
-          "VAT": 16,
+          "id": "7226228c-bf18-48fc-a880-aaba09e0ed67",
+          "description": "Refined Granite Sausages",
+          "amount": 24,
+          "price": "136.00",
+          "VAT": 25,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "ce76c7ae-c659-4ad5-b47b-6f7855862da4",
-      "date": "9.7.2021",
+      "id": "a2328c4c-ab5d-44e2-b6bc-313e5e2b6bd1",
+      "date": "6.2.2021",
       "category": "expenses",
-      "receiver": "Reinger - Kling",
-      "price": "196.00",
-      "VAT": 21,
+      "receiver": "Ward, Braun and Rath",
+      "price": "106.00",
+      "VAT": 23,
       "total_price": 0,
       "products": [
         {
-          "id": "d4c65875-691f-48fb-a3e8-f1033650dd2b",
-          "description": "Licensed Steel Chair",
-          "amount": 6,
-          "price": "119.00",
-          "VAT": 9,
+          "id": "065f00b8-1ae0-40fa-a0ee-06e5398d3897",
+          "description": "Handmade Cotton Shirt",
+          "amount": 88,
+          "price": "109.00",
+          "VAT": 19,
           "total_price": 0
         },
         {
-          "id": "d655c777-02b3-467e-ab59-5bebcbf6ffe1",
-          "description": "Incredible Soft Ball",
-          "amount": 72,
-          "price": "195.00",
-          "VAT": 22,
-          "total_price": 0
-        },
-        {
-          "id": "06f96b3f-fa41-4049-b92e-73a35b5a832a",
-          "description": "Sleek Soft Bacon",
-          "amount": 91,
-          "price": "127.00",
-          "VAT": 17,
+          "id": "b3d31b64-cf09-449e-81be-4c124c88258e",
+          "description": "Unbranded Fresh Salad",
+          "amount": 29,
+          "price": "187.00",
+          "VAT": 26,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "bc71822c-f66d-4040-9b59-467cb8278f1f",
-      "date": "3.8.2021",
+      "id": "86932a2a-9772-4809-bd04-06de59ef5858",
+      "date": "5.21.2020",
       "category": "expenses",
-      "receiver": "Kuhn and Sons",
-      "price": "162.00",
-      "VAT": 24,
+      "receiver": "Padberg Inc",
+      "price": "190.00",
+      "VAT": 18,
       "total_price": 0,
       "products": [
         {
-          "id": "c74b6512-b20b-4d80-a814-b3b0edf66511",
-          "description": "Incredible Plastic Ball",
-          "amount": 89,
-          "price": "130.00",
-          "VAT": 14,
+          "id": "dd708a10-27ac-4b1e-a278-d04b42e9eee9",
+          "description": "Handcrafted Concrete Sausages",
+          "amount": 24,
+          "price": "140.00",
+          "VAT": 11,
           "total_price": 0
-        },
+        }
+      ]
+    },
+    {
+      "id": "bef131b9-f3e2-4b1d-945f-f282392caf03",
+      "date": "7.19.2021",
+      "category": "expenses",
+      "receiver": "Johnston, Waelchi and Okuneva",
+      "price": "113.00",
+      "VAT": 29,
+      "total_price": 0,
+      "products": [
         {
-          "id": "276ea2ff-3b9a-49e4-b573-57a6b226230c",
-          "description": "Awesome Plastic Table",
-          "amount": 90,
-          "price": "133.00",
+          "id": "26b9c80d-8106-49d7-a45b-731d48edbbf8",
+          "description": "Licensed Cotton Gloves",
+          "amount": 70,
+          "price": "149.00",
           "VAT": 4,
           "total_price": 0
         },
         {
-          "id": "41ca030b-af12-4976-8370-90dfabc7ae26",
-          "description": "Gorgeous Soft Mouse",
-          "amount": 14,
-          "price": "138.00",
+          "id": "077a0d77-c0a3-4c94-af74-350502fd38df",
+          "description": "Gorgeous Soft Bacon",
+          "amount": 98,
+          "price": "192.00",
           "VAT": 24,
           "total_price": 0
         },
         {
-          "id": "633eb531-dd3f-4be1-ab59-fb80772e5a63",
-          "description": "Ergonomic Concrete Mouse",
-          "amount": 81,
-          "price": "134.00",
-          "VAT": 10,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "f429696c-04ff-463b-8589-f712bb0f56bd",
-      "date": "2.26.2021",
-      "category": "income",
-      "receiver": "Wolff and Sons",
-      "price": "113.00",
-      "VAT": 5,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "3f905070-12a0-4846-888e-c95e34133164",
-          "description": "Ergonomic Fresh Cheese",
-          "amount": 10,
-          "price": "130.00",
-          "VAT": 24,
-          "total_price": 0
-        },
-        {
-          "id": "b309d804-193d-4c0e-8e0b-38f36bd7de73",
-          "description": "Handcrafted Steel Mouse",
-          "amount": 49,
-          "price": "110.00",
-          "VAT": 25,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "4bdb7b64-08c1-4b26-95c9-6daccf829224",
-      "date": "12.10.2020",
-      "category": "expenses",
-      "receiver": "Feil - Jacobs",
-      "price": "194.00",
-      "VAT": 0,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "ad67fa5a-762d-492c-a396-1f013dc4c279",
-          "description": "Unbranded Plastic Towels",
-          "amount": 18,
-          "price": "156.00",
-          "VAT": 25,
-          "total_price": 0
-        },
-        {
-          "id": "4cf74186-4c8e-4d8b-9a06-411700368d04",
-          "description": "Awesome Plastic Gloves",
-          "amount": 27,
-          "price": "130.00",
-          "VAT": 20,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "17f83afc-018c-4ace-928e-ed4b2845c2d5",
-      "date": "9.27.2020",
-      "category": "income",
-      "receiver": "Wehner LLC",
-      "price": "125.00",
-      "VAT": 1,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "a4836db1-6637-4c59-9c7c-08c5bf74b522",
-          "description": "Ergonomic Metal Pizza",
-          "amount": 30,
+          "id": "053d83aa-5052-4673-9150-79f03ef5d723",
+          "description": "Handmade Granite Bike",
+          "amount": 11,
           "price": "124.00",
           "VAT": 24,
           "total_price": 0
         },
         {
-          "id": "d40c75d7-9759-42fd-a4d7-35d2224d4fde",
-          "description": "Awesome Frozen Cheese",
-          "amount": 68,
-          "price": "147.00",
-          "VAT": 27,
-          "total_price": 0
-        },
-        {
-          "id": "8f6453be-700e-4a47-ae6e-f3a136b42452",
-          "description": "Tasty Cotton Chicken",
-          "amount": 39,
-          "price": "138.00",
-          "VAT": 18,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "abe23c42-acc5-4553-88c6-746e8583576f",
-      "date": "4.15.2022",
-      "category": "income",
-      "receiver": "Watsica - Monahan",
-      "price": "170.00",
-      "VAT": 8,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "de8acf29-2a85-4f32-acc6-d01420eb4f8b",
-          "description": "Sleek Frozen Pizza",
-          "amount": 72,
-          "price": "137.00",
-          "VAT": 7,
-          "total_price": 0
-        },
-        {
-          "id": "f65f1120-372d-4fcc-957a-5a5e63f1bafb",
-          "description": "Rustic Frozen Bacon",
-          "amount": 83,
-          "price": "183.00",
-          "VAT": 14,
-          "total_price": 0
-        },
-        {
-          "id": "9f21614b-b9bf-4e55-8127-56e4a75e6d0a",
-          "description": "Refined Plastic Bacon",
-          "amount": 94,
-          "price": "118.00",
-          "VAT": 5,
-          "total_price": 0
-        },
-        {
-          "id": "c1a43f25-bd39-4ee4-9c4e-d862df62f66e",
-          "description": "Intelligent Concrete Chicken",
-          "amount": 33,
-          "price": "117.00",
+          "id": "8994dadc-d8db-4ff0-85d6-356c3ab9d69e",
+          "description": "Handcrafted Wooden Mouse",
+          "amount": 51,
+          "price": "184.00",
           "VAT": 14,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "e71e6fad-05e3-492d-afde-df56e28a2550",
-      "date": "3.23.2022",
+      "id": "1beb4726-93b3-477b-8fab-8960f8518408",
+      "date": "8.21.2020",
       "category": "expenses",
-      "receiver": "Lowe, Kris and Borer",
-      "price": "115.00",
-      "VAT": 13,
+      "receiver": "Wiza - Metz",
+      "price": "187.00",
+      "VAT": 6,
       "total_price": 0,
       "products": [
         {
-          "id": "c50d65a7-ce73-49bb-84f3-616cbdab6153",
-          "description": "Small Soft Hat",
-          "amount": 36,
-          "price": "114.00",
-          "VAT": 7,
-          "total_price": 0
-        },
-        {
-          "id": "13cfd916-5985-4483-99b1-37e4afeb10ec",
-          "description": "Small Granite Cheese",
-          "amount": 36,
-          "price": "116.00",
-          "VAT": 4,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "23c7b8e1-55f3-4b17-b087-b97d8daa4632",
-      "date": "3.10.2022",
-      "category": "expenses",
-      "receiver": "Pacocha - Abshire",
-      "price": "136.00",
-      "VAT": 8,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "1e58893c-2ce5-47e0-99ad-729fe39bc062",
-          "description": "Small Soft Pizza",
-          "amount": 54,
-          "price": "180.00",
-          "VAT": 0,
-          "total_price": 0
-        },
-        {
-          "id": "b803d3c4-a6f3-4eae-b3b9-9aa098100b01",
-          "description": "Intelligent Concrete Soap",
-          "amount": 5,
-          "price": "165.00",
-          "VAT": 25,
-          "total_price": 0
-        },
-        {
-          "id": "c2dd423b-8a44-4611-bd88-b3499b5ffc85",
-          "description": "Gorgeous Soft Sausages",
-          "amount": 1,
-          "price": "188.00",
-          "VAT": 1,
-          "total_price": 0
-        },
-        {
-          "id": "54150c44-8465-47a5-9c77-44a8c2d7f31f",
-          "description": "Generic Plastic Pants",
-          "amount": 12,
-          "price": "144.00",
-          "VAT": 24,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "1339f500-9964-444c-b09c-ed1a80fa04b7",
-      "date": "4.14.2022",
-      "category": "income",
-      "receiver": "McClure Inc",
-      "price": "150.00",
-      "VAT": 8,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "cb66a7b7-4e4a-45b8-90da-fd64fea0c3e3",
-          "description": "Unbranded Concrete Ball",
-          "amount": 84,
-          "price": "182.00",
-          "VAT": 3,
-          "total_price": 0
-        },
-        {
-          "id": "6692a12e-a8ee-4d81-b44b-e9aee0eeac88",
-          "description": "Refined Soft Gloves",
-          "amount": 57,
-          "price": "154.00",
-          "VAT": 4,
-          "total_price": 0
-        },
-        {
-          "id": "39e320a4-d96e-4a11-9bad-ab99d5e6e0da",
-          "description": "Awesome Steel Pants",
-          "amount": 90,
-          "price": "183.00",
-          "VAT": 17,
-          "total_price": 0
-        },
-        {
-          "id": "dfb3b828-bc70-429f-956d-0b3824a1861f",
-          "description": "Sleek Fresh Soap",
-          "amount": 5,
-          "price": "176.00",
-          "VAT": 26,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "d593beb8-7a17-4065-b5d2-84738eef6bb6",
-      "date": "4.12.2022",
-      "category": "expenses",
-      "receiver": "Bashirian LLC",
-      "price": "166.00",
-      "VAT": 19,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "8aef295e-9746-421b-8d59-5e2062e4bc39",
-          "description": "Gorgeous Granite Hat",
-          "amount": 40,
-          "price": "121.00",
-          "VAT": 11,
-          "total_price": 0
-        },
-        {
-          "id": "65ffc1c7-c36d-4560-bf96-0b7732af44de",
-          "description": "Awesome Concrete Shirt",
-          "amount": 78,
-          "price": "117.00",
-          "VAT": 13,
-          "total_price": 0
-        },
-        {
-          "id": "ef5ead66-8d52-4c20-baf5-7a7250412dcb",
-          "description": "Rustic Soft Table",
-          "amount": 17,
-          "price": "146.00",
-          "VAT": 5,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "24ac7d18-93a2-4683-ab83-be4a8c3c4985",
-      "date": "1.27.2022",
-      "category": "expenses",
-      "receiver": "Friesen - Mills",
-      "price": "182.00",
-      "VAT": 1,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "371585bf-08ad-4e4d-9d1a-ad91c58c7182",
-          "description": "Licensed Cotton Soap",
-          "amount": 29,
-          "price": "142.00",
-          "VAT": 21,
-          "total_price": 0
-        },
-        {
-          "id": "b1648419-d317-46ad-957c-b062815fce8c",
-          "description": "Incredible Metal Salad",
-          "amount": 71,
-          "price": "134.00",
+          "id": "b9dc02d2-31cc-442d-b1e7-05152b374740",
+          "description": "Handmade Plastic Tuna",
+          "amount": 10,
+          "price": "156.00",
           "VAT": 8,
           "total_price": 0
-        },
-        {
-          "id": "c2e83d03-c54c-4660-a9f8-9869615735bf",
-          "description": "Incredible Cotton Salad",
-          "amount": 11,
-          "price": "185.00",
-          "VAT": 14,
-          "total_price": 0
         }
       ]
     },
     {
-      "id": "81b8b429-3c20-4345-9206-4a1bb62a5755",
-      "date": "11.14.2021",
-      "category": "expenses",
-      "receiver": "Terry and Sons",
-      "price": "188.00",
-      "VAT": 17,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "6a0e8558-627d-4575-a35c-8cda84821f5d",
-          "description": "Handmade Frozen Soap",
-          "amount": 22,
-          "price": "189.00",
-          "VAT": 28,
-          "total_price": 0
-        },
-        {
-          "id": "e5d68df5-7978-4e6a-99ad-9538cd4715da",
-          "description": "Small Metal Keyboard",
-          "amount": 42,
-          "price": "122.00",
-          "VAT": 1,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "8e3479db-a3eb-4e66-b77f-8b083a85f367",
-      "date": "3.15.2022",
-      "category": "expenses",
-      "receiver": "Christiansen, Langworth and Bergnaum",
-      "price": "144.00",
-      "VAT": 1,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "665c5313-e4a9-4337-8638-b77f87174a6b",
-          "description": "Licensed Granite Pizza",
-          "amount": 72,
-          "price": "194.00",
-          "VAT": 28,
-          "total_price": 0
-        },
-        {
-          "id": "062d6945-cf87-4955-97ed-2811cb00e10a",
-          "description": "Incredible Concrete Towels",
-          "amount": 75,
-          "price": "193.00",
-          "VAT": 7,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "5e1b26a8-6fce-4ea9-b585-168b364b7fea",
-      "date": "10.24.2020",
+      "id": "23a8e1af-845d-494d-bc35-9b9dff13c8e4",
+      "date": "7.26.2020",
       "category": "income",
-      "receiver": "Wilderman and Sons",
-      "price": "140.00",
-      "VAT": 28,
+      "receiver": "Trantow, Bergstrom and Graham",
+      "price": "174.00",
+      "VAT": 0,
       "total_price": 0,
       "products": [
         {
-          "id": "bd8b4e08-1627-453c-9030-de3466124dc8",
-          "description": "Refined Soft Tuna",
-          "amount": 40,
-          "price": "151.00",
+          "id": "714fdae9-6cce-47f3-abd1-083a282a6b18",
+          "description": "Licensed Plastic Towels",
+          "amount": 16,
+          "price": "104.00",
           "VAT": 17,
           "total_price": 0
-        },
+        }
+      ]
+    },
+    {
+      "id": "4b2133a0-872b-4402-8b10-12b10bd40ac3",
+      "date": "9.27.2020",
+      "category": "income",
+      "receiver": "Schoen, Pagac and Jakubowski",
+      "price": "105.00",
+      "VAT": 26,
+      "total_price": 0,
+      "products": [
         {
-          "id": "b20af810-5ba1-4232-89cf-46eb5c1fa06e",
-          "description": "Incredible Wooden Bacon",
-          "amount": 95,
-          "price": "139.00",
-          "VAT": 26,
+          "id": "91db53a5-56ab-4b4b-a867-e900cccdda12",
+          "description": "Intelligent Granite Pants",
+          "amount": 19,
+          "price": "101.00",
+          "VAT": 18,
           "total_price": 0
         },
         {
-          "id": "379bcf0a-d29c-4989-ac6c-3e59538b7846",
-          "description": "Licensed Granite Salad",
-          "amount": 9,
-          "price": "115.00",
-          "VAT": 7,
+          "id": "831a8a06-7e8d-4298-8351-fa13b78340d0",
+          "description": "Practical Granite Chicken",
+          "amount": 25,
+          "price": "129.00",
+          "VAT": 10,
+          "total_price": 0
+        },
+        {
+          "id": "e7dfca78-b2bc-4dad-880d-eff6d490b979",
+          "description": "Generic Soft Chair",
+          "amount": 57,
+          "price": "171.00",
+          "VAT": 3,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "75c6df7e-9067-405b-9f0c-3f876e96ac47",
-      "date": "3.9.2022",
-      "category": "income",
-      "receiver": "Kunde - Nicolas",
-      "price": "130.00",
-      "VAT": 14,
+      "id": "3e0e95eb-f053-45af-98a6-ebcc12112552",
+      "date": "5.30.2020",
+      "category": "expenses",
+      "receiver": "Price - Kuhic",
+      "price": "181.00",
+      "VAT": 25,
       "total_price": 0,
       "products": [
         {
-          "id": "994e63b0-3d11-4417-b664-e70ab3fa1b38",
-          "description": "Unbranded Cotton Towels",
-          "amount": 87,
-          "price": "157.00",
-          "VAT": 20,
-          "total_price": 0
-        },
-        {
-          "id": "f04d43fe-5588-4227-ab9b-8a490ddd93d2",
-          "description": "Rustic Granite Mouse",
-          "amount": 3,
-          "price": "153.00",
-          "VAT": 13,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "29a5cab0-7bc8-4353-bb37-508a37b1491c",
-      "date": "3.4.2022",
-      "category": "income",
-      "receiver": "Mueller, Lind and Ondricka",
-      "price": "145.00",
-      "VAT": 18,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "c7d274da-bedc-4951-b2de-785f4c9ac6bc",
-          "description": "Unbranded Plastic Hat",
-          "amount": 45,
-          "price": "195.00",
+          "id": "99825663-fed3-4290-aa09-f469d5483ad6",
+          "description": "Generic Granite Chicken",
+          "amount": 18,
+          "price": "100.00",
           "VAT": 21,
           "total_price": 0
         },
         {
-          "id": "9b72a64e-649b-4ee6-a39d-ccf180341429",
-          "description": "Awesome Fresh Car",
-          "amount": 28,
-          "price": "111.00",
-          "VAT": 15,
+          "id": "b18e08e4-7951-41f2-8df7-81815ccf0107",
+          "description": "Tasty Soft Car",
+          "amount": 40,
+          "price": "108.00",
+          "VAT": 21,
           "total_price": 0
         },
         {
-          "id": "1b6c6614-6ecd-4ea4-b5e2-1c77436fb9ce",
-          "description": "Incredible Plastic Table",
-          "amount": 98,
+          "id": "817f8b1b-4dc9-4297-ab15-95d559266f9c",
+          "description": "Awesome Granite Soap",
+          "amount": 32,
+          "price": "197.00",
+          "VAT": 6,
+          "total_price": 0
+        },
+        {
+          "id": "51f8fc69-fe53-417b-8cf7-640b34142d62",
+          "description": "Refined Soft Keyboard",
+          "amount": 28,
+          "price": "148.00",
+          "VAT": 27,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "ec08ca01-ee9a-4e5a-a098-0ff28f56ff14",
+      "date": "8.24.2020",
+      "category": "income",
+      "receiver": "Flatley Group",
+      "price": "192.00",
+      "VAT": 16,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "3696fda4-ac2d-48a7-abf8-63bebe74f043",
+          "description": "Tasty Granite Computer",
+          "amount": 76,
+          "price": "142.00",
+          "VAT": 26,
+          "total_price": 0
+        },
+        {
+          "id": "8c77e5d9-3464-4af6-83e6-b804defd38d4",
+          "description": "Licensed Metal Chicken",
+          "amount": 35,
+          "price": "131.00",
+          "VAT": 5,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "cd7b91e7-d748-4bbb-9ed7-341a63de07eb",
+      "date": "1.9.2021",
+      "category": "income",
+      "receiver": "Olson - Ward",
+      "price": "120.00",
+      "VAT": 2,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "16c6e59a-de4f-4f45-aba0-17960c1b29f7",
+          "description": "Incredible Steel Gloves",
+          "amount": 66,
           "price": "102.00",
           "VAT": 14,
           "total_price": 0
@@ -1637,281 +1376,454 @@
       ]
     },
     {
-      "id": "fb356e54-9042-4023-a5c4-6374cb178a12",
-      "date": "3.16.2021",
-      "category": "expenses",
-      "receiver": "Pfeffer - Connelly",
-      "price": "181.00",
-      "VAT": 3,
+      "id": "e8e313a7-a395-4ca3-91fc-b06b5296ba50",
+      "date": "10.13.2021",
+      "category": "income",
+      "receiver": "Carroll, Jast and Rohan",
+      "price": "105.00",
+      "VAT": 5,
       "total_price": 0,
       "products": [
         {
-          "id": "684f7726-a679-410d-a961-09c42774f174",
-          "description": "Licensed Frozen Soap",
-          "amount": 35,
-          "price": "104.00",
-          "VAT": 7,
+          "id": "4e6ecd81-6da7-48fa-a61b-a0a1508efa86",
+          "description": "Small Granite Table",
+          "amount": 53,
+          "price": "186.00",
+          "VAT": 25,
           "total_price": 0
         },
         {
-          "id": "7825c633-4eac-48fc-a464-0a6d645b57ac",
-          "description": "Licensed Fresh Sausages",
-          "amount": 57,
-          "price": "117.00",
-          "VAT": 11,
-          "total_price": 0
-        },
-        {
-          "id": "e99d8856-dee6-4db3-9973-0545aab2adc3",
-          "description": "Gorgeous Frozen Chips",
-          "amount": 32,
-          "price": "108.00",
-          "VAT": 11,
-          "total_price": 0
-        },
-        {
-          "id": "b9f7ec2d-28fb-4cc6-affa-0d4ce1da861c",
-          "description": "Awesome Frozen Chair",
-          "amount": 2,
-          "price": "132.00",
-          "VAT": 29,
-          "total_price": 0
-        },
-        {
-          "id": "2058629a-4fd6-4ff6-ba10-3aac3863c2ca",
-          "description": "Gorgeous Plastic Sausages",
-          "amount": 43,
-          "price": "196.00",
-          "VAT": 1,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "abc4e31a-abd5-4ead-ba0a-322da7699800",
-      "date": "4.14.2022",
-      "category": "expenses",
-      "receiver": "Powlowski, Lind and Lemke",
-      "price": "177.00",
-      "VAT": 3,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "a504a84a-40e3-44d4-af82-eb7911befb34",
-          "description": "Awesome Fresh Bike",
-          "amount": 68,
-          "price": "155.00",
+          "id": "dfd969e8-4730-43ef-8293-c3444fcc0a4c",
+          "description": "Sleek Rubber Towels",
+          "amount": 59,
+          "price": "124.00",
           "VAT": 5,
           "total_price": 0
         },
         {
-          "id": "e5e3d9d2-7742-40d8-a4d9-ec40101e5e84",
-          "description": "Tasty Cotton Sausages",
-          "amount": 60,
-          "price": "135.00",
-          "VAT": 1,
-          "total_price": 0
-        },
-        {
-          "id": "4ffa74d8-6e08-4531-97d9-58bf3a464684",
-          "description": "Small Soft Car",
-          "amount": 27,
+          "id": "8c5714ef-6ed1-4bcf-965b-f7426dc631df",
+          "description": "Generic Wooden Bacon",
+          "amount": 59,
           "price": "110.00",
-          "VAT": 27,
+          "VAT": 14,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "891261b5-0eb6-4971-8457-086b74838a9e",
-      "date": "3.4.2022",
+      "id": "8e3bdd78-4acb-4d64-a47f-a6992b5810a3",
+      "date": "2.11.2021",
       "category": "expenses",
-      "receiver": "Langworth Inc",
-      "price": "140.00",
-      "VAT": 6,
+      "receiver": "Stoltenberg - Rempel",
+      "price": "126.00",
+      "VAT": 17,
       "total_price": 0,
       "products": [
         {
-          "id": "7c1ca2b8-6e84-4faf-8adb-27724a972920",
-          "description": "Tasty Metal Chair",
-          "amount": 66,
-          "price": "108.00",
+          "id": "a399f9bb-1371-442b-acb9-265537be9ba5",
+          "description": "Awesome Metal Soap",
+          "amount": 96,
+          "price": "149.00",
+          "VAT": 10,
+          "total_price": 0
+        },
+        {
+          "id": "ab6b9dc2-d14d-48d9-86dd-dec5cc13ef36",
+          "description": "Refined Rubber Fish",
+          "amount": 9,
+          "price": "184.00",
           "VAT": 26,
           "total_price": 0
         },
         {
-          "id": "f2b1223d-a59c-4f7b-8a3f-31cae9aef156",
-          "description": "Licensed Plastic Shirt",
-          "amount": 50,
-          "price": "104.00",
-          "VAT": 30,
-          "total_price": 0
-        },
-        {
-          "id": "7a364585-572b-4f02-9401-8089605bad5c",
-          "description": "Sleek Soft Soap",
-          "amount": 83,
-          "price": "166.00",
-          "VAT": 21,
+          "id": "c3e5850c-839c-48e1-97fe-9beed470ea55",
+          "description": "Gorgeous Plastic Ball",
+          "amount": 64,
+          "price": "137.00",
+          "VAT": 2,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "cc1c1f15-ba89-46b1-abf9-fb385e8f4ede",
-      "date": "3.2.2022",
-      "category": "income",
-      "receiver": "Hudson Inc",
-      "price": "123.00",
-      "VAT": 13,
+      "id": "59c1de40-ae41-4275-9a4b-567439925fbc",
+      "date": "3.15.2022",
+      "category": "expenses",
+      "receiver": "Kovacek - Shields",
+      "price": "169.00",
+      "VAT": 23,
       "total_price": 0,
       "products": [
         {
-          "id": "65572d36-5b59-42f8-b019-58ac0cc423af",
-          "description": "Refined Plastic Gloves",
-          "amount": 71,
-          "price": "118.00",
-          "VAT": 5,
+          "id": "2d977758-5c63-41e7-b6d5-08355a1cec3f",
+          "description": "Rustic Cotton Chair",
+          "amount": 53,
+          "price": "157.00",
+          "VAT": 26,
           "total_price": 0
         },
         {
-          "id": "bb36c34c-142b-4b6b-b7cf-8167c04d10a3",
-          "description": "Generic Rubber Chips",
-          "amount": 28,
-          "price": "172.00",
-          "VAT": 0,
+          "id": "8ece20f9-769d-4f1c-a3c0-3aab53c2b76d",
+          "description": "Practical Wooden Soap",
+          "amount": 41,
+          "price": "156.00",
+          "VAT": 3,
           "total_price": 0
         },
         {
-          "id": "2bf19649-d494-4c75-8b43-60ed184a9dc6",
-          "description": "Tasty Rubber Fish",
-          "amount": 87,
-          "price": "195.00",
-          "VAT": 25,
+          "id": "1b4153a4-8cde-46b8-9a49-f333055309b1",
+          "description": "Awesome Concrete Chair",
+          "amount": 92,
+          "price": "183.00",
+          "VAT": 26,
+          "total_price": 0
+        },
+        {
+          "id": "63ba5480-a773-4dee-ba87-5c27837c6ac4",
+          "description": "Incredible Fresh Bike",
+          "amount": 12,
+          "price": "191.00",
+          "VAT": 16,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "3f223716-b656-48cb-86a8-5cfc6751195b",
-      "date": "2.16.2022",
+      "id": "cc653625-a301-4280-b3e8-a31650ca1fde",
+      "date": "8.27.2020",
       "category": "income",
-      "receiver": "Heidenreich, Crist and Ratke",
+      "receiver": "McDermott and Sons",
+      "price": "176.00",
+      "VAT": 14,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "bbdad2a4-23d5-4761-8541-2160521d010b",
+          "description": "Handmade Rubber Shoes",
+          "amount": 4,
+          "price": "144.00",
+          "VAT": 9,
+          "total_price": 0
+        },
+        {
+          "id": "1cd27e66-aa47-42fe-8116-8b2ea0c49fec",
+          "description": "Rustic Granite Fish",
+          "amount": 94,
+          "price": "164.00",
+          "VAT": 24,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "db6c9fbb-de53-4f57-9a23-910cff78d891",
+      "date": "4.19.2022",
+      "category": "expenses",
+      "receiver": "Cremin - Lehner",
       "price": "103.00",
-      "VAT": 21,
+      "VAT": 22,
       "total_price": 0,
       "products": [
         {
-          "id": "e564e5a1-80b5-463e-bdc6-2e9d74822b1c",
-          "description": "Ergonomic Plastic Soap",
-          "amount": 75,
-          "price": "108.00",
-          "VAT": 14,
+          "id": "33174287-cfc6-4dd5-9a5a-5db4d425c863",
+          "description": "Rustic Granite Mouse",
+          "amount": 22,
+          "price": "125.00",
+          "VAT": 27,
           "total_price": 0
         },
         {
-          "id": "59ac2220-154c-45d3-b765-a32a069a060a",
-          "description": "Ergonomic Concrete Towels",
-          "amount": 75,
-          "price": "150.00",
+          "id": "45852d11-66eb-44f9-9f23-6edcbab29e0d",
+          "description": "Licensed Fresh Towels",
+          "amount": 27,
+          "price": "166.00",
+          "VAT": 1,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "9db23b68-027a-4db9-8ac5-657bfa333f2c",
+      "date": "5.27.2021",
+      "category": "income",
+      "receiver": "Pollich - Bosco",
+      "price": "178.00",
+      "VAT": 17,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "f00db766-02b6-42cb-93c9-5c7f03309964",
+          "description": "Tasty Rubber Keyboard",
+          "amount": 12,
+          "price": "177.00",
+          "VAT": 20,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "580cabd5-ba0d-4adb-bc3f-b3dcaef3d1bd",
+      "date": "4.20.2022",
+      "category": "income",
+      "receiver": "Grant Inc",
+      "price": "135.00",
+      "VAT": 15,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "0c3200a1-9146-42b6-a660-0d2ff4ed769b",
+          "description": "Refined Wooden Sausages",
+          "amount": 12,
+          "price": "153.00",
           "VAT": 10,
           "total_price": 0
         }
       ]
     },
     {
-      "id": "27a8a7bd-ca5b-4804-aecb-5a55bc11a55b",
-      "date": "9.25.2021",
-      "category": "expenses",
-      "receiver": "Swift LLC",
-      "price": "131.00",
-      "VAT": 17,
+      "id": "0dad359a-f2fb-4f87-bd0d-a33a3cc56092",
+      "date": "4.13.2022",
+      "category": "income",
+      "receiver": "Bergstrom - Bins",
+      "price": "120.00",
+      "VAT": 12,
       "total_price": 0,
       "products": [
         {
-          "id": "670c5a0b-f3ff-46bc-8b92-a56558541966",
-          "description": "Gorgeous Metal Cheese",
-          "amount": 38,
-          "price": "122.00",
-          "VAT": 17,
-          "total_price": 0
-        },
-        {
-          "id": "b467eabe-f951-4323-8e92-df46848d3557",
-          "description": "Ergonomic Cotton Pizza",
-          "amount": 16,
-          "price": "169.00",
-          "VAT": 3,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "d2e05203-aaf5-4b30-ac38-d1e544cca461",
-      "date": "10.13.2021",
-      "category": "expenses",
-      "receiver": "Goldner and Sons",
-      "price": "155.00",
-      "VAT": 7,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "40ee6dcb-a8c5-46de-9177-65cba30ffd2c",
-          "description": "Gorgeous Fresh Soap",
-          "amount": 94,
-          "price": "138.00",
-          "VAT": 2,
-          "total_price": 0
-        },
-        {
-          "id": "a784959b-afba-49c6-9c63-67f3b423b6c1",
-          "description": "Incredible Granite Cheese",
-          "amount": 44,
-          "price": "143.00",
-          "VAT": 12,
-          "total_price": 0
-        },
-        {
-          "id": "2fcd8a6d-19bc-4a04-b19d-d112d30b3422",
-          "description": "Incredible Plastic Gloves",
-          "amount": 60,
-          "price": "132.00",
-          "VAT": 12,
-          "total_price": 0
-        }
-      ]
-    },
-    {
-      "id": "52a1370e-bef9-4723-9dfa-cf51c8286bfa",
-      "date": "4.19.2022",
-      "category": "expenses",
-      "receiver": "Cruickshank, Kautzer and Crona",
-      "price": "154.00",
-      "VAT": 17,
-      "total_price": 0,
-      "products": [
-        {
-          "id": "fa61c77f-fef2-424e-91b1-e5c6494f78cf",
-          "description": "Rustic Plastic Chair",
-          "amount": 35,
-          "price": "189.00",
+          "id": "5aa2bed2-9500-43df-93d9-7c3a8bb65d3e",
+          "description": "Handmade Frozen Salad",
+          "amount": 73,
+          "price": "101.00",
           "VAT": 11,
           "total_price": 0
         },
         {
-          "id": "91f6be38-a3aa-4cff-abdd-5ae5bbeb7516",
-          "description": "Small Frozen Mouse",
-          "amount": 8,
-          "price": "164.00",
+          "id": "db036312-aceb-4858-891a-9fafcc432432",
+          "description": "Awesome Wooden Car",
+          "amount": 16,
+          "price": "177.00",
+          "VAT": 1,
+          "total_price": 0
+        },
+        {
+          "id": "9c47c5f8-bd05-499d-953b-fcb1f155ecc4",
+          "description": "Unbranded Rubber Pants",
+          "amount": 53,
+          "price": "129.00",
+          "VAT": 18,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "6e656180-b9f6-4112-ac18-67bfeffbbb6f",
+      "date": "3.15.2022",
+      "category": "income",
+      "receiver": "Mante, Satterfield and Terry",
+      "price": "193.00",
+      "VAT": 23,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "5d1ef2a4-de8d-4ba0-91c0-8a0146779d15",
+          "description": "Generic Concrete Chicken",
+          "amount": 77,
+          "price": "186.00",
+          "VAT": 5,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "a1be44a6-0982-47f6-92c9-8393dcc6146e",
+      "date": "2.7.2022",
+      "category": "expenses",
+      "receiver": "Gottlieb and Sons",
+      "price": "186.00",
+      "VAT": 28,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "d0e15bdd-58bc-4b3e-aaa9-3a8f361c63c2",
+          "description": "Incredible Granite Bacon",
+          "amount": 6,
+          "price": "126.00",
+          "VAT": 6,
+          "total_price": 0
+        },
+        {
+          "id": "a99b75e2-836a-4b61-b882-860ea7768a47",
+          "description": "Handmade Plastic Sausages",
+          "amount": 54,
+          "price": "192.00",
+          "VAT": 10,
+          "total_price": 0
+        },
+        {
+          "id": "832847e0-7d80-4f10-bb9d-57c79d137a16",
+          "description": "Ergonomic Plastic Car",
+          "amount": 13,
+          "price": "161.00",
+          "VAT": 10,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "8d602d60-395c-418a-a134-f8bb8666a3ad",
+      "date": "3.6.2022",
+      "category": "expenses",
+      "receiver": "Klocko, Harris and Buckridge",
+      "price": "138.00",
+      "VAT": 10,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "ef979917-a5ab-4ff5-9aac-631645ba1b89",
+          "description": "Licensed Plastic Sausages",
+          "amount": 48,
+          "price": "163.00",
+          "VAT": 22,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "3f217b95-9350-49e1-9ec1-4c805fc60b23",
+      "date": "4.17.2022",
+      "category": "income",
+      "receiver": "Schaden, Crist and Bergstrom",
+      "price": "200.00",
+      "VAT": 20,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "977abcc5-2e77-40cf-9234-ce3049db5848",
+          "description": "Small Metal Keyboard",
+          "amount": 48,
+          "price": "109.00",
+          "VAT": 19,
+          "total_price": 0
+        },
+        {
+          "id": "1a30e7c2-48f5-4b40-b3f7-89be12ae79d7",
+          "description": "Incredible Wooden Pants",
+          "amount": 2,
+          "price": "111.00",
+          "VAT": 18,
+          "total_price": 0
+        },
+        {
+          "id": "3d8a564d-4837-4d16-9daf-0697de8849a1",
+          "description": "Intelligent Soft Gloves",
+          "amount": 85,
+          "price": "121.00",
+          "VAT": 0,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "55554900-5843-4589-9c47-cb46c7e1b63d",
+      "date": "9.14.2021",
+      "category": "income",
+      "receiver": "Nolan Inc",
+      "price": "121.00",
+      "VAT": 26,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "74ed4149-2d9f-4fa1-a0cf-63b0e002a3d9",
+          "description": "Licensed Steel Gloves",
+          "amount": 99,
+          "price": "173.00",
+          "VAT": 23,
+          "total_price": 0
+        },
+        {
+          "id": "27420dd8-2c75-4f00-8879-59e2ffe1bd98",
+          "description": "Incredible Metal Bacon",
+          "amount": 96,
+          "price": "116.00",
           "VAT": 26,
           "total_price": 0
         },
         {
-          "id": "831c12f0-1fd4-40bd-be23-c117d5974944",
-          "description": "Intelligent Frozen Chair",
-          "amount": 77,
-          "price": "124.00",
-          "VAT": 23,
+          "id": "c4f8ad9f-de51-4c09-990c-126700d7ac5d",
+          "description": "Sleek Cotton Shoes",
+          "amount": 52,
+          "price": "110.00",
+          "VAT": 30,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "b7ec1dc0-27d3-44f3-9b3b-ed491464c08f",
+      "date": "2.3.2022",
+      "category": "income",
+      "receiver": "Keebler - Brakus",
+      "price": "115.00",
+      "VAT": 28,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "5e959486-2aa6-4221-a499-03ac50e8f94a",
+          "description": "Incredible Fresh Bike",
+          "amount": 9,
+          "price": "174.00",
+          "VAT": 26,
+          "total_price": 0
+        },
+        {
+          "id": "54823a19-afbe-42c9-9fcf-43e63d8323fd",
+          "description": "Unbranded Frozen Keyboard",
+          "amount": 41,
+          "price": "150.00",
+          "VAT": 26,
+          "total_price": 0
+        },
+        {
+          "id": "acdb25a5-ccfe-441e-a424-c9bff6d46849",
+          "description": "Handmade Fresh Ball",
+          "amount": 69,
+          "price": "198.00",
+          "VAT": 19,
+          "total_price": 0
+        },
+        {
+          "id": "b119b661-9b15-4b4b-bad7-43e587e6dd59",
+          "description": "Gorgeous Fresh Keyboard",
+          "amount": 31,
+          "price": "147.00",
+          "VAT": 10,
+          "total_price": 0
+        }
+      ]
+    },
+    {
+      "id": "22b5204f-ce53-402c-b75e-f71c6622cebd",
+      "date": "11.1.2020",
+      "category": "expenses",
+      "receiver": "Wolf, Beahan and Kshlerin",
+      "price": "129.00",
+      "VAT": 0,
+      "total_price": 0,
+      "products": [
+        {
+          "id": "161fdae7-0e33-4bb0-a324-7217fde30255",
+          "description": "Handmade Wooden Car",
+          "amount": 7,
+          "price": "159.00",
+          "VAT": 8,
+          "total_price": 0
+        },
+        {
+          "id": "fc1afcec-60ae-4272-befc-ac6ecc4a7fe6",
+          "description": "Small Plastic Table",
+          "amount": 92,
+          "price": "146.00",
+          "VAT": 0,
           "total_price": 0
         }
       ]
@@ -1919,204 +1831,204 @@
   ],
   "users": [
     {
-      "first_name": "Antwan",
-      "last_name": "Barton",
-      "id": "2274f81b-b9bf-495e-8120-252918738d00",
-      "email": "Eda.Mills@hotmail.com",
-      "password": "MWXZICURnq0w2lL",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1229.jpg",
-      "role": "Dynamic Infrastructure Coordinator",
-      "permissions": "Internal"
+      "first_name": "Logan",
+      "last_name": "Bernhard",
+      "id": "b79e9ed4-52cc-4d0c-95be-c8d40d0812ed",
+      "email": "Rosalinda.Baumbach36@hotmail.com",
+      "password": "oHNVvj7ATcVIkPt",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/506.jpg",
+      "role": "Investor Marketing Consultant",
+      "permissions": "Customer"
     },
     {
-      "first_name": "Justice",
-      "last_name": "Hudson",
-      "id": "7dcb49d7-6d94-4649-84b7-b7ddca68c024",
-      "email": "Reyes_Halvorson98@yahoo.com",
-      "password": "LWRLaEQjvnaslLa",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/737.jpg",
-      "role": "Customer Creative Agent",
-      "permissions": "National"
-    },
-    {
-      "first_name": "Kathlyn",
-      "last_name": "Cole",
-      "id": "41286afb-1431-4aa6-a3c8-3a7dccbe0a88",
-      "email": "Ibrahim.Dibbert37@yahoo.com",
-      "password": "78O0OsSD8iYkc6m",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/170.jpg",
-      "role": "Forward Accounts Associate",
+      "first_name": "Orrin",
+      "last_name": "Wolff",
+      "id": "255d0339-e423-401a-a935-0e41b049d071",
+      "email": "Malvina_Leuschke@gmail.com",
+      "password": "0VNmawKBgSjGrPK",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/881.jpg",
+      "role": "Direct Operations Associate",
       "permissions": "Dynamic"
     },
     {
-      "first_name": "Joanny",
-      "last_name": "DuBuque",
-      "id": "02dd6ec6-1053-40a9-b416-1f40be93d6a8",
-      "email": "Kole_Dare@yahoo.com",
-      "password": "YtSs6UirkubZApS",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/339.jpg",
-      "role": "Global Functionality Producer",
+      "first_name": "Luciano",
+      "last_name": "Klein",
+      "id": "6d6b3e16-a24b-4ceb-b5f8-bc94854e5ba8",
+      "email": "Verdie_Weissnat@hotmail.com",
+      "password": "m2WiWfZ78kNHKmY",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/930.jpg",
+      "role": "International Group Planner",
+      "permissions": "District"
+    },
+    {
+      "first_name": "Lilian",
+      "last_name": "Nolan",
+      "id": "b7fd5172-a0f8-45e7-89cd-a318ad2c464b",
+      "email": "Izabella45@hotmail.com",
+      "password": "39Pc_QKRxJ4ITrR",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/205.jpg",
+      "role": "Senior Usability Manager",
+      "permissions": "Principal"
+    },
+    {
+      "first_name": "Maynard",
+      "last_name": "D'Amore",
+      "id": "c460ecca-c385-44d2-b263-aeec7e0bdefa",
+      "email": "Ona.Brekke1@hotmail.com",
+      "password": "VhCsjwrX4rqH9UY",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/707.jpg",
+      "role": "Principal Quality Liaison",
+      "permissions": "Product"
+    },
+    {
+      "first_name": "Ashlee",
+      "last_name": "Kessler",
+      "id": "0ad477c5-7bc4-4b45-a7ce-66c47dc67718",
+      "email": "Tyrel.Gleason14@yahoo.com",
+      "password": "Pj8utMSJMOG83oE",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/142.jpg",
+      "role": "Regional Directives Orchestrator",
+      "permissions": "National"
+    },
+    {
+      "first_name": "Sven",
+      "last_name": "Wyman",
+      "id": "40347461-a36b-4c17-bd5e-95601323e4b6",
+      "email": "Freddie81@hotmail.com",
+      "password": "r3QvhBOqgkbGSiX",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/781.jpg",
+      "role": "Dynamic Marketing Facilitator",
+      "permissions": "International"
+    },
+    {
+      "first_name": "Junior",
+      "last_name": "Runte",
+      "id": "156119cc-cc49-45d4-8104-d9158be96247",
+      "email": "Theresia.Schulist20@yahoo.com",
+      "password": "DvgYKtVOCteCI52",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/687.jpg",
+      "role": "District Brand Strategist",
       "permissions": "Direct"
     },
     {
-      "first_name": "Roscoe",
-      "last_name": "Pollich",
-      "id": "d1c3bc49-d891-4693-be7e-a9873f59fade",
-      "email": "Myrtis35@yahoo.com",
-      "password": "meSkm7ySXjkf3cm",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1223.jpg",
-      "role": "Dynamic Implementation Agent",
-      "permissions": "Internal"
-    },
-    {
-      "first_name": "Reece",
-      "last_name": "Conroy",
-      "id": "f2bbb1b5-46c7-4b66-92b7-24ca250ca8cf",
-      "email": "Carolanne.Koepp@hotmail.com",
-      "password": "XM7YQKNSit3SshC",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/117.jpg",
-      "role": "Global Operations Director",
-      "permissions": "Investor"
-    },
-    {
-      "first_name": "Paxton",
-      "last_name": "Rippin",
-      "id": "bea68351-1269-4d2d-9d1b-ecd4ffd827ce",
-      "email": "Kariane42@gmail.com",
-      "password": "ma0mdk2vdhrm_xZ",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/289.jpg",
-      "role": "Senior Data Strategist",
-      "permissions": "Senior"
-    },
-    {
-      "first_name": "Kaci",
+      "first_name": "Maggie",
       "last_name": "Williamson",
-      "id": "532d6c0b-30a3-4225-b0f1-4f683deeee54",
-      "email": "Vidal_Harber5@hotmail.com",
-      "password": "TBJWjAzymYrwLMi",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/829.jpg",
-      "role": "Dynamic Data Liaison",
-      "permissions": "Future"
-    },
-    {
-      "first_name": "Maida",
-      "last_name": "Toy",
-      "id": "061e66fa-08ba-4f31-bdaf-32fd3b4ed160",
-      "email": "Dee5@gmail.com",
-      "password": "F6UWVLhMbbDewtj",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1166.jpg",
-      "role": "Corporate Applications Executive",
-      "permissions": "Human"
-    },
-    {
-      "first_name": "Reagan",
-      "last_name": "D'Amore",
-      "id": "c0720948-753e-4c72-958c-cd4d05bb27e1",
-      "email": "Aubrey_OKeefe63@hotmail.com",
-      "password": "fHLry2zpOcxFakZ",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/727.jpg",
-      "role": "Dynamic Applications Technician",
-      "permissions": "Forward"
-    },
-    {
-      "first_name": "Jaida",
-      "last_name": "Mertz",
-      "id": "77a25a09-297d-45a3-bfca-4bd475872338",
-      "email": "Jerel.Hilpert@gmail.com",
-      "password": "nCXPU6g6iLKsZfd",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1004.jpg",
-      "role": "Human Creative Agent",
-      "permissions": "District"
-    },
-    {
-      "first_name": "Ella",
-      "last_name": "Wiza",
-      "id": "8202a7a9-6f4b-46b2-9f39-07ad5cb8ebee",
-      "email": "Miguel94@gmail.com",
-      "password": "VKKhKmfoNOS5H6B",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/539.jpg",
-      "role": "Future Marketing Strategist",
-      "permissions": "Global"
-    },
-    {
-      "first_name": "Gerardo",
-      "last_name": "Donnelly",
-      "id": "e1bfc799-9bda-4489-a2e1-cc0cf072c845",
-      "email": "Leta_Rath@yahoo.com",
-      "password": "IpXx4mfYdSl9iE9",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1192.jpg",
-      "role": "Corporate Branding Technician",
-      "permissions": "Global"
-    },
-    {
-      "first_name": "Retha",
-      "last_name": "McClure",
-      "id": "59c6272a-5a83-4bb4-972d-100cc776192c",
-      "email": "Elroy7@yahoo.com",
-      "password": "dicCKRk0FfHvg01",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/43.jpg",
-      "role": "District Accounts Consultant",
+      "id": "88c0d219-614b-42da-a9a1-310ad293f420",
+      "email": "Tyrique_Lowe@gmail.com",
+      "password": "Bm_zmOx7xZNlRbj",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/474.jpg",
+      "role": "Lead Functionality Producer",
       "permissions": "Corporate"
     },
     {
-      "first_name": "Donavon",
-      "last_name": "Nitzsche",
-      "id": "16157c9f-9403-44c9-81ef-26011b888372",
-      "email": "Misael22@hotmail.com",
-      "password": "n4pvCQCYIplYzwT",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/762.jpg",
-      "role": "Central Markets Specialist",
+      "first_name": "Newton",
+      "last_name": "Hammes",
+      "id": "7cbf6064-018b-4109-86c8-089324108cc9",
+      "email": "Florence_Stoltenberg@yahoo.com",
+      "password": "tamJngFSmBC0NN3",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/164.jpg",
+      "role": "Corporate Optimization Analyst",
+      "permissions": "Customer"
+    },
+    {
+      "first_name": "Kailee",
+      "last_name": "Padberg",
+      "id": "5eead0f6-f549-417e-950f-e68f88e6baa8",
+      "email": "Kaelyn_Lemke@hotmail.com",
+      "password": "3Tom3fn7xgPIjKb",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/127.jpg",
+      "role": "Dynamic Integration Architect",
       "permissions": "Human"
     },
     {
-      "first_name": "Madisyn",
-      "last_name": "D'Amore",
-      "id": "4f44a706-8578-447b-ab63-50340ae7b041",
-      "email": "Imogene75@hotmail.com",
-      "password": "bvyybMb5W96T4bp",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/155.jpg",
-      "role": "Forward Tactics Designer",
-      "permissions": "District"
+      "first_name": "Casimir",
+      "last_name": "Herzog",
+      "id": "86272f63-0971-4f87-8e4c-cd078bc27ef4",
+      "email": "Johan_Toy95@yahoo.com",
+      "password": "AUInOr4ZTGqPorW",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/830.jpg",
+      "role": "Product Response Coordinator",
+      "permissions": "Dynamic"
     },
     {
-      "first_name": "Lavina",
-      "last_name": "Tromp",
-      "id": "4d95675b-f8cd-40ce-8e91-dd9e7b729749",
-      "email": "Elmer41@hotmail.com",
-      "password": "gvWY_YlNjjzwYFv",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/535.jpg",
-      "role": "Regional Interactions Engineer",
+      "first_name": "Astrid",
+      "last_name": "Collins",
+      "id": "10715ebb-9a81-4db9-a5ea-553273f5cda9",
+      "email": "Reggie.Nikolaus60@gmail.com",
+      "password": "Y4K8zX_Zl_gmt4P",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1050.jpg",
+      "role": "Human Paradigm Associate",
+      "permissions": "Global"
+    },
+    {
+      "first_name": "Calista",
+      "last_name": "Daniel",
+      "id": "6231cc87-25a5-4957-838b-084a3c27ce31",
+      "email": "Maia52@hotmail.com",
+      "password": "yodNuVcBC4L0w4X",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/355.jpg",
+      "role": "Future Assurance Director",
+      "permissions": "Investor"
+    },
+    {
+      "first_name": "Moises",
+      "last_name": "Barrows",
+      "id": "84da5095-655b-43a2-b235-9d8cac9077c5",
+      "email": "Kavon_Hartmann21@yahoo.com",
+      "password": "oygyNBndYanxK29",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/735.jpg",
+      "role": "Customer Accounts Director",
+      "permissions": "Lead"
+    },
+    {
+      "first_name": "Anjali",
+      "last_name": "Collier",
+      "id": "c265437c-532b-4b30-9326-ecc8f507c6ce",
+      "email": "Alessia69@yahoo.com",
+      "password": "woVw1KRVcSqEfRy",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/502.jpg",
+      "role": "Global Data Consultant",
+      "permissions": "Legacy"
+    },
+    {
+      "first_name": "Stewart",
+      "last_name": "Hyatt",
+      "id": "f50ece19-f94d-4e65-8f8c-c7e8d0b0e2af",
+      "email": "Pete_Altenwerth@gmail.com",
+      "password": "2MFbQhk9TqkANow",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/905.jpg",
+      "role": "Regional Interactions Director",
+      "permissions": "Human"
+    },
+    {
+      "first_name": "Jodie",
+      "last_name": "Carter",
+      "id": "cfe2a806-ecbf-4cbb-9d0b-9641a1ec95a2",
+      "email": "Clemmie1@hotmail.com",
+      "password": "JbhTtKAZmSjNGX3",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/216.jpg",
+      "role": "International Web Specialist",
+      "permissions": "Future"
+    },
+    {
+      "first_name": "Myrna",
+      "last_name": "Quigley",
+      "id": "83667f3a-7df6-460f-99a9-a14460ef3bcb",
+      "email": "Rashawn.Ferry@hotmail.com",
+      "password": "RHurkEJfzkvTqGC",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1166.jpg",
+      "role": "Principal Web Coordinator",
       "permissions": "Senior"
     },
     {
-      "first_name": "Kavon",
-      "last_name": "Daniel",
-      "id": "388db914-e6e8-4e9c-896c-89f9cebfa164",
-      "email": "Jarred0@yahoo.com",
-      "password": "NGKxsXKidFbfMrP",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/554.jpg",
-      "role": "Product Functionality Consultant",
-      "permissions": "Product"
-    },
-    {
-      "first_name": "Conner",
-      "last_name": "Luettgen",
-      "id": "9d579637-9371-4c06-a36d-dc019a5490cf",
-      "email": "Reuben_Heaney@yahoo.com",
-      "password": "DoZilhl9oMubZY3",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/865.jpg",
-      "role": "Corporate Response Coordinator",
-      "permissions": "Forward"
-    },
-    {
-      "first_name": "Nella",
-      "last_name": "Volkman",
-      "id": "3b5e614a-449f-43b9-9c05-1596b5b0d4c5",
-      "email": "Bradly.Heaney14@hotmail.com",
-      "password": "EI0Lg8NwQYi0Oz_",
-      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/956.jpg",
-      "role": "Internal Accountability Technician",
-      "permissions": "Product"
+      "first_name": "Doug",
+      "last_name": "Hansen",
+      "id": "4bb87784-7ba9-44e6-ae9a-40716082ac98",
+      "email": "Hayley.Kerluke@yahoo.com",
+      "password": "LLU5B2loXHAvTmc",
+      "profile_picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1005.jpg",
+      "role": "Regional Functionality Analyst",
+      "permissions": "Chief"
     }
   ]
 }

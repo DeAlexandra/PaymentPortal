@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { generateChartStyle, generateOptions } from "./chartProperties";
-import { generateChartData, dateFormatter, generateLabels } from "./chartsFunctions";
+import { generateChartData, dateFormatterShort, generateLabels } from "./chartsFunctions";
 
 import {
     Chart as ChartJS,
@@ -41,7 +41,7 @@ export default function LineChart({ timeInterval, chartTitle, startDate, endDate
     };
 
     const labels = generateLabels(timeInterval, startDate, endDate);
-    const labelDateTransaform = labels.length > 0 && labels.map(date => dateFormatter(date));
+    const labelDateTransaform = labels.length > 0 && labels.map(date => dateFormatterShort(date));
 
     return (
         <>

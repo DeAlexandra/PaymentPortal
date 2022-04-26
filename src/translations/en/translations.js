@@ -40,6 +40,14 @@ export const EN_TRANSLATIONS = {
     invalid_email: "Invalid email",
     fail_edit_transaction: "Failed to update transaction",
     success_edit_transaction: "Successfully updated transaction",
-    transaction_details: "Transaction details"
+    transaction_details: "Transaction details",
+    start_date: "Start date",
+    end_date: "End date",
+    last_ten_days: "Last 10 days",
+    last_month: "Last month",
+    last_year: "Last year",
+    two_years_ago: "Two years ago",
+    custom_interval: "Custom interval",
+    transactions_charts: "Transactions charts"
 
 };

@@ -33,10 +33,10 @@ export default function UserCard({ users }) {
                             alt=""
                         />
                         <CardContent sx={ { height: "110px" } }>
-                            <Typography gutterBottom variant="h5" component="div">
+                            <Typography gutterBottom variant="h5" component="div" >
                                 { user.first_name } { user.last_name }
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography variant="body2" color="text.secondary" style={ { wordWrap: "break-word" } }>
                                 { user.email }
                             </Typography>
                         </CardContent >

@@ -39,6 +39,15 @@ export const RO_TRANSLATIONS = {
     invalid_email: "Email invalid",
     fail_edit_transaction: "Editare tranzacție nereușită",
     success_edit_transaction: "Editare tranzacție reușită",
-    transaction_details: "Detalii tranzacție"
+    transaction_details: "Detalii tranzacție",
+    start_date: "Dată început",
+    end_date: "Dată final",
+    last_ten_days: "Ultimele 10 zile",
+    last_month: "Ultima lună",
+    last_year: "Anul trecut",
+    two_years_ago: "Acum doi ani",
+    custom_interval: "Interval personalizat",
+    transactions_charts: "Grafice tranzacții"
+
 
 };

@@ -1,4 +1,5 @@
 const dateFormatter = (date) => date.toLocaleDateString('en-US', { year: "numeric", month: "short", day: "numeric" });
+const dateFormatterShort = (date) => date.toLocaleDateString('en-US', { month: "short", day: "numeric" });
 
 const dateFromThePast = (daysInThePast, date = new Date()) => {
     let specificDate = date;
@@ -105,4 +106,4 @@ const generateChartData = (timePeriod, sampleData, startDate = null, endDate = n
     return array.reverse();
 };
 
-export { dateFormatter, generateLabels, generateChartData, lastDayOfPreviousMonth, lastYear, secondToLastYear, getDatesInInterval };
+export { dateFormatter, dateFormatterShort, generateLabels, generateChartData, lastDayOfPreviousMonth, lastYear, secondToLastYear, getDatesInInterval };
