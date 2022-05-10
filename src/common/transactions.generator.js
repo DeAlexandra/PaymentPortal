@@ -1,4 +1,4 @@
-const generate = require('./generator');
+const generate = require('./MockGenerator');
 const fs = require('fs');
 
 const dateFrom = (timePeriod) => {
@@ -12,8 +12,6 @@ const LAST_MONTH = "Last Month";
 const LAST_YEAR = "Last Year";
 const LAST_TWO_YEARS = "Last Two Years";
 
-
-
 const generateDatesArray = (number) => {
     let array = [];
     let typeOfDate = [LAST_TEN_DAYS, LAST_MONTH, LAST_YEAR, LAST_TWO_YEARS];
@@ -23,15 +21,12 @@ const generateDatesArray = (number) => {
     return array;
 };
 
-// const TRANSACTION_DATE = [dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_TEN_DAYS), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_MONTH), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_YEAR), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS), dateFrom(LAST_TWO_YEARS)];
-
 let transactionTable = {
     "transactions":
         generate.addMultiple("transactions", 60, generateDatesArray(60)),
     "users":
         generate.addMultiple("users", 20)
 };
-
 
 const jsonString = JSON.stringify(transactionTable);
 

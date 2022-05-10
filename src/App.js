@@ -2,19 +2,19 @@ import React, { Suspense, lazy, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Provider } from 'react-redux';
-import store from "./context/redux/store";
-import DrawerMenu from "./components/DrawerMenu";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ToastContext from "./context/ToastContext";
-import ToastNotification from "./components/Toast alerts/ToastNotification";
-import DrawerDetails from "./components/DrawerDetails";
+import store from "../src/shared/context/redux/store";
+import DrawerMenu from "./shared/components/navigation/DrawerMenu";
+import Header from "./shared/components/header/Header";
+import Footer from "./shared/components/footer/Footer";
+import ToastContext from "../src/shared/context/ToastContext";
+import ToastNotification from "./shared/components/ToastNotification";
+import DrawerDetails from "./shared/components/form/DrawerDetails";
 
-const Transactions = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"transactions" */ "./pages/transactions/Transactions"));
-const Payouts = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"payouts" */ "./pages/payouts/Payouts"));
-const Users = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"users" */ "./pages/users/Users"));
-const ErrorPage = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"errorPage"*/ "./pages/ErrorPage"));
-const Dashboard = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"dashboard"*/ "./pages/dashboard/Dashboard"));
+const Transactions = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"transactions" */ "./domain_features/components/Transactions/Transactions"));
+const Payouts = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"payouts" */ "./domain_features/components/Payouts/Payouts"));
+const Users = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"users" */ "./domain_features/components/Users/Users"));
+const ErrorPage = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"errorPage"*/ "./domain_features/components/ErrorPage"));
+const Dashboard = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"dashboard"*/ "./domain_features/components/Dashboard/Dashboard"));
 
 export default function App() {
   const { t } = useTranslation();
