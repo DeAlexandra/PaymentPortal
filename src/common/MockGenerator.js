@@ -1,4 +1,3 @@
-// import randomNumberGenerator from "../utils/array.utils/randomNumberGenerator";
 const faker = require('@faker-js/faker');
 const CATEGORY = ["expenses", "income"];
 
@@ -6,7 +5,6 @@ const randomNumberGenerator = (array) => {
     return array[Math.floor(Math.random() * array.length)];
 };
 
-// export { randomNumberGenerator };
 class Generator {
     addProduct = () => {
         return {

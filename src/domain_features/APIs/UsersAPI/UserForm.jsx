@@ -3,16 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import UserValidationSchema from '../../models/UserValidationSchema';
 import { reset } from '../../../shared/context/redux/actions';
 import store from '../../../shared/context/redux/store';
-import { useGetFetchCall } from '../../../shared/custom_hooks/useFetchCall';
+import { useGetCall } from '../../../shared/custom_hooks/useGetCall';
 import { usePatchCall } from '../../../shared/custom_hooks/usePatchCall';
 import useLocationId from '../../../shared/custom_hooks/useLocationId';
 import userFieldsArray from '../../../shared/components/form/userFormFieldsArray';
 import { FormButtons, InputField, DrawerForm, DrawerTitle } from '../../../shared/components/index';
+import DB_URL from '../../../shared/utils/URLs';
 export default function UserForm() {
     const navigate = useNavigate();
     const userId = useLocationId();
-    const url = `http://localhost:3004/users/${userId}`;
-    const { data: singleUser } = useGetFetchCall(url, "fail_fetch_user");
+    const url = `${DB_URL}/users/${userId}`;
+    const { data: singleUser } = useGetCall(url, "fail_fetch_user");
     const { updateEntry: updateUser } = usePatchCall(url, "fail_patch_user", "users");
 
     const cancelUpdateUser = () => {

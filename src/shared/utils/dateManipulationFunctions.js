@@ -14,7 +14,6 @@ const getNumberOfDaysOfThePreviousMonth = (presentDate) => {
     const last = (new Date(presentDate.setDate(0))).setHours(23, 59, 59, 59); //last day of the previous month
     const first = (new Date(presentDate.setDate(1))).setHours(0, 0, 0, 0); //first day of the previous month
     const getNumberOfDays = Math.round((last - first) / (1000 * 60 * 60 * 24));
-    console.log(getNumberOfDays);
     return getNumberOfDays;
 };
 
@@ -26,10 +25,9 @@ const daysLabelDateTransformation = (date) => {
 const getDatesInInterval = (startDate, endDate) => {
     let datesArray = [];
     for (let i = new Date(startDate); i <= new Date(endDate); i.setDate(i.getDate() + 1)) {
-        // console.log(i); //pushes in the array today date+1 ???
         datesArray.push(new Date(i));
     }
-    return datesArray; // array of dates in the interval
+    return datesArray;
 };
 
 const checkForDateOccurrence = (date, sampleData) => {
@@ -64,7 +62,6 @@ const setChartDataYearlyCustomInterval = (chartData, chartDataLength, sampleData
             const compareMilliseconds = timePeriod === CUSTOM_INTERVAL && (new Date(setMidnightTime(getDateFromDB(sampleData, j))).getTime() === setMidnightTime(datesInterval[i]));
             if (timePeriods.indexOf(timePeriod) >= 0 && (compareMonthYear || compareMilliseconds)) {
                 chartData[i] = chartData[i] + 1;
-                // if (yearPeriods.indexOf(timePeriod) >= 0) break;
             }
         }
     }

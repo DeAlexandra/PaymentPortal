@@ -25,9 +25,8 @@ const generateChartData = (timePeriod, sampleData, startDate = null, endDate = n
     let chartData = [];
     if (timePeriod === LAST_TEN_DAYS || timePeriod === LAST_MONTH) {
         const TEN_DAYS = 10;
-        const chartDataLength = (timePeriod === LAST_TEN_DAYS && TEN_DAYS) || (timePeriod === LAST_MONTH && getNumberOfDaysOfThePreviousMonth()); // console.log(chartDataLength); //10 when LAST_10_DAYS, 31 LAST_MONTH
-        const lastDay = (timePeriod === LAST_MONTH && lastDayOfPreviousMonth) || new Date(); //instead of null, calculeaza zilele din urma, pt 10 zile scade din data actuala;
-        // console.log(lastDay); //present date when LAST_TEN_DAYS, mar 31 2022 when LAST_MONTH
+        const chartDataLength = (timePeriod === LAST_TEN_DAYS && TEN_DAYS) || (timePeriod === LAST_MONTH && getNumberOfDaysOfThePreviousMonth());
+        const lastDay = (timePeriod === LAST_MONTH && lastDayOfPreviousMonth) || new Date();
         setChartData(chartData, chartDataLength, sampleData, lastDay);
     }
     else if (timePeriod === LAST_YEAR || timePeriod === LAST_TWO_YEARS || timePeriod === CUSTOM_INTERVAL) {

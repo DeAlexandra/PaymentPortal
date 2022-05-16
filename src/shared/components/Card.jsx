@@ -14,7 +14,6 @@ export default function UserCard({ cardData, buttonAction }) {
             <CardMedia
                 component="img"
                 height="100px"
-                // image={ `http://localhost:3000/assets/userPics/${user.profile_picture} ` }
                 image={ cardData.profile_picture }
                 alt=""
             />

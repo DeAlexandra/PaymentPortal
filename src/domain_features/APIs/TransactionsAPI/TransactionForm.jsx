@@ -4,14 +4,15 @@ import { useNavigate } from 'react-router-dom';
 import TransactionValidationSchema from '../../models/TransactionValidationSchema';
 import { reset } from '../../../shared/context/redux/actions';
 import store from '../../../shared/context/redux/store';
-import { useGetFetchCall, useLocationId, usePatchCall } from '../../../shared/custom_hooks/index';
+import { useGetCall, useLocationId, usePatchCall } from '../../../shared/custom_hooks/index';
 import { DrawerTitle, DrawerForm, InputField, FormButtons, SimpleCard } from "../../../shared/components/index";
+import DB_URL from '../../../shared/utils/URLs';
 
 export default function TransactionForm() {
     const navigate = useNavigate();
     const transactionId = useLocationId();
-    const url = `http://localhost:3004/transactions/${transactionId}`;
-    const { data: singleTransaction } = useGetFetchCall(url, "fail_fetch_transaction");
+    const url = `${DB_URL}/transactions/${transactionId}`;
+    const { data: singleTransaction } = useGetCall(url, "fail_fetch_transaction");
     const { updateEntry: updateTransaction } = usePatchCall(url, "fail_patch_transaction", "transactions");
 
     const cancelUpdateTransaction = () => {

@@ -1,8 +1,8 @@
 import { useState, useEffect, useContext } from 'react';
 import { fetchRequest } from './fetchRequests';
-import ToastContext from '../../shared/context/ToastContext';
+import ToastContext from '../context/ToastContext';
 
-const useGetFetchCall = (url, errorCode) => {
+const useGetCall = (url, errorCode) => {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const { toastState, setToastState } = useContext(ToastContext);
@@ -27,4 +27,4 @@ const useGetFetchCall = (url, errorCode) => {
     return { data, setData, isLoading, setIsLoading, toastState };
 };
 
-export { useGetFetchCall };
+export { useGetCall };
