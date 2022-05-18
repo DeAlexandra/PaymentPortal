@@ -35,7 +35,7 @@ const generateOptions = (chartTitle) => {
         plugins: {
             title: {
                 display: true,
-                text: chartTitle,
+                text: t(chartTitle),
                 font:
                     { size: "20px" },
                 padding: {
