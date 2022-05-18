@@ -49,19 +49,17 @@ export const RO_TRANSLATIONS = {
     custom_interval: "Interval personalizat",
     transactions_charts: "Grafice tranzacții",
     month_names: {
-        "January": "Ianuarie",
-        "February": "Februarie",
-        "March": "Martie",
-        "April": "Aprilie",
-        "May": "Mai",
-        "June": "Iunie",
-        "July": "Iulie",
-        "August": "August",
-        "September": "Septembrie",
-        "October": "Octombrie",
-        "November": "Noiembrie",
-        "December": "Decembrie"
+        january: "Ianuarie",
+        february: "Februarie",
+        march: "Martie",
+        april: "Aprilie",
+        may: "Mai",
+        june: "Iunie",
+        july: "Iulie",
+        august: "August",
+        september: "Septembrie",
+        october: "Octombrie",
+        november: "Noiembrie",
+        december: "Decembrie"
     }
-
-
 };
