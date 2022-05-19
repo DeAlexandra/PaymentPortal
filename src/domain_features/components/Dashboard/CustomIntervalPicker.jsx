@@ -4,7 +4,6 @@ import { dateFormatter } from '../../../shared/utils/dateManipulationFunctions';
 import LineChartContainer from '../../APIs/DashboardAPI/charts/LineChartContainer';
 import { useDates } from '../../../shared/custom_hooks';
 import { CUSTOM_INTERVAL } from '../../../shared/utils/dateConstants';
-import { t } from 'i18next';
 
 export default function CustomIntervalPicker() {
     const { startDate, endDate, handleChangeStart, handleChangeEnd } = useDates();
