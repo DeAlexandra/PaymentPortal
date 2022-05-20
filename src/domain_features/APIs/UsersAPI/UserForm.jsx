@@ -6,7 +6,7 @@ import store from '../../../shared/context/redux/store';
 import { useGetCall } from '../../../shared/custom_hooks/useGetCall';
 import { usePatchCall } from '../../../shared/custom_hooks/usePatchCall';
 import useLocationId from '../../../shared/custom_hooks/useLocationId';
-import userFieldsArray from '../../../shared/components/form/userFormFieldsArray';
+import { userFieldsArray } from '../../../shared/components/form/userFormFieldsArray';
 import { FormButtons, InputField, DrawerForm, DrawerTitle } from '../../../shared/components/index';
 import DB_URL from '../../../shared/utils/URLs';
 export default function UserForm() {
