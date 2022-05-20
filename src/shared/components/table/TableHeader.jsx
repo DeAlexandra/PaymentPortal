@@ -7,9 +7,9 @@ export default function TableHeader({ tableHeaderTitles }) {
         <TableHead sx={ { bgcolor: "primary.main", border: 1, borderColor: "transparent" } }>
             <TableRow>
                 {
-                    tableHeaderTitles.map(({ label }, i) => (
+                    tableHeaderTitles.map((elem, i) => (
                         < TableCell sx={ { color: 'white' } }
-                            align="left" key={ i }> { t(label) } </TableCell >
+                            align="left" key={ i }> { t(elem) } </TableCell >
                     ))
                 }
             </TableRow>
