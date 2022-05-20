@@ -18,7 +18,7 @@ export default function Transactions() {
     }
     return elem;
   });
-  console.log(transactionsTableHeads);
+
   return (isLoading === true)
     ? <IsLoading />
     : transactions.length > 0
