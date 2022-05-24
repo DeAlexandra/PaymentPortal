@@ -48,6 +48,20 @@ export const EN_TRANSLATIONS = {
     last_year: "Last year",
     two_years_ago: "Two years ago",
     custom_interval: "Custom interval",
-    transactions_charts: "Transactions charts"
+    transactions_charts: "Transactions charts",
+    month_names: {
+        january: "January",
+        february: "February",
+        march: "March",
+        april: "April",
+        may: "May",
+        june: "June",
+        july: "July",
+        august: "August",
+        september: "September",
+        october: "October",
+        november: "November",
+        december: "December"
+    }
 
 };
