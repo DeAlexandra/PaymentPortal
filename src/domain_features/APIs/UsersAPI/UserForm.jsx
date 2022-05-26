@@ -26,7 +26,7 @@ export default function UserForm() {
                 { ({ values, errors, touched, isSubmitting, handleChange, handleSubmit, handleBlur }) => (
                     <Form onSubmit={ handleSubmit }>
                         { userFieldsArray.map(userFieldEntry => {
-                            return <InputField fieldName={ userFieldEntry } handleChange={ handleChange } handleBlur={ handleBlur } values={ values } touched={ touched } errors={ errors } />;
+                            return <InputField key={ userFieldEntry } fieldName={ userFieldEntry } handleChange={ handleChange } handleBlur={ handleBlur } values={ values } touched={ touched } errors={ errors } />;
                         })
                         }
                         <FormButtons isSubmitting={ isSubmitting } cancelUpdate={ cancelUpdateUser } />

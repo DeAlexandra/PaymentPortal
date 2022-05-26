@@ -4,7 +4,7 @@ import ToastContext from '../../shared/context/ToastContext';
 import { useNavigate } from 'react-router-dom';
 import store from '../../shared/context/redux/store';
 import { reset } from '../../shared/context/redux/actions';
-
+import { setDrawerClose } from '../context/redux/actionCreators';
 const usePatchCall = (url, errorCode, redirectUrl) => {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -19,7 +19,7 @@ const usePatchCall = (url, errorCode, redirectUrl) => {
     const successPatchCb = () => {
         setIsLoading(false);
         setToastState({ message: "success_edit_transaction", severity: "success", open: true });
-        store.dispatch(reset);
+        store.dispatch(setDrawerClose());
         navigate(`/${redirectUrl}`);
     };
     const errorCb = () => {

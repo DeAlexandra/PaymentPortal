@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Form } from 'formik';
 import { useNavigate } from 'react-router-dom';
 import { reset } from '../../../shared/context/redux/actions';
@@ -9,17 +9,32 @@ import { transactionFieldArray } from "../../../shared/components/form/userFormF
 import TransactionValidationSchema from '../../models/TransactionValidationSchema';
 import InputField from './FormInputField';
 import DB_URL from '../../../shared/utils/URLs';
+import { selectedTransaction } from '../../../shared/context/redux/actionCreators';
+import { getTransaction } from '../../../shared/context/redux/actionCreators';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router';
+import { setDrawerClose } from '../../../shared/context/redux/actionCreators';
 
 export default function TransactionForm() {
     const navigate = useNavigate();
     const transactionId = useLocationId();
+    const { transId } = useParams();
     const url = `${DB_URL}/transactions/${transactionId}`;
     const { data: singleTransaction } = useGetCall(url, "fail_fetch_transaction");
     const { updateEntry: updateTransaction } = usePatchCall(url, "fail_patch_transaction", "transactions");
+    // const dispatch = useDispatch();
+    // const selectedTrans = useSelector((state) => state.transaction);
+    // console.log(selectedTrans);
 
+    // useEffect(() => {
+    //     dispatch(getTransaction(transId));
+    // }, []);
+
+    // console.log(selectedTrans);
     const cancelUpdateTransaction = () => {
         navigate(-1);
-        store.dispatch(reset);
+        store.dispatch(setDrawerClose());
     };
     return (
         <><DrawerTitle title={ "transaction_details" } />
@@ -28,7 +43,7 @@ export default function TransactionForm() {
                     <Form onSubmit={ handleSubmit }>
                         <div style={ { display: "flex", flexDirection: "column", margin: " 0 auto", width: "30vw", minWidth: "300px" } }>
                             { transactionFieldArray.map((elem) => {
-                                return <InputField fieldName={ elem } displayName={ elem !== "receiver" ? elem : "shop" } handleChange={ handleChange } handleBlur={ handleBlur } values={ values } touched={ touched } errors={ errors } />;
+                                return <InputField key={ elem } fieldName={ elem } displayName={ elem !== "receiver" ? elem : "shop" } handleChange={ handleChange } handleBlur={ handleBlur } values={ values } touched={ touched } errors={ errors } />;
                             }) }
                             <FormButtons isSubmitting={ isSubmitting } cancelUpdate={ cancelUpdateTransaction } />
                         </div>
