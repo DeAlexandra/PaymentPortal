@@ -1,13 +1,12 @@
 import { Drawer, Box } from '@mui/material';
 import store from '../../shared/context/redux/store';
-import { reset } from '../../shared/context/redux/actions';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { setDrawerClose } from '../context/redux/actionCreators';
+import { setDrawerClose } from '../context/redux/actionCreators/drawerActionCreator';
+
 export default function RightDrawer(props) {
     const navigate = useNavigate();
     const open = useSelector(state => state.drawerReducer.open);
-
 
     const handleCloseDrawer = () => {
         store.dispatch(setDrawerClose());

@@ -9,6 +9,7 @@ import useLocationId from '../../../shared/custom_hooks/useLocationId';
 import { userFieldsArray } from '../../../shared/components/form/userFormFieldsArray';
 import { FormButtons, InputField, DrawerForm, DrawerTitle } from '../../../shared/components/index';
 import DB_URL from '../../../shared/utils/URLs';
+
 export default function UserForm() {
     const navigate = useNavigate();
     const userId = useLocationId();

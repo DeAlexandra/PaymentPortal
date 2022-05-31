@@ -3,10 +3,9 @@ import { fetchRequest } from './fetchRequests';
 import ToastContext from '../../shared/context/ToastContext';
 import { useNavigate } from 'react-router-dom';
 import store from '../../shared/context/redux/store';
-import { reset } from '../../shared/context/redux/actions';
-import { setDrawerClose } from '../context/redux/actionCreators';
+import { setDrawerClose } from '../context/redux/actionCreators/drawerActionCreator';
+
 const usePatchCall = (url, errorCode, redirectUrl) => {
-    const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const { toastState, setToastState } = useContext(ToastContext);
     const navigate = useNavigate();

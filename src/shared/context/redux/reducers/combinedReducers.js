@@ -1,10 +1,11 @@
 import { combineReducers } from "redux";
-import { transactionReducer, selectedTransactionReducer } from "./transactionsReducer";
+import { transactionReducer, selectedTransactionReducer, updateTransactionReducer } from "./transactionsReducer";
 import drawerReducer from "./drawerReducer";
 
 const rootReducer = combineReducers({
     allTransactions: transactionReducer,
-    transaction: selectedTransactionReducer,
+    selectedTransaction: selectedTransactionReducer,
+    updateTransaction: updateTransactionReducer,
     drawerReducer: drawerReducer
 });
 export default rootReducer;
