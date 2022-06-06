@@ -1,36 +1,47 @@
 import { Form } from 'formik';
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import UserValidationSchema from '../../models/UserValidationSchema';
-import { reset } from '../../../shared/context/redux/actions';
-import store from '../../../shared/context/redux/store';
-import { useGetCall } from '../../../shared/custom_hooks/useGetCall';
-import { usePatchCall } from '../../../shared/custom_hooks/usePatchCall';
-import useLocationId from '../../../shared/custom_hooks/useLocationId';
 import { userFieldsArray } from '../../../shared/components/form/userFormFieldsArray';
 import { FormButtons, InputField, DrawerForm, DrawerTitle } from '../../../shared/components/index';
 import DB_URL from '../../../shared/utils/URLs';
+import { useUpdateCallRedux, useLocationId } from '../../../shared/custom_hooks/index';
+import {
+    selectedUser,
+    updateUserAction,
+    updateUserFailure,
+    updateUserSuccess,
+    removeSelectedUser
+} from '../../../shared/context/redux/actionCreators/users';
 
 export default function UserForm() {
-    const navigate = useNavigate();
+    const dispatch = useDispatch();
     const userId = useLocationId();
     const url = `${DB_URL}/users/${userId}`;
-    const { data: singleUser } = useGetCall(url, "fail_fetch_user");
-    const { updateEntry: updateUser } = usePatchCall(url, "fail_patch_user", "users");
+    const { updateEntry } = useUpdateCallRedux(url, "fail_update_user", "success_edit_user", "users", updateUserAction, updateUserSuccess, updateUserFailure);
+    const open = useSelector((state) => state.drawerReducer.open);
+    const singleUser = useSelector((state) => state.allUsers.users.find(user => user.id === userId));
 
-    const cancelUpdateUser = () => {
-        navigate(-1);
-        store.dispatch(reset);
+    useEffect(() => {
+        if (userId && userId !== undefined) dispatch(selectedUser(singleUser));
+        return () => {
+            dispatch(removeSelectedUser());
+        };
+    }, []);
+
+    const handleUpdateUser = (user) => {
+        updateEntry(user);
     };
     return (
         <><DrawerTitle title={ "user_details" } />
-            <DrawerForm initialValues={ singleUser } validationSchema={ UserValidationSchema } updateEntry={ updateUser }>
+            <DrawerForm initialValues={ singleUser } validationSchema={ UserValidationSchema } updateEntry={ handleUpdateUser }>
                 { ({ values, errors, touched, isSubmitting, handleChange, handleSubmit, handleBlur }) => (
                     <Form onSubmit={ handleSubmit }>
-                        { userFieldsArray.map(userFieldEntry => {
+                        { open === true && userFieldsArray.map(userFieldEntry => {
                             return <InputField key={ userFieldEntry } fieldName={ userFieldEntry } handleChange={ handleChange } handleBlur={ handleBlur } values={ values } touched={ touched } errors={ errors } />;
                         })
                         }
-                        <FormButtons isSubmitting={ isSubmitting } cancelUpdate={ cancelUpdateUser } />
+                        <FormButtons isSubmitting={ isSubmitting } />
                     </Form>
                 ) }
             </DrawerForm></>

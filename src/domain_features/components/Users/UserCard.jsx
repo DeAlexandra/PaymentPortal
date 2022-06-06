@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import store from '../../../shared/context/redux/store';
-import { setOpen } from '../../../shared/context/redux/actions';
+import { setDrawerOpen } from '../../../shared/context/redux/actionCreators/drawerActionCreator';
 import { useNavigate } from "react-router-dom";
 import UserCard from '../../../shared/components/Card';
 
@@ -9,7 +9,7 @@ export default function Card({ users }) {
     const navigate = useNavigate();
 
     const navigateToDetails = (userId) => {
-        store.dispatch(setOpen);
+        store.dispatch(setDrawerOpen());
         navigate(`/users/${userId}`);
     };
 

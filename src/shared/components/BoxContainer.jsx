@@ -12,6 +12,6 @@ export default function BoxContainer(props) {
                 minHeight: "100vh",
                 paddingBottom: "300px"
             } }
-        > <Typography>{ props.children }</Typography></Box>
+        > <Typography component={ 'span' }>{ props.children }</Typography></Box>
     );
 }

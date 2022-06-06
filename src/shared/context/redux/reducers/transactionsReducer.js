@@ -13,7 +13,7 @@ const initialUpdateValues = {
 
 export const transactionReducer = (state = initialState, { type, payload }) => {
     switch (type) {
-        case ActionTypes.GET_TRANSACTIONS_REQUEST:
+        case ActionTypes.GET_TRANSACTIONS:
             return { ...state, loading: true };
         case ActionTypes.GET_TRANSACTIONS_SUCCESS:
             return { ...state, transactions: payload, loading: false, error: null };
@@ -36,7 +36,7 @@ export const selectedTransactionReducer = (state = {}, { type, payload }) => {
 
 export const updateTransactionReducer = (state = initialUpdateValues, { type, payload }) => {
     switch (type) {
-        case ActionTypes.UPDATE_TRANSACTION_REQUEST:
+        case ActionTypes.UPDATE_TRANSACTION:
             return {
                 ...state, loading: true
             };

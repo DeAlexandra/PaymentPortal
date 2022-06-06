@@ -1,30 +1,26 @@
-import { useState, useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { fetchRequest } from './fetchRequests';
 import ToastContext from '../context/ToastContext';
+import { useDispatch } from 'react-redux';
 
-const useGetCall = (url, errorCode) => {
-    const [data, setData] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+const useGetCallRedux = (url, errorCode, getDispatchAction, getEntitySucess, getEntityFailure) => {
     const { toastState, setToastState } = useContext(ToastContext);
-
-    useEffect(() => {
-        fetchData();
-    }, []);
+    const dispatch = useDispatch();
 
     const fetchData = async () => {
-        setIsLoading(true);
+        dispatch(getDispatchAction());
         await fetchRequest(url, successFetchCb, errorCb, errorCode, "GET");
     };
 
     const successFetchCb = (data) => {
-        setData(data);
-        setIsLoading(false);
+        dispatch(getEntitySucess(data));
     };
+
     const errorCb = (errorCode) => {
-        setIsLoading(false);
+        dispatch(getEntityFailure(errorCode));
         setToastState({ message: errorCode, severity: "error", open: true });
     };
-    return { data, setData, isLoading, setIsLoading, toastState };
+    return { fetchData, toastState };
 };
 
-export { useGetCall };
+export default useGetCallRedux;
