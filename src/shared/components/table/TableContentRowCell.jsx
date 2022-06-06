@@ -4,13 +4,13 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { IconButton } from '@material-ui/core';
 import { getTotalPrice } from '../../utils/getTotalPrice';
 import store from '../../context/redux/store';
-import { setOpen } from "../../context/redux/actions";
 import { useNavigate } from 'react-router-dom';
+import { setDrawerOpen } from '../../context/redux/actionCreators/drawerActionCreator';
 
 export default function TableContentRowCell({ row }) {
     const navigate = useNavigate();
     const NavigateToDetails = (transactionId) => {
-        store.dispatch(setOpen);
+        store.dispatch(setDrawerOpen());
         navigate(`/transactions/${transactionId}`);
     };
 
