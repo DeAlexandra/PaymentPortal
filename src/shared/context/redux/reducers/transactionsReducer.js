@@ -7,7 +7,6 @@ const initialState = {
 };
 const initialUpdateValues = {
     loading: false,
-    transaction: {},
     error: null
 };
 
@@ -23,15 +22,18 @@ export const transactionReducer = (state = initialState, { type, payload }) => {
     };
 };
 
-export const selectedTransactionReducer = (state = {}, { type, payload }) => {
+export const transactionDetailsReducer = (state = {}, { type, payload }) => {
     switch (type) {
-        case ActionTypes.SELECTED_TRANSACTION:
-            return { ...state, ...payload };
-        case ActionTypes.REMOVE_SELECTED_TRANSACTION:
+        case ActionTypes.GET_TRANSACTION_DETAILS:
+            return { ...state, loading: true };
+        case ActionTypes.GET_TRANSACTION_DETAILS_SUCCESS:
+            return { ...state, transaction: payload, loading: false, error: null };
+        case ActionTypes.GET_TRANSACTION_DETAILS_FAILURE:
+            return { ...state, loading: false, transaction: {}, error: payload };
+        case ActionTypes.REMOVE_TRANSACTION_DETAILS:
             return {};
-        default:
-            return state;
-    }
+        default: return state;
+    };
 };
 
 export const updateTransactionReducer = (state = initialUpdateValues, { type, payload }) => {
@@ -41,7 +43,7 @@ export const updateTransactionReducer = (state = initialUpdateValues, { type, pa
                 ...state, loading: true
             };
         case ActionTypes.UPDATE_TRANSACTION_SUCCESS:
-            return { ...state, transaction: payload, loading: false };
+            return { ...state, loading: false };
         case ActionTypes.UPDATE_TRANSACTION_FAILURE:
             return { ...state, error: payload, loading: false };
         default:

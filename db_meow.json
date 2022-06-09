@@ -5,7 +5,7 @@
       "date": "4.16.2021",
       "category": "expenses",
       "receiver": "O'Hara Inc",
-      "price": "110",
+      "price": "100",
       "VAT": 16,
       "total_price": 0,
       "products": [
@@ -23,7 +23,7 @@
       "id": "d3d3bdc6-832e-43ca-a63b-d73edc1f9ab5",
       "date": "6.1.2021",
       "category": "income",
-      "receiver": "Mante - Stanton",
+      "receiver": "Mante",
       "price": "128.00",
       "VAT": 8,
       "total_price": 0,
@@ -1911,7 +1911,7 @@
   ],
   "users": [
     {
-      "first_name": "Eldridge",
+      "first_name": "Eldridgey",
       "last_name": "Leuschke",
       "id": "06320904-ae7a-4941-b6c7-a08ffac09075",
       "email": "Ryder_Tillman35@yahoo.com",
