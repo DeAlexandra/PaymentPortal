@@ -9,5 +9,7 @@ export const updateTransactionAction = makeActionCreator(ActionTypes.UPDATE_TRAN
 export const updateTransactionSuccess = makeActionCreator(ActionTypes.UPDATE_TRANSACTION_SUCCESS);
 export const updateTransactionFailure = makeActionCreator(ActionTypes.UPDATE_TRANSACTION_FAILURE, "payload");
 
-export const selectedTransaction = makeActionCreator(ActionTypes.SELECTED_TRANSACTION, "payload");
-export const removeSelectedTransaction = makeActionCreator(ActionTypes.REMOVE_SELECTED_TRANSACTION, "payload");
+export const getTransactionDetailsAction = makeActionCreator(ActionTypes.GET_TRANSACTION_DETAILS);
+export const getTransactionDetailsSuccess = makeActionCreator(ActionTypes.GET_TRANSACTION_DETAILS_SUCCESS, "payload");
+export const getTransactionDetailsFailure = makeActionCreator(ActionTypes.GET_TRANSACTION_DETAILS_FAILURE, "payload");
+export const removeTransactionDetails = makeActionCreator(ActionTypes.REMOVE_TRANSACTION_DETAILS, "payload");
