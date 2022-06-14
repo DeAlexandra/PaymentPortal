@@ -7,7 +7,6 @@ const initialState = {
 };
 const initialUpdateValues = {
     loading: false,
-    user: {},
     error: null
 };
 
@@ -23,15 +22,18 @@ export const userReducer = (state = initialState, { type, payload }) => {
     };
 };
 
-export const selectedUserReducer = (state = {}, { type, payload }) => {
+export const userDetailsReducer = (state = {}, { type, payload }) => {
     switch (type) {
-        case ActionTypes.SELECTED_USER:
-            return { ...state, ...payload };
-        case ActionTypes.REMOVE_SELECTED_USER:
+        case ActionTypes.GET_USER_DETAILS:
+            return { ...state, loading: true };
+        case ActionTypes.GET_USER_DETAILS_SUCCESS:
+            return { ...state, user: payload, loading: false, error: null };
+        case ActionTypes.GET_USER_DETAILS_FAILURE:
+            return { ...state, loading: false, user: {}, error: payload };
+        case ActionTypes.REMOVE_USER_DETAILS:
             return {};
-        default:
-            return state;
-    }
+        default: return state;
+    };
 };
 
 export const updateUserReducer = (state = initialUpdateValues, { type, payload }) => {

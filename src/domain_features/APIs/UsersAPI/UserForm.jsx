@@ -5,13 +5,15 @@ import UserValidationSchema from '../../models/UserValidationSchema';
 import { userFieldsArray } from '../../../shared/components/form/userFormFieldsArray';
 import { FormButtons, InputField, DrawerForm, DrawerTitle } from '../../../shared/components/index';
 import DB_URL from '../../../shared/utils/URLs';
-import { useUpdateCallRedux, useLocationId } from '../../../shared/custom_hooks/index';
+import { useUpdateCallRedux, useLocationId, useGetCallRedux } from '../../../shared/custom_hooks/index';
 import {
-    selectedUser,
+    getUserDetailsAction,
+    getUserDetailsSuccess,
+    getUserDetailsFailure,
+    removeUserDetails,
     updateUserAction,
     updateUserFailure,
     updateUserSuccess,
-    removeSelectedUser
 } from '../../../shared/context/redux/actionCreators/users';
 
 export default function UserForm() {
@@ -20,12 +22,13 @@ export default function UserForm() {
     const url = `${DB_URL}/users/${userId}`;
     const { updateEntry } = useUpdateCallRedux(url, "fail_update_user", "success_edit_user", "users", updateUserAction, updateUserSuccess, updateUserFailure);
     const open = useSelector((state) => state.drawerReducer.open);
-    const singleUser = useSelector((state) => state.allUsers.users.find(user => user.id === userId));
-
+    const singleUser = useSelector((state) => state.userDetails);
+    const { fetchData } = useGetCallRedux(url, "fail_fetch_user", getUserDetailsAction, getUserDetailsSuccess, getUserDetailsFailure);
+    const selectedUserDetails = singleUser.user !== undefined && singleUser.user;
     useEffect(() => {
-        if (userId && userId !== undefined) dispatch(selectedUser(singleUser));
+        fetchData();
         return () => {
-            dispatch(removeSelectedUser());
+            dispatch(removeUserDetails());
         };
     }, []);
 
@@ -34,7 +37,7 @@ export default function UserForm() {
     };
     return (
         <><DrawerTitle title={ "user_details" } />
-            <DrawerForm initialValues={ singleUser } validationSchema={ UserValidationSchema } updateEntry={ handleUpdateUser }>
+            <DrawerForm initialValues={ selectedUserDetails } validationSchema={ UserValidationSchema } updateEntry={ handleUpdateUser }>
                 { ({ values, errors, touched, isSubmitting, handleChange, handleSubmit, handleBlur }) => (
                     <Form onSubmit={ handleSubmit }>
                         { open === true && userFieldsArray.map(userFieldEntry => {

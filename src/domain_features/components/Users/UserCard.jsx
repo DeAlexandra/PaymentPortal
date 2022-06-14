@@ -7,7 +7,6 @@ import UserCard from '../../../shared/components/Card';
 
 export default function Card({ users }) {
     const navigate = useNavigate();
-
     const navigateToDetails = (userId) => {
         store.dispatch(setDrawerOpen());
         navigate(`/users/${userId}`);
