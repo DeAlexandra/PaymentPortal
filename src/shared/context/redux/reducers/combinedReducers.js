@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import { transactionReducer, updateTransactionReducer, transactionDetailsReducer } from "./transactionsReducer";
-import { userReducer, selectedUserReducer, updateUserReducer } from "./usersReducer";
+import { userReducer, updateUserReducer, userDetailsReducer } from "./usersReducer";
 import drawerReducer from "./drawerReducer";
 
 const rootReducer = combineReducers({
@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
     transactionDetails: transactionDetailsReducer,
     updateTransaction: updateTransactionReducer,
     allUsers: userReducer,
-    selectedUser: selectedUserReducer,
+    userDetails: userDetailsReducer,
     updateUser: updateUserReducer,
     drawerReducer: drawerReducer
 });
