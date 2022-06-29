@@ -6,3 +6,4 @@ export * from "./lib/dateConstants";
 export * from "./lib/dateManipulationFunctions";
 export * from "./lib/getTotalPrice";
 export * from "./lib/navigationArray";
+export * from "./lib/userFormFieldsArray";

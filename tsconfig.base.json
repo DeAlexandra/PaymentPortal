@@ -8,7 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2022",
     "module": "esnext",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
@@ -25,7 +25,9 @@
       "@myorg/shared/components": ["libs/shared/components/src/index.js"],
       "@myorg/shared/translations": ["libs/shared/translations/src/index.js"],
       "@myorg/state": ["libs/shared/state/src/index.js"],
+      "@myorg/transaction-form": ["libs/transaction-form/src/index.js"],
       "@myorg/transactions": ["libs/transactions/src/index.js"],
+      "@myorg/user-form": ["libs/user-form/src/index.js"],
       "@myorg/users": ["libs/users/src/index.js"]
     }
   },

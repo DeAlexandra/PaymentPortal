@@ -13,8 +13,31 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
+              },
+              {
+                "sourceTag": "scope:transactions",
+                "onlyDependOnLibsWithTags": [
+                  "scope:shared",
+                  "scope:transactions"
+                ]
+              },
+              {
+                "sourceTag": "scope:users",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:users"]
+              },
+              {
+                "sourceTag": "scope:payouts",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:payouts"]
+              },
+              {
+                "sourceTag": "scope:dashboard",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:dashboard"]
+              },
+              {
+                "sourceTag": "scope:errorPage",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:errorPage"]
               }
             ]
           }
@@ -29,7 +52,9 @@
     {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nrwl/nx/javascript"],
-      "rules": {}
+      "rules": {
+        "semi": [2, "always"]
+      }
     }
   ]
 }

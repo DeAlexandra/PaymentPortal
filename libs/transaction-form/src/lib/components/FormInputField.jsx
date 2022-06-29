@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { TextField } from "@mui/material";
 import { getTotalPrice } from "@my-org/shared/utils";
 
-export default function InputField({ fieldName, displayName = fieldName, handleChange, handleBlur, values, touched, errors, disabled = false }) {
+function InputField({ fieldName, displayName = fieldName, handleChange, handleBlur, values, touched, errors, disabled = false }) {
     const { t } = useTranslation();
     return (
         <>
@@ -24,3 +24,4 @@ export default function InputField({ fieldName, displayName = fieldName, handleC
         </>
     );
 }
+export { InputField };

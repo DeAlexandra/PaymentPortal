@@ -2,7 +2,7 @@
   "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/payouts/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:payouts"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

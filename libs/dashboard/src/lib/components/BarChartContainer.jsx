@@ -1,27 +1,19 @@
-import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { BarChart } from '@myorg/shared/components';
-import { generateLabels, generateChartData } from "@my-org/shared/utils";
-import { generateChartStyle, generateOptions } from "@my-org/shared/utils";
-import { useGetCallRedux } from "@myorg/state";
-import { DB_URL } from '@my-org/shared/utils';
-import { getTransactionsAction, getTransactionsSuccess, getTransactionsFailure } from '@myorg/state';
+import { useSelector } from "react-redux";
+import { BarChart } from "@myorg/shared/components";
+import { generateLabels, generateChartData, generateChartStyle, generateOptions } from "@my-org/shared/utils";
+import { useBarChartTransactions } from "../API/useBarChartTransactions";
 
-export function BarChartContainer({ timeInterval, chartTitle }) {
-    const url = `${DB_URL}/transactions`;
-    const { fetchData } = useGetCallRedux(url, "fail_fetch_transactions", getTransactionsAction, getTransactionsSuccess, getTransactionsFailure);
+function BarChartContainer({ timeInterval, chartTitle }) {
     const chart = useSelector((state) => state.allTransactions.transactions);
-
-    useEffect(() => {
-        fetchData();
-    }, []);
+    useBarChartTransactions();
     return (
         <BarChart
             data={ generateChartStyle(
                 generateLabels(timeInterval),
-                generateChartData(timeInterval, chart),
+                generateChartData(timeInterval, chart)
             ) }
-            options={ generateOptions(chartTitle) } />
+            options={ generateOptions(chartTitle) }
+        />
     );
 }
-export default BarChartContainer;
+export { BarChartContainer };

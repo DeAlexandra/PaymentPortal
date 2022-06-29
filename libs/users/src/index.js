@@ -1,2 +1,2 @@
-export * from "./lib/components/Users";
-export * from "./lib/components/UserForm";
+import { UsersList } from "./lib/components/UsersList";
+export { UsersList };

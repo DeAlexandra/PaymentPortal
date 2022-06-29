@@ -1,41 +1,58 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
+import styles from "./app.module.css";
 import {
   Footer,
   DrawerMenu,
   Header,
   ToastNotification,
-} from '@myorg/shared/components';
-import { DetailsDrawer } from '@myorg/details-drawer';
-import React, { Suspense, lazy, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { Provider } from 'react-redux';
-import { store } from '@myorg/state';
-import { Transactions } from '@myorg/transactions';
-import { Dashboard } from '@myorg/dashboard';
-import { Users } from '@myorg/users';
-import { ErrorPage } from '@myorg/error-page';
-import { Payouts } from '@myorg/payouts';
-import { ToastContext } from '@myorg/state';
-// const Transactions = lazy(
-//   () =>
-//     import(
-//       /* webpackPrefetch: true, webpackChunkName:"transactions" */ '@myorg/transactions'
-//     )
-// );
-// const Payouts = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"payouts" */ "./domain_features/components/Payouts/Payouts"));
-// const Users = lazy(
-//   () =>
-//     import(/* webpackPrefetch: true, webpackChunkName:"users" */ '@myorg/users')
-// );
-// // const ErrorPage = lazy(() => import(/* webpackPrefetch: true, webpackChunkName:"errorPage"*/ "./domain_features/components/ErrorPage"));
-// const Dashboard = lazy(
-//   () =>
-//     import(
-//       /* webpackPrefetch: true, webpackChunkName:"dashboard"*/ '@myorg/dashboard'
-//     )
-// );
+} from "@myorg/shared/components";
+import { DetailsDrawer } from "@myorg/details-drawer";
+import React, { Suspense, lazy, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Provider } from "react-redux";
+import { store } from "@myorg/state";
+import { ToastContext } from "@myorg/state";
+
+const TransactionsList = lazy(() =>
+  import(
+    /* webpackPrefetch: true, webpackChunkName:"transactionsList" */ "@myorg/transactions"
+  ).then(({ TransactionsList }) => ({
+    default: TransactionsList,
+  }))
+);
+
+const Dashboard = lazy(() =>
+  import(
+    /* webpackPrefetch: true, webpackChunkName:"dashboard" */ "@myorg/dashboard"
+  ).then(({ Dashboard }) => ({
+    default: Dashboard,
+  }))
+);
+
+const UsersList = lazy(() =>
+  import(
+    /* webpackPrefetch: true, webpackChunkName:"usersList" */ "@myorg/users"
+  ).then(({ UsersList }) => ({
+    default: UsersList,
+  }))
+);
+
+const Payouts = lazy(() =>
+  import(
+    /* webpackPrefetch: true, webpackChunkName:"payouts" */ "@myorg/payouts"
+  ).then(({ Payouts }) => ({
+    default: Payouts,
+  }))
+);
+
+const ErrorPage = lazy(() =>
+  import(
+    /* webpackPrefetch: true, webpackChunkName:"errorPage" */ "@myorg/error-page"
+  ).then(({ ErrorPage }) => ({
+    default: ErrorPage,
+  }))
+);
 
 export function App() {
   const { t } = useTranslation();
@@ -52,16 +69,16 @@ export function App() {
           <DetailsDrawer />
           <Header handleDrawerOpen={handleDrawerOpen} open={open} />
           <DrawerMenu handleDrawerClose={handleDrawerClose} open={open} />
-          <Suspense fallback={<div>{'Loading...'}</div>}>
+          <Suspense fallback={<div>{"Loading..."}</div>}>
             {/* the message should be replaced with t("loading_message") */}
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/transactions" element={<Transactions />} />
-              <Route path="/transactions/:id" element={<Transactions />} />
+              <Route path="/transactions" element={<TransactionsList />} />
+              <Route path="/transactions/:id" element={<TransactionsList />} />
               <Route path="/payouts" element={<Payouts />} />
-              <Route path="/users" element={<Users />} />
-              <Route path="/users/:id" element={<Users />} />
+              <Route path="/users" element={<UsersList />} />
+              <Route path="/users/:id" element={<UsersList />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </Suspense>

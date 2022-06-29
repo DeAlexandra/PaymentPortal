@@ -5,7 +5,7 @@
       "date": "4.16.2021",
       "category": "expenses",
       "receiver": "O'Hara Inc",
-      "price": "100",
+      "price": "1000",
       "VAT": 16,
       "total_price": 0,
       "products": [
@@ -1911,7 +1911,7 @@
   ],
   "users": [
     {
-      "first_name": "Eldridgey",
+      "first_name": "Eldri",
       "last_name": "Leuschk",
       "id": "06320904-ae7a-4941-b6c7-a08ffac09075",
       "email": "Ryder_Tillman35@yahoo.com",
@@ -1922,7 +1922,7 @@
     },
     {
       "first_name": "Ahmad",
-      "last_name": "O'Reilly",
+      "last_name": "O'Reila",
       "id": "46624cc7-5c1c-403c-be8f-ffb67c50de8d",
       "email": "Evert.Smitham96@gmail.com",
       "password": "JgagzgROq57bEwH",
@@ -1932,7 +1932,7 @@
     },
     {
       "first_name": "Hugh",
-      "last_name": "Kovacek",
+      "last_name": "Kovacec",
       "id": "fffe3e54-1d20-48fa-b827-9658c01c65d2",
       "email": "Ambrose_Graham68@hotmail.com",
       "password": "7yoL4JDWQ8QtmLG",

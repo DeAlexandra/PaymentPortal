@@ -20,5 +20,5 @@ const UserValidationSchema = Yup.object({
         .required("required")
 });
 
-export default UserValidationSchema;
+export { UserValidationSchema };
 

@@ -9,4 +9,4 @@ const useLocationId = () => {
     return getId();
 };
 
-export default useLocationId;
+export { useLocationId };

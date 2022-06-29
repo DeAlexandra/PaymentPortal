@@ -2,7 +2,7 @@
   "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/dashboard/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:dashboard"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

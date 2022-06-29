@@ -1,2 +1,1 @@
-export * from "./lib/components/Transactions";
-export * from "./lib/components/TransactionForm";
+export * from "./lib/components/TransactionsList";

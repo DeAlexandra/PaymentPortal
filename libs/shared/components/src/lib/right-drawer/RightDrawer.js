@@ -1,8 +1,7 @@
 import { Drawer, Box } from '@mui/material';
-import { store } from '@myorg/state';
+import { store, setDrawerClose } from '@myorg/state';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { setDrawerClose } from '@myorg/state';
 
 function RightDrawer(props) {
   const navigate = useNavigate();

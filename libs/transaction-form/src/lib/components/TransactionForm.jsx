@@ -1,42 +1,19 @@
-import React, { useEffect } from 'react';
 import { Form } from 'formik';
-import { useDispatch, useSelector } from 'react-redux';
-import { useLocationId, useUpdateCallRedux, useGetCallRedux } from '@myorg/state';
+import { useSelector } from 'react-redux';
 import { DrawerTitle, DrawerForm, FormButtons, SimpleCard } from "@myorg/shared/components";
-import { transactionFieldArray } from "./userFormFieldsArray";
-import TransactionValidationSchema from '../models/TransactionValidationSchema';
-import InputField from './FormInputField';
-import { DB_URL } from '@my-org/shared/utils';
-import {
-    updateTransactionAction,
-    updateTransactionFailure,
-    updateTransactionSuccess,
-    removeTransactionDetails,
-    getTransactionDetailsAction,
-    getTransactionDetailsSuccess,
-    getTransactionDetailsFailure,
-} from '@myorg/state';
+import { transactionFieldArray } from "@my-org/shared/utils";
+import { TransactionValidationSchema } from '../models/TransactionValidationSchema';
+import { InputField } from './FormInputField';
+import { useFetchTransaction } from '../API/useFetchTransaction';
+import { useUpdateTransaction } from "../API/useUpdateTransaction";
 
 function TransactionForm() {
-    const dispatch = useDispatch();
-    const transactionId = useLocationId();
-    const url = `${DB_URL}/transactions/${transactionId}`;
-    const { updateEntry } = useUpdateCallRedux(url, "fail_edit_transaction", "success_edit_transaction", "transactions", updateTransactionAction, updateTransactionSuccess, updateTransactionFailure);
+    const { handleUpdateTransaction } = useUpdateTransaction();
     const singleTransaction = useSelector((state) => state.transactionDetails);
     const open = useSelector((state) => state.drawerReducer.open);
-    const { fetchData } = useGetCallRedux(url, "fail_fetch_transaction", getTransactionDetailsAction, getTransactionDetailsSuccess, getTransactionDetailsFailure);
-
     const selectedTransactionDetails = singleTransaction.transaction !== undefined && singleTransaction.transaction;
-    useEffect(() => {
-        fetchData();
-        return () => {
-            dispatch(removeTransactionDetails());
-        };
-    }, []);
-
-    const handleUpdateTransaction = (transaction) => {
-        updateEntry(transaction);
-    };
+    useFetchTransaction();
+    useUpdateTransaction();
 
     return (
         <><DrawerTitle title={ "transaction_details" } />

@@ -3,9 +3,8 @@ import TableCell from '@mui/material/TableCell';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import IconButton from '@mui/material/IconButton';
 import { getTotalPrice } from '@my-org/shared/utils';
-import { store } from '@myorg/state';
+import { store, setDrawerOpen } from '@myorg/state';
 import { useNavigate } from 'react-router-dom';
-import { setDrawerOpen } from '@myorg/state';
 
 export default function TableContentRowCell({ row }) {
   const navigate = useNavigate();
