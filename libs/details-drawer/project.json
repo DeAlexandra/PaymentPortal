@@ -2,7 +2,7 @@
   "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/details-drawer/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:detailsDrawer"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

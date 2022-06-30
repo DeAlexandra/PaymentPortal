@@ -13,6 +13,19 @@
             "allow": [],
             "depConstraints": [
               {
+                "sourceTag": "scope:app",
+                "onlyDependOnLibsWithTags": [
+                  "scope:app",
+                  "scope:shared",
+                  "scope:transactions",
+                  "scope:users",
+                  "scope:dashboard",
+                  "scope:detailsDrawer",
+                  "scope:payouts",
+                  "scope:errorPage"
+                ]
+              },
+              {
                 "sourceTag": "scope:shared",
                 "onlyDependOnLibsWithTags": ["scope:shared"]
               },
