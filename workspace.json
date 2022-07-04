@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "dashboard": "libs/dashboard",
+    "details-drawer": "libs/details-drawer",
+    "error-page": "libs/error-page",
+    "payment-dashboard": "apps/payment-dashboard",
+    "payment-dashboard-e2e": "apps/payment-dashboard-e2e",
+    "payouts": "libs/payouts",
+    "shared-components": "libs/shared/components",
+    "shared-state": "libs/shared/state",
+    "shared-translations": "libs/shared/translations",
+    "shared-utils": "libs/shared/utils",
+    "transaction-form": "libs/transaction-form",
+    "transactions": "libs/transactions",
+    "user-form": "libs/user-form",
+    "users": "libs/users"
+  }
+}

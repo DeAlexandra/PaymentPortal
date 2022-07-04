@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-org/shared/forms": ["libs/shared/forms/src/index.js"],
+      "@my-org/shared/utils": ["libs/shared/utils/src/index.js"],
+      "@myorg/dashboard": ["libs/dashboard/src/index.js"],
+      "@myorg/details-drawer": ["libs/details-drawer/src/index.js"],
+      "@myorg/error-page": ["libs/error-page/src/index.js"],
+      "@myorg/forms": ["libs/forms/src/index.ts"],
+      "@myorg/payouts": ["libs/payouts/src/index.js"],
+      "@myorg/shared/components": ["libs/shared/components/src/index.js"],
+      "@myorg/shared/translations": ["libs/shared/translations/src/index.js"],
+      "@myorg/state": ["libs/shared/state/src/index.js"],
+      "@myorg/transaction-form": ["libs/transaction-form/src/index.js"],
+      "@myorg/transactions": ["libs/transactions/src/index.js"],
+      "@myorg/user-form": ["libs/user-form/src/index.js"],
+      "@myorg/users": ["libs/users/src/index.js"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,73 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nrwl/nx"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "scope:app",
+                "onlyDependOnLibsWithTags": [
+                  "scope:app",
+                  "scope:shared",
+                  "scope:transactions",
+                  "scope:users",
+                  "scope:dashboard",
+                  "scope:detailsDrawer",
+                  "scope:payouts",
+                  "scope:errorPage"
+                ]
+              },
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
+              },
+              {
+                "sourceTag": "scope:transactions",
+                "onlyDependOnLibsWithTags": [
+                  "scope:shared",
+                  "scope:transactions"
+                ]
+              },
+              {
+                "sourceTag": "scope:users",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:users"]
+              },
+              {
+                "sourceTag": "scope:payouts",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:payouts"]
+              },
+              {
+                "sourceTag": "scope:dashboard",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:dashboard"]
+              },
+              {
+                "sourceTag": "scope:errorPage",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:errorPage"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {
+        "semi": [2, "always"]
+      }
+    }
+  ]
+}

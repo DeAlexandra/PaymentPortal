@@ -1,0 +1,23 @@
+{
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "libs/details-drawer/src",
+  "projectType": "library",
+  "tags": ["scope:detailsDrawer"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/details-drawer/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/details-drawer"],
+      "options": {
+        "jestConfig": "libs/details-drawer/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
